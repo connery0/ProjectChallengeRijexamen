@@ -45,9 +45,10 @@
             this.antwoord1.Name = "antwoord1";
             this.antwoord1.Size = new System.Drawing.Size(79, 17);
             this.antwoord1.TabIndex = 0;
-            this.antwoord1.TabStop = true;
             this.antwoord1.Text = "Antwoord 1";
             this.antwoord1.UseVisualStyleBackColor = true;
+            this.antwoord1.Visible = false;
+            this.antwoord1.CheckedChanged += new System.EventHandler(this.antwoord1_CheckedChanged);
             // 
             // antwoord2
             // 
@@ -56,9 +57,10 @@
             this.antwoord2.Name = "antwoord2";
             this.antwoord2.Size = new System.Drawing.Size(79, 17);
             this.antwoord2.TabIndex = 1;
-            this.antwoord2.TabStop = true;
             this.antwoord2.Text = "Antwoord 2";
             this.antwoord2.UseVisualStyleBackColor = true;
+            this.antwoord2.Visible = false;
+            this.antwoord2.CheckedChanged += new System.EventHandler(this.antwoord2_CheckedChanged);
             // 
             // antwoord3
             // 
@@ -67,9 +69,10 @@
             this.antwoord3.Name = "antwoord3";
             this.antwoord3.Size = new System.Drawing.Size(79, 17);
             this.antwoord3.TabIndex = 2;
-            this.antwoord3.TabStop = true;
             this.antwoord3.Text = "Antwoord 3";
             this.antwoord3.UseVisualStyleBackColor = true;
+            this.antwoord3.Visible = false;
+            this.antwoord3.CheckedChanged += new System.EventHandler(this.antwoord3_CheckedChanged);
             // 
             // antwoord4
             // 
@@ -78,9 +81,10 @@
             this.antwoord4.Name = "antwoord4";
             this.antwoord4.Size = new System.Drawing.Size(79, 17);
             this.antwoord4.TabIndex = 3;
-            this.antwoord4.TabStop = true;
             this.antwoord4.Text = "Antwoord 4";
             this.antwoord4.UseVisualStyleBackColor = true;
+            this.antwoord4.Visible = false;
+            this.antwoord4.CheckedChanged += new System.EventHandler(this.antwoord4_CheckedChanged);
             // 
             // button1
             // 
@@ -112,7 +116,6 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(162, 40);
             this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "Juist";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
