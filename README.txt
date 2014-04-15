@@ -10,10 +10,10 @@ stuff wat gedaan moet worden:
 		[]	Score bijhouden en tonen
 	
 	[]	Multiple choise
-		[x]	Random vragen
+		[]	Random vragen
 		[]	Afbeelding Tonen
 		[]	Score bijhouden en tonen
-		[x]	"juist" of "fout"
+		[]	"juist" of "fout"
 		[]	uitleg bij iedere vraag
 		[]	tijdlimiet
 		[]	alle foute vragen opnieuw kunnen inoefenen
