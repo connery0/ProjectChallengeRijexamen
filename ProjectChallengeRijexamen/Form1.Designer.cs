@@ -28,34 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.M_knop1 = new System.Windows.Forms.Button();
+            this.M_knop2 = new System.Windows.Forms.Button();
+            this.M_knop3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // M_knop1
             // 
-            this.button1.Location = new System.Drawing.Point(116, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.M_knop1, "M_knop1");
+            this.M_knop1.Name = "M_knop1";
+            this.M_knop1.UseVisualStyleBackColor = true;
+            this.M_knop1.Click += new System.EventHandler(this.M_knop1_Click);
+            // 
+            // M_knop2
+            // 
+            resources.ApplyResources(this.M_knop2, "M_knop2");
+            this.M_knop2.Name = "M_knop2";
+            this.M_knop2.UseVisualStyleBackColor = true;
+            // 
+            // M_knop3
+            // 
+            resources.ApplyResources(this.M_knop3, "M_knop3");
+            this.M_knop3.Name = "M_knop3";
+            this.M_knop3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 262);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.M_knop3);
+            this.Controls.Add(this.M_knop2);
+            this.Controls.Add(this.M_knop1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button M_knop1;
+        private System.Windows.Forms.Button M_knop2;
+        private System.Windows.Forms.Button M_knop3;
 
 
     }

@@ -117,90 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="M_knop1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="M_knop1.Text" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;M_knop1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;M_knop3.Name" xml:space="preserve">
-    <value>M_knop3</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;M_knop3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;M_knop2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;M_knop1.Name" xml:space="preserve">
-    <value>M_knop1</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>750, 500</value>
-  </data>
-  <data name="M_knop1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 56</value>
-  </data>
-  <data name="&gt;&gt;M_knop1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="M_knop2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 115</value>
-  </data>
-  <data name="M_knop2.Text" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="M_knop3.Text" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;M_knop2.Name" xml:space="preserve">
-    <value>M_knop2</value>
-  </data>
-  <data name="&gt;&gt;M_knop2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;M_knop1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="M_knop3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 56</value>
-  </data>
-  <data name="M_knop1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 39</value>
-  </data>
-  <data name="M_knop3.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="M_knop2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 56</value>
-  </data>
-  <data name="&gt;&gt;M_knop2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="M_knop2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;M_knop3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
@@ -225,16 +142,4 @@
         //8AAP//AAD//w==
 </value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;M_knop3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="M_knop3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 189</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
