@@ -10,8 +10,8 @@ namespace ProjectChallengeRijexamen
     {
         private Vraag[] Vragen;
         private MC_Form ParentForm;
-        private string Naam;
-        private bool NieuwBestand;
+       // private string Naam;
+       // private bool NieuwBestand;
 
         public MultipleChoice(MC_Form ParentForm, String Naam, Boolean NieuwBestand)
         {
@@ -32,7 +32,10 @@ namespace ProjectChallengeRijexamen
             String test = A.PrintVraag();
             ParentForm.ShowMessage(test);
 
-
+            System.IO.StreamWriter objWriter;
+            objWriter = new System.IO.StreamWriter("..\\..\\vragen\\Vragen2.txt");
+            objWriter.Write("test");
+            objWriter.Close();
 
 
 
