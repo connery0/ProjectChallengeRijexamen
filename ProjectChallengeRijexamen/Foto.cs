@@ -8,15 +8,20 @@ namespace ProjectChallengeRijexamen
 {
     class Foto
     {
-        String doel;
+        
+        String Naam;
         public Foto(String Naam)
         {
-            doel = "..//..//img//" + Naam;
+            this.Naam = Naam;
         }
 
         public String getDoel()
         {
-            return doel;
+            return "..//..//img//" + Naam;
+        }
+        public String getNaam()
+        {
+            return Naam;
         }
 
     }

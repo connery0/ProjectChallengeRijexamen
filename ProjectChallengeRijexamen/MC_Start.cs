@@ -13,10 +13,12 @@ namespace ProjectChallengeRijexamen
     public partial class MC_Start : Form
     {
         public Form1 ParentForm;
-        public MC_Start()
+        private Boolean OpenMainMenu = true;
+        private String Naam;
+        public MC_Start(Form1 ParentForm)
         {
             InitializeComponent();
-
+            this.ParentForm = ParentForm;
         }
 
         private void MC_Start_Load(object sender, EventArgs e)
@@ -26,8 +28,20 @@ namespace ProjectChallengeRijexamen
 
         private void MC_Start_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ParentForm.StartMC= new MC_Start();
+            if (OpenMainMenu) { 
+            ParentForm.Location = this.Location;
+            ParentForm.Show();
+            }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenMainMenu = false;
+            Naam = Naam1.Text + Naam2.Text;
+            ParentForm.MultipleChoice = new MC_Form(ParentForm, Naam,true);
+            ParentForm.MultipleChoice.Show();
+            this.Close();
         }
     }
 }

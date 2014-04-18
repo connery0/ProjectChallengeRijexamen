@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MC_Form));
             this.MC_tekst = new System.Windows.Forms.TextBox();
             this.MC_Radio3 = new System.Windows.Forms.RadioButton();
             this.MC_Radio2 = new System.Windows.Forms.RadioButton();
@@ -121,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 500);
+            this.ClientSize = new System.Drawing.Size(734, 462);
             this.Controls.Add(this.MC_tekst);
             this.Controls.Add(this.MC_Radio3);
             this.Controls.Add(this.MC_Radio2);
@@ -129,12 +130,15 @@
             this.Controls.Add(this.MC_picture);
             this.Controls.Add(this.MC_Progres);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MC_Form";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MC_Form";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MC_Form_FormClosed);
+            this.Load += new System.EventHandler(this.MC_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MC_picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

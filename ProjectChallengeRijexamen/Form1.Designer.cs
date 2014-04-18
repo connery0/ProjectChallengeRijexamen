@@ -60,7 +60,7 @@
             this.Controls.Add(this.M_knop3);
             this.Controls.Add(this.M_knop2);
             this.Controls.Add(this.M_knop1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

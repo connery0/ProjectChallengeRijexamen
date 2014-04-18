@@ -19,7 +19,6 @@ namespace ProjectChallengeRijexamen
         public Form1()
         {
             InitializeComponent();
-            StartMC = new MC_Start();
             setScherm("Menu");
         }
 
@@ -62,9 +61,11 @@ namespace ProjectChallengeRijexamen
 
         private void M_knop1_Click(object sender, EventArgs e)
         {
-
-            StartMC.ParentForm = this;
+            StartMC = new MC_Start(this);
             StartMC.Show();
+            StartMC.Location = this.Location;
+            this.Hide();
+            
 
         }
 

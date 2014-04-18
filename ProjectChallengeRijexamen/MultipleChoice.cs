@@ -8,29 +8,48 @@ namespace ProjectChallengeRijexamen
 {
     class MultipleChoice
     {
-        Vraag[] Vragen;
+        private Vraag[] Vragen;
+        private MC_Form ParentForm;
+        private string Naam;
+        private bool NieuwBestand;
 
-
-        public MultipleChoice(String Naam)
+        public MultipleChoice(MC_Form ParentForm, String Naam, Boolean NieuwBestand)
         {
+            this.ParentForm = ParentForm;
+
+            String FileName = "..\\..\\Vragen\\" + Naam+".txt";
+            if (System.IO.File.Exists(FileName)==false)
+            {
+                ParentForm.ShowMessage("file not found");
+              //  String Text=
+                System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\" + Naam + ".txt")); 
+            }
+
             setAantalVragen(Naam);
             setVragen(Naam);
+
+            Vraag A = Vragen[0];
+            String test = A.PrintVraag();
+            ParentForm.ShowMessage(test);
+
+
+
+
+
+
+
+
+
+            
         }
 
-
-
-
-
-        public MultipleChoice()
-        {
-            setAantalVragen("test");
-            setVragen("test");
-        }
+       
+  
 
         private void setAantalVragen(String bestandsNaam)
         {
             System.IO.StreamReader myFile =
-           new System.IO.StreamReader("..\\..\\Vragen\\" + bestandsNaam+".txt");
+           new System.IO.StreamReader("..\\..\\Vragen\\" + bestandsNaam + ".txt");
             string myString = myFile.ReadToEnd();
 
             myFile.Close();
