@@ -1,36 +1,42 @@
 -------- LIJST MET MULTIPLE CHOICE VRAGEN -----------
 vraag 1 bla bla
 img1.png
-antwoord1
+antwoord1(Juist antwoord)
 antwoord2
 antwoord3
+uitleg van vraag1
 ------------
-vraag 2 bla
+1+1=
 img2.png
-antwoord1
-antwoord2
-antwoord3
+2
+5
+vis
+5 vissen is een dom antwoord
 ------------
 vraag 3 bla
 img3.png
 antwoord1
 antwoord2
 antwoord3
+uitleg van vraag3
 ------------
 vraag 4 bla
 img1.png
 antwoord1
 antwoord2
 antwoord3
+uitleg van vraag4
 ------------
 vraag 5 bla
 img2.png
 antwoord1
 antwoord2
 antwoord3
+uitleg van vraag5
 ------------
 vraag 6 bla
 img1.png
 antwoord1
 antwoord2
 antwoord3
+uitleg van vraag6
