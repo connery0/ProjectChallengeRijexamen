@@ -15,6 +15,7 @@ namespace ProjectChallengeRijexamen
         public Form1 ParentForm;
         private Boolean OpenMainMenu = true;
         private String Naam;
+        private int TijdsLimiet = 0;
         public MC_Start(Form1 ParentForm)
         {
             InitializeComponent();
@@ -81,7 +82,7 @@ namespace ProjectChallengeRijexamen
         private void VolgendScherm()
         {
             OpenMainMenu = false;
-            ParentForm.MultipleChoice = new MC_Form(ParentForm, Naam);
+            ParentForm.MultipleChoice = new MC_Form(ParentForm, Naam,TijdsLimiet);
             ParentForm.MultipleChoice.Show();
             ParentForm.MultipleChoice.Location = this.Location;
             this.Close();
@@ -109,6 +110,30 @@ namespace ProjectChallengeRijexamen
             }
 
             return isValid;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                TijdsLimiet = 0;
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                TijdsLimiet = 1;
+            }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked)
+            {
+                TijdsLimiet = 2;
+            }
         }
     }
 }

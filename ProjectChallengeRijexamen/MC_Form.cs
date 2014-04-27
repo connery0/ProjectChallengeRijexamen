@@ -16,16 +16,66 @@ namespace ProjectChallengeRijexamen
         private String Naam;
         private MultipleChoice Vragen;
         private int Antwoord;
+        private Boolean tijdPerVraag;
+        private int maxTijd;
 
 
-        public MC_Form(Form1 ParentForm, String Naam)
+        public MC_Form(Form1 ParentForm, String Naam, int tijdslimiet)
         {
             InitializeComponent();
-            Vragen = new MultipleChoice(this, Naam) ;
+            Vragen = new MultipleChoice(this, Naam);
             this.ParentForm = ParentForm;
             this.Naam = Naam;
             MC_picture.SizeMode = PictureBoxSizeMode.CenterImage;
+            if (tijdslimiet > 0)
+            {
+                MC_Progres.Visible = true;
+                SetTijdsLimiet(tijdslimiet);
+            }
         }
+
+        private void ProgresTijd()
+        {
+            double tijdOver = MC_Progres.Maximum - MC_Progres.Value;
+            int tijdMin;
+            ProgresLabel.Text = "";
+            if (tijdOver > 60)
+            {
+                tijdMin = Convert.ToInt32(Math.Floor(tijdOver / 60));
+                tijdOver = tijdOver - tijdMin * 60;
+                ProgresLabel.Text = tijdMin + "M ";
+            }
+            ProgresLabel.Text = ProgresLabel.Text + tijdOver + "S";
+
+        }
+        private void SetTijdsLimiet(int tijdsL)
+        {
+            switch (tijdsL)
+            {
+                case 1:
+                    tijdPerVraag = true;
+                    maxTijd = 60;
+                    break;
+                case 2:
+                    tijdPerVraag = false;
+                    maxTijd = 3600;
+                    break;
+            }
+
+            MC_Progres.Value = 0;
+            MC_Progres.Maximum = maxTijd;
+            ProgresTijd();
+            timer1.Start();
+        }
+
+
+
+
+
+
+
+
+
 
         private void MC_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -99,8 +149,10 @@ namespace ProjectChallengeRijexamen
                 case "Antwoord":
                     if (Antwoord > 0)
                     {
+                        timer1.Stop();
                         button1.Text = "Volgende";
                         Vragen.ControleerVraag(Antwoord);
+                        
                     }
                     else
                     {
@@ -108,6 +160,7 @@ namespace ProjectChallengeRijexamen
                     }
                     break;
                 case "Volgende":
+                    timer1.Start();
                     button1.Text = "Antwoord";
                     MC_tekst.BackColor = Color.Empty;
                     MC_tekst.ScrollBars = ScrollBars.None;
@@ -116,6 +169,11 @@ namespace ProjectChallengeRijexamen
                     MC_Radio2.Checked = false;
                     MC_Radio3.Checked = false;
                     Antwoord = 0;
+                    if (tijdPerVraag)
+                    {
+                        MC_Progres.Value = 0;
+                        ProgresTijd();
+                    }
                     break;
             }
         }
@@ -141,6 +199,27 @@ namespace ProjectChallengeRijexamen
             if (MC_Radio3.Checked)
             {
                 Antwoord = 3;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            MC_Progres.Value += 1;
+            ProgresTijd();
+            if (MC_Progres.Value >= MC_Progres.Maximum)
+            {
+                timer1.Stop();
+                ProgresTijd();
+                VraagFout("De tijd is om");
+                
+                if (!tijdPerVraag)
+                {
+                    Vragen.EindeVraag();
+                }
+                else
+                {
+                    button1.Text = "Volgende";
+                }
             }
         }
     }

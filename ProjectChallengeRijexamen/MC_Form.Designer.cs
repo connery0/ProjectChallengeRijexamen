@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MC_Form));
             this.MC_tekst = new System.Windows.Forms.TextBox();
             this.MC_Radio3 = new System.Windows.Forms.RadioButton();
@@ -36,6 +37,8 @@
             this.MC_picture = new System.Windows.Forms.PictureBox();
             this.MC_Progres = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ProgresLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MC_picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,9 +116,11 @@
             // MC_Progres
             // 
             this.MC_Progres.Location = new System.Drawing.Point(12, 425);
+            this.MC_Progres.MarqueeAnimationSpeed = 0;
             this.MC_Progres.Name = "MC_Progres";
-            this.MC_Progres.Size = new System.Drawing.Size(582, 23);
+            this.MC_Progres.Size = new System.Drawing.Size(567, 23);
             this.MC_Progres.TabIndex = 9;
+            this.MC_Progres.Visible = false;
             // 
             // button1
             // 
@@ -127,12 +132,30 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // ProgresLabel
+            // 
+            this.ProgresLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ProgresLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ProgresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ProgresLabel.Location = new System.Drawing.Point(579, 416);
+            this.ProgresLabel.Name = "ProgresLabel";
+            this.ProgresLabel.Size = new System.Drawing.Size(42, 43);
+            this.ProgresLabel.TabIndex = 15;
+            this.ProgresLabel.Text = "00M 00S";
+            this.ProgresLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // MC_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(734, 462);
+            this.Controls.Add(this.ProgresLabel);
             this.Controls.Add(this.MC_tekst);
             this.Controls.Add(this.MC_Radio3);
             this.Controls.Add(this.MC_Radio2);
@@ -162,5 +185,7 @@
         private System.Windows.Forms.PictureBox MC_picture;
         private System.Windows.Forms.ProgressBar MC_Progres;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label ProgresLabel;
     }
 }

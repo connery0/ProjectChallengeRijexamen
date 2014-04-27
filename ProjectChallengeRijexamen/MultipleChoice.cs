@@ -34,52 +34,60 @@ namespace ProjectChallengeRijexamen
             }
             else
             {
-
-                ParentForm.ShowMessage("einde");
-               
-                String PrintVragen = "";
-                Boolean EersteText = true;
-                for (int i = 0; i < Vragen.Length; i++)
-                {
-                    if (!Vragen[i].VraagJuist())
-                    {
-                        if (!EersteText)
-                        {
-                            PrintVragen = PrintVragen + "\n";
-                        }
-                        else
-                        {
-                            EersteText = false;
-                        }
-
-                        PrintVragen = PrintVragen + Vragen[i].PrintVraag();
-                    }
-
-                }
-                if (PrintVragen == "")
-                {
-                    try
-                    {
-                        System.IO.File.Delete("..\\..\\Vragen\\" + Naam + ".txt");
-                    }
-                    catch (System.IO.IOException f)
-                    {
-                        Console.WriteLine(f.Message);
-                        return;
-                    }
-                }
-                else
-                {
-                    System.IO.File.WriteAllText("..\\..\\Vragen\\" + Naam + ".txt", PrintVragen);
-                }
-                ParentForm.Close();
-
-
-
+                EindeVraag();
 
             }
 
         }
+
+
+        public void EindeVraag()
+        {
+            ParentForm.ShowMessage("einde");
+
+            String PrintVragen = "";
+            Boolean EersteText = true;
+            for (int i = 0; i < Vragen.Length; i++)
+            {
+                if ((!Vragen[i].VraagJuist())||(!Vragen[i].VraagBeantwoord()))
+                {
+                    if (!EersteText)
+                    {
+                        PrintVragen = PrintVragen + "\n";
+                    }
+                    else
+                    {
+                        EersteText = false;
+                    }
+
+                    PrintVragen = PrintVragen + Vragen[i].PrintVraag();
+                }
+
+            }
+            if (PrintVragen == "")
+            {
+                try
+                {
+                    System.IO.File.Delete("..\\..\\Vragen\\" + Naam + ".txt");
+                }
+                catch (System.IO.IOException f)
+                {
+                    Console.WriteLine(f.Message);
+                    return;
+                }
+            }
+            else
+            {
+                System.IO.File.WriteAllText("..\\..\\Vragen\\" + Naam + ".txt", PrintVragen);
+            }
+
+            ParentForm.Close();
+
+        }
+
+
+
+
 
         private void RandomVraag()
         {
