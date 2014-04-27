@@ -36,12 +36,12 @@
             this.MC_picture = new System.Windows.Forms.PictureBox();
             this.MC_Progres = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MC_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // MC_tekst
             // 
+            this.MC_tekst.BackColor = System.Drawing.SystemColors.Control;
             this.MC_tekst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MC_tekst.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_tekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -51,6 +51,7 @@
             this.MC_tekst.ReadOnly = true;
             this.MC_tekst.Size = new System.Drawing.Size(710, 90);
             this.MC_tekst.TabIndex = 14;
+            this.MC_tekst.Text = "Verkeers Quiz";
             // 
             // MC_Radio3
             // 
@@ -65,6 +66,7 @@
             this.MC_Radio3.TabStop = true;
             this.MC_Radio3.Text = "Antwoord";
             this.MC_Radio3.UseVisualStyleBackColor = true;
+            this.MC_Radio3.CheckedChanged += new System.EventHandler(this.MC_Radio3_CheckedChanged);
             // 
             // MC_Radio2
             // 
@@ -79,6 +81,7 @@
             this.MC_Radio2.TabStop = true;
             this.MC_Radio2.Text = "Antwoord";
             this.MC_Radio2.UseVisualStyleBackColor = true;
+            this.MC_Radio2.CheckedChanged += new System.EventHandler(this.MC_Radio2_CheckedChanged);
             // 
             // MC_Radio1
             // 
@@ -94,6 +97,7 @@
             this.MC_Radio1.TabStop = true;
             this.MC_Radio1.Text = "Antwoord";
             this.MC_Radio1.UseVisualStyleBackColor = false;
+            this.MC_Radio1.CheckedChanged += new System.EventHandler(this.MC_Radio1_CheckedChanged);
             // 
             // MC_picture
             // 
@@ -115,22 +119,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(627, 425);
+            this.button1.Location = new System.Drawing.Point(627, 408);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 25);
+            this.button1.Size = new System.Drawing.Size(95, 42);
             this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
+            this.button1.Text = "Antwoord";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(627, 398);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 25);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // MC_Form
             // 
@@ -138,7 +133,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(734, 462);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.MC_tekst);
             this.Controls.Add(this.MC_Radio3);
             this.Controls.Add(this.MC_Radio2);
@@ -168,6 +162,5 @@
         private System.Windows.Forms.PictureBox MC_picture;
         private System.Windows.Forms.ProgressBar MC_Progres;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }

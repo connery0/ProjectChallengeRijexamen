@@ -3,6 +3,8 @@ ProjectChallengeRijexamen
 stuff wat gedaan moet worden:
 
 	[]	verkeersborden en vragen opslaan in .txt formaat
+		[X] txt formaat van vragen
+		[] txt formaat van verkeersborden
 	
 	[] Drag and drop verkeersborden
 		[]	Drag and drop verkeersborden
@@ -11,12 +13,12 @@ stuff wat gedaan moet worden:
 	
 	[]	Multiple choise
 		[]	Random vragen
-		[]	Afbeelding Tonen
+		[X]	Afbeelding Tonen
 		[]	Score bijhouden en tonen
 		[]	"juist" of "fout"
 		[]	uitleg bij iedere vraag
 		[]	tijdlimiet
-		[]	alle foute vragen opnieuw kunnen inoefenen
+		[X]	alle foute vragen opnieuw kunnen inoefenen
 		
 	[]	Hoofdmenu
 		[]	theorie instuderen
@@ -38,11 +40,8 @@ stuff wat gedaan moet worden:
 		[]	Memorie spel met verkeersborden
 		
 		
-		
-	
-	[]	klassen gebruiken?
-	[]	startscherm
-	[]	mogelijkheid om tussen forms of schermen te wisselen
+		[]	startscherm
+	[X]	mogelijkheid om tussen forms of schermen te wisselen
 		(van multiple choice naar drag and drop? of van start menu naar een van de twee)
 	
 	

@@ -44,8 +44,10 @@
             this.Naam1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Naam1.Location = new System.Drawing.Point(134, 126);
             this.Naam1.Name = "Naam1";
+            this.Naam1.ShortcutsEnabled = false;
             this.Naam1.Size = new System.Drawing.Size(223, 32);
             this.Naam1.TabIndex = 0;
+            this.Naam1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Box_KeyPress);
             // 
             // label1
             // 
@@ -83,8 +85,10 @@
             this.Naam2.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Naam2.Location = new System.Drawing.Point(434, 128);
             this.Naam2.Name = "Naam2";
+            this.Naam2.ShortcutsEnabled = false;
             this.Naam2.Size = new System.Drawing.Size(285, 32);
             this.Naam2.TabIndex = 4;
+            this.Naam2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Box_KeyPress);
             // 
             // Text_Label
             // 

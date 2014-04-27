@@ -14,6 +14,7 @@ namespace ProjectChallengeRijexamen
         private Keuze antwoord1, antwoord2, antwoord3;
         private String Uitleg;
         private int JuistAntwoord;
+        private Boolean Beantwoord = false, JuistBeantwoord = false;
 
 
         public String PrintVraag()
@@ -33,7 +34,33 @@ namespace ProjectChallengeRijexamen
                     toPrint = toPrint + antwoord3.getAntwoord() + "\n" + antwoord2.getAntwoord() + "\n" + antwoord1.getAntwoord();
                     break;
             }
+            toPrint = toPrint +"\n"+ getUitleg();
             return toPrint;
+        }
+
+        public Boolean ControleerVraag(int Antwoord)
+        {
+            if (Beantwoord == false)
+            {
+                Beantwoord = true;
+                if (JuistAntwoord == Antwoord)
+                {
+                    JuistBeantwoord = true;
+                }
+                else { JuistBeantwoord = false; }
+            }
+            return JuistBeantwoord;
+        }
+
+
+
+        public Boolean VraagBeantwoord()
+        {
+            return Beantwoord;
+        }
+        public Boolean VraagJuist()
+        {
+            return JuistBeantwoord;
         }
 
         public String getUitleg()
@@ -47,16 +74,16 @@ namespace ProjectChallengeRijexamen
             switch (Nr)
             {
                 case 1:
-                    returnAntwoord= antwoord1;
+                    returnAntwoord = antwoord1;
                     break;
                 case 2:
-                    returnAntwoord= antwoord2;
+                    returnAntwoord = antwoord2;
                     break;
                 case 3:
-                    returnAntwoord= antwoord3;
+                    returnAntwoord = antwoord3;
                     break;
                 default:
-                    returnAntwoord= new Keuze("Error", false);
+                    returnAntwoord = new Keuze("Error", false);
                     break;
             }
             return returnAntwoord;
@@ -70,15 +97,19 @@ namespace ProjectChallengeRijexamen
             return afbeelding;
         }
 
+        public Vraag()
+        {
+            vraag = "Error";
+            afbeelding = new Foto("Error.jpg");
+        }
 
-        public Vraag(String Vraag, String Afbeelding, String Antwoord1, String Antwoord2, String Antwoord3,String Uitleg)
+        public Vraag(String Vraag, String Afbeelding, String Antwoord1, String Antwoord2, String Antwoord3, String Uitleg,Random R)
         {
             vraag = Vraag; ;
             afbeelding = new Foto(Afbeelding);
             this.Uitleg = Uitleg;
 
-            int R = new Random().Next(0, 6);
-            switch (R)
+            switch (R.Next(0, 6))
             {
                 case 1:
                     antwoord1 = new Keuze(Antwoord1, true);
@@ -110,16 +141,13 @@ namespace ProjectChallengeRijexamen
                     antwoord3 = new Keuze(Antwoord1, true);
                     JuistAntwoord = 3;
                     break;
-                case 6:
+                default:
                     antwoord1 = new Keuze(Antwoord3, false);
                     antwoord2 = new Keuze(Antwoord2, false);
                     antwoord3 = new Keuze(Antwoord1, true);
                     JuistAntwoord = 3;
                     break;
             }
-
-
-
 
         }
 

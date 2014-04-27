@@ -41,11 +41,11 @@ namespace ProjectChallengeRijexamen
         {
             if (button1.Text == "Volgende")
             {
-                Naam = Naam1.Text +"_"+ Naam2.Text;
+                Naam = Naam1.Text + "_" + Naam2.Text;
                 String FileName = "..\\..\\Vragen\\" + Naam + ".txt";
                 if (System.IO.File.Exists(FileName) == false)
                 {
-                    MessageBox.Show("file not found");
+                    
                     System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\" + Naam + ".txt"));
                     VolgendScherm();
                 }
@@ -60,18 +60,16 @@ namespace ProjectChallengeRijexamen
             }
             else
             {
-                // Use a try block to catch IOExceptions, to 
-                // handle the case of the file already being 
-                // opened by another process. 
-               // try
-                //{
+
+                try
+                {
                     System.IO.File.Delete("..\\..\\Vragen\\" + Naam + ".txt");
-                //}
-                //catch (System.IO.IOException e)
-                //{
-                //    Console.WriteLine(e.Message);
-                //    return;
-                //}
+                }
+                catch (System.IO.IOException f)
+                {
+                    Console.WriteLine(f.Message);
+                    return;
+                }
 
 
 
@@ -83,7 +81,7 @@ namespace ProjectChallengeRijexamen
         private void VolgendScherm()
         {
             OpenMainMenu = false;
-            ParentForm.MultipleChoice = new MC_Form(ParentForm, Naam, true);
+            ParentForm.MultipleChoice = new MC_Form(ParentForm, Naam);
             ParentForm.MultipleChoice.Show();
             ParentForm.MultipleChoice.Location = this.Location;
             this.Close();
@@ -92,6 +90,25 @@ namespace ProjectChallengeRijexamen
         private void button2_Click(object sender, EventArgs e)
         {
             VolgendScherm();
+        }
+
+        private void Box_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            e.Handled = !IsValidCharacter(e.KeyChar);
+        }
+
+        private bool IsValidCharacter(char c)
+        {
+            bool isValid = false;
+
+            // (char)8 = backspace
+            if (c == (char)8 || c == 'a' || c == 'b' || c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 'g' || c == 'h' || c == 'i' || c == 'j' || c == 'k' || c == 'l' || c == 'm' || c == 'n' || c == 'o' || c == 'p' || c == 'q' || c == 'r' || c == 's' || c == 't' || c == 'u' || c == 'v' || c == 'w' || c == 'x' || c == 'y' || c == 'z' || c == 'A' || c == 'B' || c == 'C' || c == 'D' || c == 'E' || c == 'F' || c == 'G' || c == 'H' || c == 'I' || c == 'J' || c == 'K' || c == 'L' || c == 'M' || c == 'N' || c == 'O' || c == 'P' || c == 'Q' || c == 'R' || c == 'S' || c == 'T' || c == 'U' || c == 'V' || c == 'W' || c == 'X' || c == 'Y' || c == 'Z')
+            {
+                isValid = true;
+            }
+
+            return isValid;
         }
     }
 }

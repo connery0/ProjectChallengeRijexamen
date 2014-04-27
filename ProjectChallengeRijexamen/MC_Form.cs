@@ -15,12 +15,13 @@ namespace ProjectChallengeRijexamen
         private Form1 ParentForm;
         private String Naam;
         private MultipleChoice Vragen;
+        private int Antwoord;
 
 
-        public MC_Form(Form1 ParentForm, String Naam, Boolean NieuwBestand)
+        public MC_Form(Form1 ParentForm, String Naam)
         {
             InitializeComponent();
-            Vragen = new MultipleChoice(this, Naam, NieuwBestand);
+            Vragen = new MultipleChoice(this, Naam) ;
             this.ParentForm = ParentForm;
             this.Naam = Naam;
             MC_picture.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -55,14 +56,29 @@ namespace ProjectChallengeRijexamen
         }
         public void setUitleg(String uitleg)
         {
-            MC_tekst.Text = MC_tekst.Text + Environment.NewLine+"uitleg: " + uitleg;
-
+            MC_tekst.Text = MC_tekst.Text + Environment.NewLine + "uitleg: " + uitleg;
+            if (MC_tekst.Text.Split('\n').Length > 4)
+            {
+                MC_tekst.ScrollBars = ScrollBars.Vertical;
+            }
 
         }
         public void setImage(String Doel)
         {
             MC_picture.Image = Image.FromFile(Doel);
         }
+
+        public void VraagJuist()
+        {
+            MC_tekst.BackColor = Color.LightGreen;
+        }
+        public void VraagFout(String Uitleg)
+        {
+            MC_tekst.BackColor = Color.IndianRed;
+            setUitleg(Uitleg);
+        }
+
+
 
 
         public void ShowMessage(string a)
@@ -78,7 +94,54 @@ namespace ProjectChallengeRijexamen
 
         private void button1_Click(object sender, EventArgs e)
         {
-       
+            switch (button1.Text)
+            {
+                case "Antwoord":
+                    if (Antwoord > 0)
+                    {
+                        button1.Text = "Volgende";
+                        Vragen.ControleerVraag(Antwoord);
+                    }
+                    else
+                    {
+                        MessageBox.Show("gelieve eerst een antwoord te kiezen");
+                    }
+                    break;
+                case "Volgende":
+                    button1.Text = "Antwoord";
+                    MC_tekst.BackColor = Color.Empty;
+                    MC_tekst.ScrollBars = ScrollBars.None;
+                    Vragen.VolgendeVraag();
+                    MC_Radio1.Checked = false;
+                    MC_Radio2.Checked = false;
+                    MC_Radio3.Checked = false;
+                    Antwoord = 0;
+                    break;
+            }
+        }
+
+        private void MC_Radio1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MC_Radio1.Checked)
+            {
+                Antwoord = 1;
+            }
+        }
+
+        private void MC_Radio2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MC_Radio2.Checked)
+            {
+                Antwoord = 2;
+            }
+        }
+
+        private void MC_Radio3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MC_Radio3.Checked)
+            {
+                Antwoord = 3;
+            }
         }
     }
 }
