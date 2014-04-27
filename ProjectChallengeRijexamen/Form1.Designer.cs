@@ -46,6 +46,7 @@
             resources.ApplyResources(this.M_knop2, "M_knop2");
             this.M_knop2.Name = "M_knop2";
             this.M_knop2.UseVisualStyleBackColor = true;
+            this.M_knop2.Click += new System.EventHandler(this.M_knop2_Click);
             // 
             // M_knop3
             // 

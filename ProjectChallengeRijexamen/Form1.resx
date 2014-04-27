@@ -129,7 +129,7 @@
     <value>8</value>
   </data>
   <data name="M_knop1.Text" xml:space="preserve">
-    <value>button2</value>
+    <value>Verkeersborden MC</value>
   </data>
   <data name="&gt;&gt;M_knop1.Name" xml:space="preserve">
     <value>M_knop1</value>
@@ -153,7 +153,7 @@
     <value>9</value>
   </data>
   <data name="M_knop2.Text" xml:space="preserve">
-    <value>button3</value>
+    <value>DragDrop</value>
   </data>
   <data name="&gt;&gt;M_knop2.Name" xml:space="preserve">
     <value>M_knop2</value>
@@ -177,7 +177,7 @@
     <value>10</value>
   </data>
   <data name="M_knop3.Text" xml:space="preserve">
-    <value>button4</value>
+    <value>button3</value>
   </data>
   <data name="&gt;&gt;M_knop3.Name" xml:space="preserve">
     <value>M_knop3</value>
