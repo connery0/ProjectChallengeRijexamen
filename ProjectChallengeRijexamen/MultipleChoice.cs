@@ -68,7 +68,7 @@ namespace ProjectChallengeRijexamen
             {
                 try
                 {
-                    System.IO.File.Delete("..\\..\\Vragen\\" + Naam + ".txt");
+                    System.IO.File.Delete("Vragen\\" + Naam + ".txt");
                 }
                 catch (System.IO.IOException f)
                 {
@@ -78,7 +78,7 @@ namespace ProjectChallengeRijexamen
             }
             else
             {
-                System.IO.File.WriteAllText("..\\..\\Vragen\\" + Naam + ".txt", PrintVragen);
+                System.IO.File.WriteAllText("Vragen\\" + Naam + ".txt", PrintVragen);
             }
 
             ParentForm.Close();
@@ -160,7 +160,7 @@ namespace ProjectChallengeRijexamen
         private void setVragen(String bestandsNaam)
         {
             System.IO.StreamReader myFile =
-            new System.IO.StreamReader("..\\..\\Vragen\\" + bestandsNaam + ".txt");
+            new System.IO.StreamReader("Vragen\\" + bestandsNaam + ".txt");
             string myString = myFile.ReadToEnd();
 
             myFile.Close();
@@ -173,10 +173,18 @@ namespace ProjectChallengeRijexamen
 
             string line;
             int teller = 0;
-            System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\" + bestandsNaam + ".txt");
+            System.IO.StreamReader file = new System.IO.StreamReader("Vragen\\" + bestandsNaam + ".txt");
             while ((line = file.ReadLine()) != null)
             {
-                Vragen[teller] = new Vraag(file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), R);
+                String test, test2, test3, test4, test5, test6;
+                test = file.ReadLine();
+                test2 = file.ReadLine();
+                test3 = file.ReadLine();
+                test4 = file.ReadLine();
+                test5 = file.ReadLine();
+                test6 = file.ReadLine();
+
+                Vragen[teller] = new Vraag(test,test2,test3,test4,test5,test6, R);
                 teller += 1;
             }
             file.Close();

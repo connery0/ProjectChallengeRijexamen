@@ -43,11 +43,11 @@ namespace ProjectChallengeRijexamen
             if (button1.Text == "Volgende")
             {
                 Naam = Naam1.Text + "_" + Naam2.Text;
-                String FileName = "..\\..\\Vragen\\" + Naam + ".txt";
+                String FileName = "Vragen\\" + Naam + ".txt";
                 if (System.IO.File.Exists(FileName) == false)
                 {
                     
-                    System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\" + Naam + ".txt"));
+                    System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("Vragen\\" + Naam + ".txt"));
                     VolgendScherm();
                 }
                 else
@@ -64,7 +64,7 @@ namespace ProjectChallengeRijexamen
 
                 try
                 {
-                    System.IO.File.Delete("..\\..\\Vragen\\" + Naam + ".txt");
+                    System.IO.File.Delete("Vragen\\" + Naam + ".txt");
                 }
                 catch (System.IO.IOException f)
                 {
@@ -74,7 +74,7 @@ namespace ProjectChallengeRijexamen
 
 
 
-                System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\" + Naam + ".txt"));
+                System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("Vragen\\" + Naam + ".txt"));
                 VolgendScherm();
             }
         }

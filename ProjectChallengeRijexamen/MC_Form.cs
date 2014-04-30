@@ -68,15 +68,6 @@ namespace ProjectChallengeRijexamen
             timer1.Start();
         }
 
-
-
-
-
-
-
-
-
-
         private void MC_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
             ParentForm.Location = this.Location;
@@ -106,7 +97,7 @@ namespace ProjectChallengeRijexamen
         }
         public void setUitleg(String uitleg)
         {
-            MC_tekst.Text = MC_tekst.Text + Environment.NewLine + "uitleg: " + uitleg;
+            MC_tekst.Text = MC_tekst.Text + Environment.NewLine +uitleg;
             if (MC_tekst.Text.Split('\n').Length > 4)
             {
                 MC_tekst.ScrollBars = ScrollBars.Vertical;
