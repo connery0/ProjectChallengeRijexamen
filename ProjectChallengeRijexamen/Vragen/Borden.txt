@@ -37,27 +37,27 @@ c33.png
 Verboden toegang voor bestuurders van voertuigen, waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide
 c29.png
 ------------
-E3 Stilstaan en parkeren verboden
+Stilstaan en parkeren verboden
 e3.png
 ------------
-E7 Parkeerverbod van de 16e tot het einde van de maand
+Parkeerverbod van de 16e tot het einde van de maand
 e7.png
 ------------
-F7 Einde van een autosnelweg
+Einde van een autosnelweg
 f7.png
 ------------
-F12a Begin van een woonerf of van een erf
+Begin van een woonerf of van een erf
 f12a.png
 ------------
-F51 Ondergrondse of bovengrondse oversteekplaats voor voetgangers
+Ondergrondse of bovengrondse oversteekplaats voor voetgangers
 f51.png
 ------------
-F60 Aankondiging van een overdekte parking
+Aankondiging van een overdekte parking
 f60.png
 ------------
-F95 Noodstopstrook
+Noodstopstrook
 f95.png
 ------------
-F99c Weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers en ruiters. Het verkeersbord mag aangepast worden volgens de categorie(ën) van weggebruiker(s) die tot deze weg is/zijn toegelaten
+Weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers en ruiters. Het verkeersbord mag aangepast worden volgens de categorie(ën) van weggebruiker(s) die tot deze weg is/zijn toegelaten
 f99c.png
 ------------
