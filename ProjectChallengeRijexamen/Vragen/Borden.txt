@@ -1,0 +1,63 @@
+Overweg voor twee of meer sporen.
+a47.png
+------------
+Overweg met slagbomen.
+a41.png
+------------
+Overweg voor enkel spoor.
+a45.png
+------------
+Gevaarlijke bocht. Dubbelle bocht of opeenvolging van meer dan twee bochten, de eerste naar links.
+a1c.png
+------------
+Doortocht van vee.
+a29.png
+------------
+Vallende stenen.
+a19.png
+------------
+Gevaarlijke bocht.Bocht naar rechts.
+a1b.png
+------------
+Voorrang verlenen.
+b1.png
+------------
+Smalle doorgang. Gebod doorgang te verlenen aan de bestuurders die uit de tegenovergestelde richting komen.
+b19.png
+------------
+Verplichte weg voor voetgangers.
+D11.png
+------------
+Deel van de openbare weg voorbehouden voor het verkeer van voetgangers, van fietsen en van tweewielige bromfietsen klasse A.
+D9.png
+------------
+Vanaf het verkeersbord tot het volgend kruispunt, verbod te keren
+c33.png
+------------
+Verboden toegang voor bestuurders van voertuigen, waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide
+c29.png
+------------
+E3 Stilstaan en parkeren verboden
+e3.png
+------------
+E7 Parkeerverbod van de 16e tot het einde van de maand
+e7.png
+------------
+F7 Einde van een autosnelweg
+f7.png
+------------
+F12a Begin van een woonerf of van een erf
+f12a.png
+------------
+F51 Ondergrondse of bovengrondse oversteekplaats voor voetgangers
+f51.png
+------------
+F60 Aankondiging van een overdekte parking
+f60.png
+------------
+F95 Noodstopstrook
+f95.png
+------------
+F99c Weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers en ruiters. Het verkeersbord mag aangepast worden volgens de categorie(ën) van weggebruiker(s) die tot deze weg is/zijn toegelaten
+f99c.png
+------------
