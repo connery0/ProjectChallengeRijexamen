@@ -73,7 +73,7 @@ Vraag 11: Ik rijd op een aardeweg en wil rechts afslaan. Wie heeft voorrang?
 vraag11.png
 De personenauto die op de rijbaan rijdt.
 Ik, want ik kom van rechts.
-000000000000000000000000000000000000000000000000000000000000000000000000000000
+Ik, want ik kom van een aardeweg.
 Feedback: Een bestuurder die van een aardeweg of een pad komt gereden, moet voorrang verlenen aan de bestuurders op de rijbaan.
 ------------
 Vraag 12: De fietser rijdt op een fietssugestiestrook. Moet ik hem voorrang verlenen?
@@ -157,7 +157,7 @@ Vraag 23: Ik rijd rechtdoor.
 vraag23.png
 Ik heb voorrang.
 Ik moet voorrang verlenen aan de tegenligger die links wil afslaan.
-0000000000000000000000000000000000000000000000000000000000000000000000
+Ik moet voorrang verlenen aan alle weggebruikers.
 Feedback: Een bestuurder die rechtdoor rijdt heeft voorrang op een bestuurder die links wil afslaan.
 ------------
 Vraag 24: Als ik de fietser wil inhalen, moet ik een vruie ruimte laten van ten minste:
@@ -367,7 +367,7 @@ Vraag 53: Mag ik een gewonde medicijnen geven in afwachting van de hulpdiensten?
 vraag53.png
 Neen.
 Ja.
-0000000000000000000000000000
+Ja, als hij er zelf om vraagt.
 Feedback: Je mag een gewonde nooit te drinken geven en vooral geen medicijnen geven.
 ------------
 Vraag 54: Ik ben betrokken bij een verkeersongeval met 1 lichtgewonde.
@@ -514,7 +514,7 @@ Vraag 74: Mag de groene auto links afslaan?
 vraag74.png
 Ja.
 Neen.
-000000000000000000000000
+Neen, want de rode auto heeft voorrang.
 Feedback: Een arm of beide armen horizontaal uitgestrekt betekent dat de weggebruikers komende uit de richting links en rechts van een bevoegd persoon mogen doorrijden of links of rechts afslaan.
 ------------
 Vraag 75: Hoeveel categorieën van overtredingen bestaan er?
