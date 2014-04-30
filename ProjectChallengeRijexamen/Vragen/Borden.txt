@@ -61,3 +61,9 @@ f95.png
 Weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers en ruiters. Het verkeersbord mag aangepast worden volgens de categorie(ën) van weggebruiker(s) die tot deze weg is/zijn toegelaten
 f99c.png
 ------------
+Verboden toegang voor bestuurders van motorvoertuigen met meer dan twee wielen en van motorfietsen met zijspan.
+c5.png
+------------
+Uitweg of een kaai of een oever.
+a11.png
+------------
