@@ -47,7 +47,7 @@ namespace ProjectChallengeRijexamen
                 if (System.IO.File.Exists(FileName) == false)
                 {
                     
-                    System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("Vragen\\" + Naam + ".txt"));
+                    System.IO.File.Copy("Vragen/Vragen.txt", ("Vragen/" + Naam + ".txt"));
                     VolgendScherm();
                 }
                 else
