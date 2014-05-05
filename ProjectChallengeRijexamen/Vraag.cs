@@ -12,7 +12,7 @@ namespace ProjectChallengeRijexamen
         private String vraag;
         private Foto afbeelding;
         private Keuze antwoord1, antwoord2, antwoord3;
-        private String Uitleg;
+        private String uitleg;
         private int JuistAntwoord;
         private Boolean Beantwoord = false, JuistBeantwoord = false;
 
@@ -34,7 +34,7 @@ namespace ProjectChallengeRijexamen
                     toPrint = toPrint + antwoord3.getAntwoord() + "\n" + antwoord2.getAntwoord() + "\n" + antwoord1.getAntwoord();
                     break;
             }
-            toPrint = toPrint +"\n"+ getUitleg();
+            toPrint = toPrint + "\n" + Uitleg;
             return toPrint;
         }
 
@@ -54,18 +54,24 @@ namespace ProjectChallengeRijexamen
 
 
 
-        public Boolean VraagBeantwoord()
+        public Boolean IsBeantwoord
         {
-            return Beantwoord;
+            get
+            {
+                return Beantwoord;
+            }
         }
-        public Boolean VraagJuist()
+        public Boolean VraagJuist
         {
-            return JuistBeantwoord;
+            get
+            {
+                return JuistBeantwoord;
+            }
         }
 
-        public String getUitleg()
+        public String Uitleg
         {
-            return Uitleg;
+            get { return uitleg; }
         }
 
         public Keuze getantwoord(int Nr)
@@ -88,13 +94,19 @@ namespace ProjectChallengeRijexamen
             }
             return returnAntwoord;
         }
-        public String getVraag()
+        public String getVraag
         {
-            return vraag;
+            get
+            {
+                return vraag;
+            }
         }
-        public Foto getImg()
+        public Foto Img
         {
-            return afbeelding;
+            get
+            {
+                return afbeelding;
+            }
         }
 
         public Vraag()
@@ -103,11 +115,11 @@ namespace ProjectChallengeRijexamen
             afbeelding = new Foto("Error.jpg");
         }
 
-        public Vraag(String Vraag, String Afbeelding, String Antwoord1, String Antwoord2, String Antwoord3, String Uitleg,Random R)
+        public Vraag(String Vraag, String Afbeelding, String Antwoord1, String Antwoord2, String Antwoord3, String Uitleg, Random R)
         {
             vraag = Vraag; ;
             afbeelding = new Foto(Afbeelding);
-            this.Uitleg = Uitleg;
+            this.uitleg = Uitleg;
 
             switch (R.Next(0, 6))
             {

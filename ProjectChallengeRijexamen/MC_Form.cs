@@ -17,7 +17,8 @@ namespace ProjectChallengeRijexamen
         private MultipleChoice Vragen;
         private int Antwoord;
         private Boolean tijdPerVraag;
-        private int maxTijd;
+        private int maxTijd = 0;
+        private int VraagNummer = 0;
 
 
         public MC_Form(Form1 ParentForm, String Naam, int tijdslimiet)
@@ -30,8 +31,10 @@ namespace ProjectChallengeRijexamen
             if (tijdslimiet > 0)
             {
                 MC_Progres.Visible = true;
+                ProgresLabel.Visible = true;
                 SetTijdsLimiet(tijdslimiet);
             }
+            TelVraag();
         }
 
         private void ProgresTijd()
@@ -97,7 +100,7 @@ namespace ProjectChallengeRijexamen
         }
         public void setUitleg(String uitleg)
         {
-            MC_tekst.Text = MC_tekst.Text + Environment.NewLine +uitleg;
+            MC_tekst.Text = MC_tekst.Text + Environment.NewLine + uitleg;
             if (MC_tekst.Text.Split('\n').Length > 4)
             {
                 MC_tekst.ScrollBars = ScrollBars.Vertical;
@@ -143,7 +146,7 @@ namespace ProjectChallengeRijexamen
                         timer1.Stop();
                         button1.Text = "Volgende";
                         Vragen.ControleerVraag(Antwoord);
-                        
+
                     }
                     else
                     {
@@ -151,11 +154,13 @@ namespace ProjectChallengeRijexamen
                     }
                     break;
                 case "Volgende":
-                    timer1.Start();
+
+                    if (maxTijd != 0) { timer1.Start(); }
                     button1.Text = "Antwoord";
                     MC_tekst.BackColor = Color.Empty;
                     MC_tekst.ScrollBars = ScrollBars.None;
                     Vragen.VolgendeVraag();
+                    TelVraag();
                     MC_Radio1.Checked = false;
                     MC_Radio2.Checked = false;
                     MC_Radio3.Checked = false;
@@ -167,6 +172,11 @@ namespace ProjectChallengeRijexamen
                     }
                     break;
             }
+        }
+        private void TelVraag()
+        {
+            VraagNummer++;
+            VraagTeller.Text = VraagNummer + "/" + Vragen.getAantalVragen();
         }
 
         private void MC_Radio1_CheckedChanged(object sender, EventArgs e)
@@ -202,7 +212,7 @@ namespace ProjectChallengeRijexamen
                 timer1.Stop();
                 ProgresTijd();
                 VraagFout("De tijd is om");
-                
+
                 if (!tijdPerVraag)
                 {
                     Vragen.EindeVraag();

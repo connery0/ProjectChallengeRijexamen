@@ -4,7 +4,7 @@ De reactietijd is de tijd die verloopt tussen:
 Het zien van het gevaar en het indrukken van het rempedaal.
 Het indrukken van het rempedaal en de plaats van stilstand.
 Het zien van het gevaar en de plaats van stilstand.
-Feedback: De reactietijd is de tijd die verloopt tussen het zien van het gevaar en het indruken van het rempedaal. Deze bedraagt ongeveer 1 seconde.
+Feedback: De reactietijd is de tijd die verloopt tussen het zien van het gevaar en het indrukken van het rempedaal. Deze bedraagt ongeveer 1 seconde.
 ------------
 Op deze weg bedraagt de maximumsnelheid 90 km/u
 2.png
@@ -59,7 +59,7 @@ Bij het naderen van trek-, last- of rijdieren of vee, moet de bestuurder:
 9.png
 Vertragen en indien nodig stoppen.
 Vertragen en onmiddellijk stoppen.
-Vertragen, zachtjes claxoneren en indien nodig stoppen.
+Vertragen, zachtjes claxonneren en indien nodig stoppen.
 Feedback: Bij het naderen van trek-, last- of rijdieren moet de bestuurder vertragen en indien nodig stoppen.
 ------------
 Op het volgend kruispunt:
@@ -76,14 +76,14 @@ Ik, want ik kom van rechts.
 Ik, want ik kom van een aardeweg.
 Feedback: Een bestuurder die van een aardeweg of een pad komt gereden, moet voorrang verlenen aan de bestuurders op de rijbaan.
 ------------
-De fietser rijdt op een fietssugestiestrook. Moet ik hem voorrang verlenen?
+De fietser rijdt op een fietssuggestiestrook. Moet ik hem voorrang verlenen?
 12.png
 Neen.
 Ja.
-Ja, een fietssugestiestrook is hetzelfde als een fietspad.
-Feedback: Een fietssugestiestrook is gewoon een onderdeel van de rijbaan. De fietser die erop rijdt, moet voorrang aan rechts verlenen.
+Ja, een fietssuggestiestrook is hetzelfde als een fietspad.
+Feedback: Een fietssuggestiestrook is gewoon een onderdeel van de rijbaan. De fietser die erop rijdt, moet voorrang aan rechts verlenen.
 ------------
-Wie moet ik voorrang verlenen bij het oversteken van een doorlopend trottior?
+Wie moet ik voorrang verlenen bij het oversteken van een doorlopend trottoir?
 13.png
 Iedereen die het trottoir mag gebruiken.
 Alleen de voetgangers.
@@ -95,7 +95,7 @@ Op het kruispunt
 moet ik stoppen en voorrang verlenen.
 moet ik voorrang verlenen.
 heb ik voorrang.
-Feedback: Verkeersbord B5: stoppen en vorrang verlenen.
+Feedback: Verkeersbord B5: stoppen en voorrang verlenen.
 ------------
 Autosnelweg. De auto die de autosnelweg wil oprijden:
 15.png
@@ -121,14 +121,14 @@ Feedback: Kruispunt met 'voorrang aan rechts'. De rode auto komt van rechts, ik 
 Als ik een sirene van een ambulance hoor, moet ik:
 18.png
 de doorgang vrijmaken, voorrang verlenen en zo nodig stoppen.
-onmiddelijk stoppen.
+onmiddellijk stoppen.
 gewoon verder rijden.
 Feedback: Zodra je een sirene hoort moet je de doorgang vrijmaken, voorrang verlenen aan de ambulance en zo nodig stoppen.
 -----------
 Het onderbord betekent:
 19.png
 fietsers kunnen van links en rechts komen.
-fieters hebben voorrang.
+fietsers hebben voorrang.
 'voorrang aan rechts' behalve voor fietsers.
 Feedback: Het onderbord betekent dat fietsers van zowel links als rechts kunnen komen. Ik moet alleen voorrang verlenen aan fietsers die van rechts komen. Die fietsers die van links komen, moeten mij voorrang verlenen.
 ------------
@@ -137,7 +137,7 @@ Ik volg een voorrangsweg. Op het kruispunt:
 heb ik voorrang.
 heeft de bromfietser (zwakke weggebruiker) voorrang.
 geldt de regel 'rechts heeft voorrang'.
-Feedback: Verkeersbord B9: voorrangsweg. Dir verkeersbord wordt telkens voorbij het kruispunt geplaatst.
+Feedback: Verkeersbord B9: voorrangsweg. Dit verkeersbord wordt telkens voorbij het kruispunt geplaatst.
 ------------
 De tram komt van links.
 21.png
@@ -151,7 +151,7 @@ Ik wil verderop rechts parkeren. Ik heb voorrang op de fietser.
 Neen.
 Ja.
 Ja, als ik sneller rijd.
-Feedback: Bij het uitvoeren van een menoeuvre, zoals parkeren, moet de bestuurder voorrang verlenen aan alle andere weggebruikens, dus ook aan fietsers die rechtdoor rijden op de rijbaan.
+Feedback: Bij het uitvoeren van een manoeuvre, zoals parkeren, moet de bestuurder voorrang verlenen aan alle andere weggebruikers, dus ook aan fietsers die rechtdoor rijden op de rijbaan.
 ------------
 Ik rijd rechtdoor.
 23.png
@@ -160,7 +160,7 @@ Ik moet voorrang verlenen aan de tegenligger die links wil afslaan.
 Ik moet voorrang verlenen aan alle weggebruikers.
 Feedback: Een bestuurder die rechtdoor rijdt heeft voorrang op een bestuurder die links wil afslaan.
 ------------
-Als ik de fietser wil inhalen, moet ik een vruie ruimte laten van ten minste:
+Als ik de fietser wil inhalen, moet ik een vrije ruimte laten van ten minste:
 24.png
 1 meter tussen mijn voertuig en de fietser
 1,5 meter tussen mijn voertuig en de fietser.
@@ -184,7 +184,7 @@ Feedback: Iedere bestuurder moet extra voorzichtig zijn bij het naderen van een 
 Wat moet ik in deze situatie doen?
 27.png
 Ik vertraag en blijf rustig en achter de fietser.
-Ik claxoneer om doorgang te vragen.
+Ik claxonneer om doorgang te vragen.
 Ik haal voorzichtig in en rijd een beetje over de witte streep.
 Feedback: Om in te halen moet ik ten minste 1 meter tussen mijn voertuig en de fietser laten en ik mag niet over de witte doorlopende streep in het midden van de rijbaan rijden. Ik moet vertragen en achter de fietser blijven rijden tot er voldoende plaats is om in te halen zonder overtredingen en gevaar voor andere weggebruikers.
 ------------
@@ -218,10 +218,10 @@ Feedback: Op een autosnelweg is het verboden achteruit te rijden, te keren of in
 ------------
 Op een autoweg is het verboden te rijden met:
 30.png
-Een landbouwtracor met aanhangwagen.
+Een landbouw tractor met aanhangwagen.
 een jeep met aanhangwagen.
 een auto met aanhangwagen.
-Feedback: Op een autoweg is het verboden te rijden met een landbouwtractor met of zonder aanhangwagen.
+Feedback: Op een autoweg is het verboden te rijden met een landbouw tractor met of zonder aanhangwagen.
 ------------
 Bebouwde kom. Op deze autoweg is de maximale toegelaten snelheid:
 33.png
@@ -249,7 +249,7 @@ Op de openbare weg moet ik mijn dimlichten ontsteken zodra het zicht minder word
 200 meter.
 100 meter.
 50 meter.
-Feedback: Je moet de lichten onsteken zodra het zicht minder wordt dan 200 meter. 
+Feedback: Je moet de lichten ontsteken zodra het zicht minder wordt dan 200 meter. 
 ------------
 Bij felle regen
 37.png
@@ -258,7 +258,7 @@ mogen de achtermistlichten gebruikt worden.
 mogen de achtermistlichten nooit gebruikt worden.
 Feedback: De achtermistlichten moeten gebruikt worden: bij mist of sneeuwval die de zichtbaarheid vermindert tot minder dan 100 meter en altijd bij felle regen.
 ------------
-De maxiale hoogte ven een beladen personenauto bedraagt:
+De maximale hoogte ven een beladen personenauto bedraagt:
 38.png 
 4 meter.
 3 meter.
@@ -270,14 +270,14 @@ Voormistlichten zijn
 niet verplicht.
 verplicht op alle nieuw ingeschreven personenauto's.
 verplicht op alle personenauto's.
-Feedback: Achtermistlichten zijn verplicht, voormistlichten zijn niet verplicht, wel toegelaten.
+Feedback: Achtermistlichten zijn verplicht, voor mistlichten zijn niet verplicht, wel toegelaten.
 ------------
 Het gebruik van een geluidstoestel is overdag toegelaten als ik een bestuurder moet waarschuwen die ik wil inhalen.
 40.png
 Ja, maar alleen buiten de bebouwde kom.
 Ja, maar alleen binnen de bebouwde kom.
 Ja.
-Feedback: Geluidssignalen zijn alleen toegelaten om een noodzakelike waarschuwing te geven om een ongeval te voorkomen en buiten de bebouwde kom, als je een bestuurder moet waarschuwen die je wil inhalen.
+Feedback: Geluidssignalen zijn alleen toegelaten om een noodzakelijke waarschuwing te geven om een ongeval te voorkomen en buiten de bebouwde kom, als je een bestuurder moet waarschuwen die je wil inhalen.
 ------------
 Het grootlicht moet worden gedoofd en de dimlichten ontstoken, als ik een ander voertuig op minder dan
 41.png
@@ -367,7 +367,7 @@ Mag ik een gewonde medicijnen geven in afwachting van de hulpdiensten?
 53.png
 Neen.
 Ja.
-Ja, als hij er zelf om t.
+Ja, als hij er zelf om vraagt.
 Feedback: Je mag een gewonde nooit te drinken geven en vooral geen medicijnen geven.
 ------------
 Ik ben betrokken bij een verkeersongeval met 1 lichtgewonde.
@@ -419,12 +419,12 @@ Olie in de verbrandingskamer.
 Water in de verbrandingskamer.
 Feedback: Een vuile luchtfilter kan de oorzaak zijn van zwarte rook, reinig daarom regelmatig de luchtfilter.
 ------------
-Aan het chasis mag ik:
+Aan het chassis mag ik:
 56.png
 nooit boren en lassen.
 wel lassen maar niet boren.
-somes boren en lassen.
-Feedback: Je mag aan het chasis nooit boren en lassen.
+soms boren en lassen.
+Feedback: Je mag aan het chassis nooit boren en lassen.
 ------------
 Ik moet de bandenspanning
 62.png
@@ -452,7 +452,7 @@ Door welk bestanddeel kan diesel in de winter stollen?
 Paraffine.
 Cetaan.
 Water.
-Feedback: Zomerdiesel kan in de winter beginnen vlokken (dit zijn paraffinekristallen), waardoor de branstoffilters verstopt raken.
+Feedback: Zomerdiesel kan in de winter beginnen vlokken (dit zijn paraffinekristallen), waardoor de brandstoffilters verstopt raken.
 ------------
 Ik rem en mijn voertuig wijkt naar links of rechts uit. Dat is te wijten aan:
 62.png
@@ -470,7 +470,7 @@ Feedback: Bij het instappen ga je liefst langs de voorkant van de auto naar het 
 ------------
 Fietsen plaats je best:
 42.png
-op de fietsendragen achteraan.
+op de fietsendrager achteraan.
 recht op het dak.
 plat op het dak.
 Feedback: Skiboxen, bagagedragers en fietsendragers veroorzaken een hoger brandstofverbruik. Fietsen plaatsen op een fietsendrager achteraan is dus beter dan ze op het dak te plaatsen.
@@ -489,12 +489,12 @@ Minder wrijving met het wegdek.
 De banden slijten minder snel.
 Feedback: Bij een te lage bandendruk slijten de banden sneller en neemt het brandstofverbruik toe.
 ------------
-Ik bega een snelheidsovertreding van 8km/u. De onmiddelijke inning bedraagt:
+Ik bega een snelheidsovertreding van 8km/u. De onmiddellijke inning bedraagt:
 71.png
 50 euro.
 100 euro.
 150 euro.
-Feedback: Voor een snelheidsovertreding van maximaal 10 km/u volgt een onmiddelijke inning van 50 euro.
+Feedback: Voor een snelheidsovertreding van maximaal 10 km/u volgt een onmiddellijke inning van 50 euro.
 ------------
 Ik mag:
 72.png
@@ -505,10 +505,10 @@ Feedback: Een arm recht opgestoken betekent dat alle weggebruikers moeten stoppe
 ------------
 Als ik door een rood licht rijd,
 73.png
-kan de politie mijn rijbewijs onmiddelijk intrekken.
-kan de politie mijn voertuig onmiddelijk in beslag nemen.
+kan de politie mijn rijbewijs onmiddellijk intrekken.
+kan de politie mijn voertuig onmiddellijk in beslag nemen.
 is er een rechterlijk vonnis nodig om mijn rijbewijs te kunnen intrekken.
-Feedback: Bij een overtreding van de derde graad (bv. door een rood licht rijden) kan de politie het rijbewijs onmiddelijk intrekken. Dit gebeurt na advies en op bevel van het parket.
+Feedback: Bij een overtreding van de derde graad (bv. door een rood licht rijden) kan de politie het rijbewijs onmiddellijk intrekken. Dit gebeurt na advies en op bevel van het parket.
 ------------
 Mag de groene auto links afslaan?
 74.png

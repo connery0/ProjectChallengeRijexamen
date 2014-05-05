@@ -49,7 +49,7 @@ namespace ProjectChallengeRijexamen
             Boolean EersteText = true;
             for (int i = 0; i < Vragen.Length; i++)
             {
-                if ((!Vragen[i].VraagJuist())||(!Vragen[i].VraagBeantwoord()))
+                if ((!Vragen[i].VraagJuist)||(!Vragen[i].IsBeantwoord))
                 {
                     if (!EersteText)
                     {
@@ -99,7 +99,7 @@ namespace ProjectChallengeRijexamen
                 if (teller < 20)
                 {
                     int I = R.Next(0, Vragen.Length);
-                    if (Vragen[I].VraagBeantwoord() == false)
+                    if (Vragen[I].IsBeantwoord == false)
                     {
                         HuidigeVraag = Vragen[I];
                     }
@@ -108,7 +108,7 @@ namespace ProjectChallengeRijexamen
                 {
                     for (int j = 0; j < Vragen.Length; j++)
                     {
-                        if (Vragen[j].VraagBeantwoord() == false)
+                        if (Vragen[j].IsBeantwoord == false)
                         {
                             HuidigeVraag = Vragen[j];
                         }
@@ -135,7 +135,7 @@ namespace ProjectChallengeRijexamen
             }
             else
             {
-                ParentForm.VraagFout(HuidigeVraag.getUitleg());
+                ParentForm.VraagFout(HuidigeVraag.Uitleg);
             }
         }
 
@@ -144,16 +144,12 @@ namespace ProjectChallengeRijexamen
 
         private void setvraag(Vraag V)
         {
-            ParentForm.setVraag(V.getVraag());
+            ParentForm.setVraag(V.getVraag);
             for (int i = 1; i <= 3; i++)
             {
-                if (V.getantwoord(1) == null)
-                {
-                    ParentForm.ShowMessage("wut");
-                }
                 ParentForm.setAntwoord(V.getantwoord(i).getAntwoord(), i);
             }
-            ParentForm.setImage(V.getImg().getDoel());
+            ParentForm.setImage(V.Img.getDoel());
 
         }
 

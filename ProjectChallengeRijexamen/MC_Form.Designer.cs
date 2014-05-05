@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ProgresLabel = new System.Windows.Forms.Label();
+            this.VraagTeller = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MC_picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             this.MC_tekst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MC_tekst.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_tekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MC_tekst.Location = new System.Drawing.Point(12, 12);
+            this.MC_tekst.Location = new System.Drawing.Point(12, 25);
             this.MC_tekst.Multiline = true;
             this.MC_tekst.Name = "MC_tekst";
             this.MC_tekst.ReadOnly = true;
@@ -62,7 +63,7 @@
             this.MC_Radio3.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_Radio3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.MC_Radio3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MC_Radio3.Location = new System.Drawing.Point(402, 299);
+            this.MC_Radio3.Location = new System.Drawing.Point(402, 318);
             this.MC_Radio3.Name = "MC_Radio3";
             this.MC_Radio3.Size = new System.Drawing.Size(320, 90);
             this.MC_Radio3.TabIndex = 13;
@@ -77,7 +78,7 @@
             this.MC_Radio2.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_Radio2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.MC_Radio2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MC_Radio2.Location = new System.Drawing.Point(402, 203);
+            this.MC_Radio2.Location = new System.Drawing.Point(402, 217);
             this.MC_Radio2.Name = "MC_Radio2";
             this.MC_Radio2.Size = new System.Drawing.Size(320, 90);
             this.MC_Radio2.TabIndex = 12;
@@ -93,7 +94,7 @@
             this.MC_Radio1.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_Radio1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.MC_Radio1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MC_Radio1.Location = new System.Drawing.Point(402, 107);
+            this.MC_Radio1.Location = new System.Drawing.Point(402, 119);
             this.MC_Radio1.Name = "MC_Radio1";
             this.MC_Radio1.Size = new System.Drawing.Size(320, 90);
             this.MC_Radio1.TabIndex = 11;
@@ -107,7 +108,7 @@
             this.MC_picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.MC_picture.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_picture.ImageLocation = "";
-            this.MC_picture.Location = new System.Drawing.Point(12, 107);
+            this.MC_picture.Location = new System.Drawing.Point(12, 116);
             this.MC_picture.Name = "MC_picture";
             this.MC_picture.Size = new System.Drawing.Size(385, 310);
             this.MC_picture.TabIndex = 10;
@@ -115,7 +116,7 @@
             // 
             // MC_Progres
             // 
-            this.MC_Progres.Location = new System.Drawing.Point(12, 425);
+            this.MC_Progres.Location = new System.Drawing.Point(11, 431);
             this.MC_Progres.MarqueeAnimationSpeed = 0;
             this.MC_Progres.Name = "MC_Progres";
             this.MC_Progres.Size = new System.Drawing.Size(567, 23);
@@ -124,7 +125,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(627, 408);
+            this.button1.Location = new System.Drawing.Point(627, 418);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 42);
             this.button1.TabIndex = 8;
@@ -142,12 +143,24 @@
             this.ProgresLabel.BackColor = System.Drawing.Color.Transparent;
             this.ProgresLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ProgresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ProgresLabel.Location = new System.Drawing.Point(579, 416);
+            this.ProgresLabel.Location = new System.Drawing.Point(579, 421);
             this.ProgresLabel.Name = "ProgresLabel";
             this.ProgresLabel.Size = new System.Drawing.Size(42, 43);
             this.ProgresLabel.TabIndex = 15;
             this.ProgresLabel.Text = "00M 00S";
             this.ProgresLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ProgresLabel.Visible = false;
+            // 
+            // VraagTeller
+            // 
+            this.VraagTeller.AutoSize = true;
+            this.VraagTeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VraagTeller.Location = new System.Drawing.Point(682, 2);
+            this.VraagTeller.Name = "VraagTeller";
+            this.VraagTeller.Size = new System.Drawing.Size(54, 20);
+            this.VraagTeller.TabIndex = 16;
+            this.VraagTeller.Text = "00/00";
+            this.VraagTeller.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // MC_Form
             // 
@@ -155,6 +168,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(734, 462);
+            this.Controls.Add(this.VraagTeller);
             this.Controls.Add(this.ProgresLabel);
             this.Controls.Add(this.MC_tekst);
             this.Controls.Add(this.MC_Radio3);
@@ -187,5 +201,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label ProgresLabel;
+        private System.Windows.Forms.Label VraagTeller;
     }
 }

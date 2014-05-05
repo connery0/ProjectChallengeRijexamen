@@ -57,11 +57,11 @@
             // 
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 77);
+            this.label1.Location = new System.Drawing.Point(2, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(749, 26);
+            this.label1.Size = new System.Drawing.Size(731, 26);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Gelieve uw Naam en voornaam in te vullen";
+            this.label1.Text = "Gelieve uw Naam in te vullen.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label2
@@ -102,7 +102,7 @@
             this.Text_Label.Name = "Text_Label";
             this.Text_Label.Size = new System.Drawing.Size(719, 77);
             this.Text_Label.TabIndex = 6;
-            this.Text_Label.Text = "Klik op volgende om met de test te beginnen";
+            this.Text_Label.Text = "Klik op volgende om met de test te beginnen.";
             this.Text_Label.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // button1

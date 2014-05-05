@@ -10,9 +10,10 @@ namespace ProjectChallengeRijexamen
     {
         private String antwoord;
         private Boolean juist;
-        public Keuze(String Antwoord,Boolean Juist){
-            antwoord=Antwoord;
-            juist=Juist;
+        public Keuze(String Antwoord, Boolean Juist)
+        {
+            antwoord = Antwoord;
+            juist = Juist;
 
         }
 
@@ -28,6 +29,6 @@ namespace ProjectChallengeRijexamen
 
 
 
-        
+
     }
 }
