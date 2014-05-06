@@ -17,7 +17,7 @@ namespace ProjectChallengeRijexamen
 
         public String getDoel()
         {
-            return "img/" + Naam;
+            return "..\\..\\img/" + Naam;
         }
         public String getNaam()
         {

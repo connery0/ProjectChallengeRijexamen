@@ -24,12 +24,6 @@ namespace ProjectChallengeRijexamen
             setScherm("Menu");
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void setScherm(String Scherm)
         {
             switch (Scherm)
@@ -52,7 +46,6 @@ namespace ProjectChallengeRijexamen
 
         private void M_knop1_Click(object sender, EventArgs e)
         {
-            System.IO.File.WriteAllText("Vragen\\" + "test" + ".txt", "blabla");
             StartMC = new MC_Start(this);
             StartMC.Show();
             StartMC.Location = this.Location;
