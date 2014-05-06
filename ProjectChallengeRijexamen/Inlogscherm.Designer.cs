@@ -40,16 +40,9 @@
             // 
             this.TextboxAchternaam.Location = new System.Drawing.Point(103, 38);
             this.TextboxAchternaam.Name = "TextboxAchternaam";
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             this.TextboxAchternaam.PasswordChar = '*';
-=======
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
-=======
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
-=======
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
+
             this.TextboxAchternaam.Size = new System.Drawing.Size(169, 20);
             this.TextboxAchternaam.TabIndex = 6;
             // 
@@ -99,19 +92,12 @@
             this.BtnAanmelden.TabIndex = 9;
             this.BtnAanmelden.Text = "Aanmelden";
             this.BtnAanmelden.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
             this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
-=======
+
             this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
-=======
-            this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
+  this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
+
             // 
             // Inlogscherm
             // 

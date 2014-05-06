@@ -16,7 +16,6 @@ namespace ProjectChallengeRijexamen
         public MC_Form MultipleChoice;
         public MC_Start StartMC;
         public DnD_Form DragnDrop;
-        public DnD_Start StartDnD;
         public string naam;
         public Form1()
         {
@@ -72,9 +71,7 @@ namespace ProjectChallengeRijexamen
 
         private void M_knop2_Click(object sender, EventArgs e)
         {
-            StartDnD = new DnD_Start(this);
-            StartDnD.Show();
-            StartDnD.Location = this.Location;
+          
             this.Hide(); 
         }
     }

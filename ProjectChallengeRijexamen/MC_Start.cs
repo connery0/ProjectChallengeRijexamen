@@ -42,7 +42,6 @@ namespace ProjectChallengeRijexamen
         {
             if (button1.Text == "Volgende")
             {
-                String Naam = ParentForm.Naam;
                 String FileName = "..\\..\\Vragen\\Persoon\\" + Naam + ".txt";
                 if (System.IO.File.Exists(FileName) == false)
                 {
