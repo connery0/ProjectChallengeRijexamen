@@ -12,20 +12,20 @@ namespace ProjectChallengeRijexamen
 {
     public partial class Form1 : Form
     {
-       // private String Scherm;
+        // private String Scherm;
         public MC_Form MultipleChoice;
         public MC_Start StartMC;
-        public DnD_Form DragnDrop;
+        public DnD DragAndDrop;
         public string naam;
         public Form1()
         {
             InitializeComponent();
             Inlogscherm inloggen = new Inlogscherm(this);
- 
+
             DialogResult button = inloggen.ShowDialog();
             naam = this.Tag.ToString();
             MessageBox.Show(naam);
-             this.Text = "Welkom, " + this.Tag; 
+            this.Text = "Welkom, " + this.Tag;
             setScherm("Menu");
         }
 
@@ -46,10 +46,10 @@ namespace ProjectChallengeRijexamen
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            
-           
-        
+
+
+
+
         }
 
         private void M_knop1_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace ProjectChallengeRijexamen
             StartMC = new MC_Start(this);
             StartMC.Show();
             StartMC.Location = this.Location;
-            this.Hide();           
+            this.Hide();
 
         }
 
@@ -71,8 +71,9 @@ namespace ProjectChallengeRijexamen
 
         private void M_knop2_Click(object sender, EventArgs e)
         {
-          
-            this.Hide(); 
+            DragAndDrop = new DnD();
+            DragAndDrop.Show();
+            this.Hide();
         }
     }
 }

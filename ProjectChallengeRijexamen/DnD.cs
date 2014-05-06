@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace ProjectChallengeRijexamen
 {
     public partial class DnD : Form
     {
@@ -35,8 +35,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            DragEnDropEerste bla = new DragEnDropEerste();
-            bla.Show();
+           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -133,8 +132,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 test = new Form2();
-            test.Show();
+            
         }
        
     }
