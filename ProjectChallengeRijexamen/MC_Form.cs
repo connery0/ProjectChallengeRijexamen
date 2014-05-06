@@ -19,6 +19,7 @@ namespace ProjectChallengeRijexamen
         private Boolean tijdPerVraag;
         private int maxTijd = 0;
         private int VraagNummer = 0;
+        private Boolean Closing = false;
 
 
         public MC_Form(Form1 ParentForm, String Naam, int tijdslimiet)
@@ -73,6 +74,11 @@ namespace ProjectChallengeRijexamen
 
         private void MC_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
+            if (!Closing)
+            {
+                Closing = true;
+                Vragen.EindeVraag();
+            }
             ParentForm.Location = this.Location;
             ParentForm.Show();
         }
@@ -128,12 +134,6 @@ namespace ProjectChallengeRijexamen
         public void ShowMessage(string a)
         {
             MessageBox.Show(a);
-        }
-
-
-        private void MC_Form_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -222,6 +222,11 @@ namespace ProjectChallengeRijexamen
                     button1.Text = "Volgende";
                 }
             }
+        }
+
+        private void MC_Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

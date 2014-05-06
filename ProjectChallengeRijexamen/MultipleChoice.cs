@@ -68,7 +68,7 @@ namespace ProjectChallengeRijexamen
             {
                 try
                 {
-                    System.IO.File.Delete("Vragen\\" + Naam + ".txt");
+                    System.IO.File.Delete("..\\..\\Vragen\\Persoon\\" + Naam + ".txt");
                 }
                 catch (System.IO.IOException f)
                 {
@@ -78,7 +78,7 @@ namespace ProjectChallengeRijexamen
             }
             else
             {
-                System.IO.File.WriteAllText("Vragen\\" + Naam + ".txt", PrintVragen);
+                System.IO.File.WriteAllText("..\\..\\Vragen\\Persoon\\" + Naam + ".txt", PrintVragen);
             }
 
             ParentForm.Close();
@@ -156,7 +156,7 @@ namespace ProjectChallengeRijexamen
         private void setVragen(String bestandsNaam)
         {
             System.IO.StreamReader myFile =
-            new System.IO.StreamReader("..\\..\\Vragen\\" + bestandsNaam + ".txt");
+            new System.IO.StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
             string myString = myFile.ReadToEnd();
 
             myFile.Close();
@@ -169,7 +169,7 @@ namespace ProjectChallengeRijexamen
 
             string line;
             int teller = 0;
-            System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\" + bestandsNaam + ".txt");
+            System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
             while ((line = file.ReadLine()) != null)
             {
                 String test, test2, test3, test4, test5, test6;

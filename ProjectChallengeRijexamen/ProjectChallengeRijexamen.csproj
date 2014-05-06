@@ -79,12 +79,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="DnD_Start.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DnD_Start.Designer.cs">
-      <DependentUpon>DnD_Start.cs</DependentUpon>
-    </Compile>
     <Compile Include="DnD_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +86,12 @@
       <DependentUpon>DnD_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Foto.cs" />
+    <Compile Include="Inlogscherm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inlogscherm.Designer.cs">
+      <DependentUpon>Inlogscherm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Keuze.cs" />
     <Compile Include="MC_Form.cs">
       <SubType>Form</SubType>
@@ -113,14 +113,14 @@
     <EmbeddedResource Include="DnD_Form.resx">
       <DependentUpon>DnD_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DnD_Start.resx">
-      <DependentUpon>DnD_Start.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.af-ZA.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inlogscherm.resx">
+      <DependentUpon>Inlogscherm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MC_Form.resx">
       <DependentUpon>MC_Form.cs</DependentUpon>

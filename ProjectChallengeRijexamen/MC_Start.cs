@@ -12,7 +12,7 @@ namespace ProjectChallengeRijexamen
 {
     public partial class MC_Start : Form
     {
-        public Form1 ParentForm;
+        private Form1 ParentForm;
         private Boolean OpenMainMenu = true;
         private String Naam;
         private int TijdsLimiet = 0;
@@ -42,12 +42,12 @@ namespace ProjectChallengeRijexamen
         {
             if (button1.Text == "Volgende")
             {
-                Naam = Naam1.Text + "_" + Naam2.Text;
-                String FileName = "..\\..\\Vragen/" + Naam + ".txt";
+                String Naam = ParentForm.Naam;
+                String FileName = "..\\..\\Vragen\\Persoon\\" + Naam + ".txt";
                 if (System.IO.File.Exists(FileName) == false)
                 {
                     
-                    System.IO.File.Copy("..\\..\\Vragen/Vragen.txt", ("..\\..\\Vragen/" + Naam + ".txt"));
+                    System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\Persoon\\" + Naam + ".txt"));
                     VolgendScherm();
                 }
                 else
@@ -64,7 +64,7 @@ namespace ProjectChallengeRijexamen
 
                 try
                 {
-                    System.IO.File.Delete("Vragen\\" + Naam + ".txt");
+                    System.IO.File.Delete("..\\..\\Vragen\\Persoon\\" + Naam + ".txt");
                 }
                 catch (System.IO.IOException f)
                 {
@@ -74,7 +74,7 @@ namespace ProjectChallengeRijexamen
 
 
 
-                System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("Vragen\\" + Naam + ".txt"));
+                System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\Persoon\\" + Naam + ".txt"));
                 VolgendScherm();
             }
         }
