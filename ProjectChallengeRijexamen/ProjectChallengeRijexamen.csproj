@@ -73,17 +73,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DnD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DnD.Designer.cs">
+      <DependentUpon>DnD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DnD_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DnD_Form.Designer.cs">
-      <DependentUpon>DnD_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Foto.cs" />
     <Compile Include="Inlogscherm.cs">
@@ -110,8 +110,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Verkeersbord.cs" />
     <Compile Include="Vraag.cs" />
-    <EmbeddedResource Include="DnD_Form.resx">
-      <DependentUpon>DnD_Form.cs</DependentUpon>
+    <EmbeddedResource Include="DnD.resx">
+      <DependentUpon>DnD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.af-ZA.resx">
       <DependentUpon>Form1.cs</DependentUpon>
