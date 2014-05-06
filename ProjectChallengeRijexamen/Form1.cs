@@ -17,10 +17,16 @@ namespace ProjectChallengeRijexamen
         public MC_Start StartMC;
         public DnD_Form DragnDrop;
         public DnD_Start StartDnD;
-
+        public string naam;
         public Form1()
         {
             InitializeComponent();
+            Inlogscherm inloggen = new Inlogscherm(this);
+ 
+            DialogResult button = inloggen.ShowDialog();
+            naam = this.Tag.ToString();
+            MessageBox.Show(naam);
+             this.Text = "Welkom, " + this.Tag; 
             setScherm("Menu");
         }
 
@@ -41,7 +47,10 @@ namespace ProjectChallengeRijexamen
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
+            
+           
+        
         }
 
         private void M_knop1_Click(object sender, EventArgs e)
