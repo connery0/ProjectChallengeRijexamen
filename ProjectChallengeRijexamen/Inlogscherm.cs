@@ -12,17 +12,13 @@ namespace ProjectChallengeRijexamen
 {
     public partial class Inlogscherm : Form
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         public Inlogscherm()
         {
             InitializeComponent();
         }
 
-       
-=======
-=======
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
+
         Form1 parentForm;
 
         public Inlogscherm(Form1 parentForm)
@@ -44,9 +40,6 @@ namespace ProjectChallengeRijexamen
             }
            
         }
-<<<<<<< HEAD
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
-=======
->>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
+
     }
 }

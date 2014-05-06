@@ -42,7 +42,10 @@
             this.TextboxAchternaam.Name = "TextboxAchternaam";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.TextboxAchternaam.PasswordChar = '*';
+=======
+>>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
 =======
 >>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
 =======
@@ -98,7 +101,11 @@
             this.BtnAanmelden.UseVisualStyleBackColor = false;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+            this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
+>>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
 =======
             this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
 >>>>>>> eed6130300deb272cd2d6ab3c13007ae3a27e81e
