@@ -10,6 +10,7 @@ namespace ProjectChallengeRijexamen
     {
         
         String Naam;
+
         public Foto(String Naam)
         {
             this.Naam = Naam;

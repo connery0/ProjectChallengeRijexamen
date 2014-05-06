@@ -14,9 +14,15 @@ namespace ProjectChallengeRijexamen
     {
         private PictureBox pic1;
         private PictureBox pic2;
+        private Verkeersbord[] verkeersborden;
+
         public DnD()
         {
             InitializeComponent();
+
+            setVerkeersborden();
+            MessageBox.Show(verkeersborden[0].getDoel());
+
             foreach( Control control in this.Controls){
                 
                 if (control is PictureBox)
@@ -99,9 +105,29 @@ namespace ProjectChallengeRijexamen
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+      
+        private void setVerkeersborden()
         {
+            System.IO.StreamReader myFile = new System.IO.StreamReader("..\\..\\Vragen\\Borden.txt");
+            string myString = myFile.ReadToEnd();
 
+            myFile.Close();
+
+            double L = myString.Split('\n').Length / 3;
+            int Lengte = Convert.ToInt32(L);
+            verkeersborden = new Verkeersbord[Lengte];
+
+            ///////////////////////////////////////////////////////////////////////////////////////
+
+            string line;
+            int teller = 0;
+            System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\Borden.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                verkeersborden[teller] = new Verkeersbord(file.ReadLine(), file.ReadLine());
+                teller += 1;
+            }
+            file.Close();
         }
         private Boolean controle()
         {
