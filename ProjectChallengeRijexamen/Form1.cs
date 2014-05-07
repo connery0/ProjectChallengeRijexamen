@@ -70,7 +70,7 @@ namespace ProjectChallengeRijexamen
 
         private void M_knop2_Click(object sender, EventArgs e)
         {
-            DragAndDrop = new DnD();
+            DragAndDrop = new DnD(this);
             DragAndDrop.Show();
             this.Hide();
         }

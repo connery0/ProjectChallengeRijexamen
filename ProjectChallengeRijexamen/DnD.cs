@@ -16,12 +16,13 @@ namespace ProjectChallengeRijexamen
         private PictureBox pic2;
         private Verkeersbord[] alleVerkeersborden;
         private Verkeersbord[] gevraagdeVerkeersborden;
+        private Form1 Parentform;
 
 
-        public DnD()
+        public DnD(Form1 Parentform)
         {
             InitializeComponent();
-
+            this.Parentform = Parentform;
             setVerkeersborden();
             randomVerkeersborden();
             invullen();
@@ -256,15 +257,15 @@ namespace ProjectChallengeRijexamen
 
         private void DnD_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            Parentform.Location = this.Location;
+            Parentform.Show();
                
             
         }
 
         private void DnD_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ParentForm.Location = this.Location;
-            ParentForm.Show();
+            
         }
        
     }
