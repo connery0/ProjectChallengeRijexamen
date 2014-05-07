@@ -14,15 +14,19 @@ namespace ProjectChallengeRijexamen
     {
         private PictureBox pic1;
         private PictureBox pic2;
-        private Verkeersbord[] verkeersborden;
+        private Verkeersbord[] alleVerkeersborden;
+        private Verkeersbord[] gevraagdeVerkeersborden;
+
 
         public DnD()
         {
             InitializeComponent();
 
             setVerkeersborden();
-            MessageBox.Show(verkeersborden[0].getDoel());
-
+            randomVerkeersborden();
+            invullen();
+            
+            
             foreach( Control control in this.Controls){
                 
                 if (control is PictureBox)
@@ -36,12 +40,6 @@ namespace ProjectChallengeRijexamen
                     }
                 }
             }
-        }
-
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -115,7 +113,7 @@ namespace ProjectChallengeRijexamen
 
             double L = myString.Split('\n').Length / 3;
             int Lengte = Convert.ToInt32(L);
-            verkeersborden = new Verkeersbord[Lengte];
+            alleVerkeersborden = new Verkeersbord[Lengte];
 
             ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -124,7 +122,7 @@ namespace ProjectChallengeRijexamen
             System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\Borden.txt");
             while ((line = file.ReadLine()) != null)
             {
-                verkeersborden[teller] = new Verkeersbord(file.ReadLine(), file.ReadLine());
+                alleVerkeersborden[teller] = new Verkeersbord(file.ReadLine(), file.ReadLine());
                 teller += 1;
             }
             file.Close();
@@ -159,6 +157,72 @@ namespace ProjectChallengeRijexamen
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void randomVerkeersborden()
+        {
+            Random randomGetal = new Random();
+            gevraagdeVerkeersborden = new Verkeersbord[6];
+            int tellerAantal = 0;
+            int teller = 0;
+            while (tellerAantal<6)
+            {
+                if (teller < 20)
+                {
+                    int i = randomGetal.Next(0, alleVerkeersborden.Length);
+                    if (alleVerkeersborden[i].GetSetBeantwoord == false)
+                    {
+                        gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[i];
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < alleVerkeersborden.Length; j++)
+                    {
+                        if (alleVerkeersborden[j].GetSetBeantwoord == false)
+                        {
+                            gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[j];
+                        }
+                    }
+                    
+                }
+                teller++;
+                tellerAantal++;
+            }
+
+        }
+
+        private void invullen()
+        {
+            int tellerFoto = 0;
+            int tellerUiteg = 0;
+            foreach (Control control in this.Controls)
+            {
+                if (control is PictureBox)
+                {
+                    PictureBox picture = (PictureBox) control;
+                    if (picture.Name == "pictureBox1" || picture.Name == "pictureBox2" ||
+                        picture.Name == "pictureBox3" || picture.Name == "pictureBox4" || picture.Name == "pictureBox5" ||
+                        picture.Name == "pictureBox6")
+                    {
+                        picture.Image = Image.FromFile(gevraagdeVerkeersborden[tellerFoto].getDoelVerkeersbord());
+                        tellerFoto++;
+                    }
+
+                }
+                else if (control is Label)
+                {
+                    Label uitleg = (Label)control;
+                    uitleg.Text = gevraagdeVerkeersborden[tellerUiteg].deUitleg;
+                    tellerUiteg++;
+                }
+            }
+            
+        }
+
+        private void DnD_Load(object sender, EventArgs e)
+        {
+
         }
        
     }

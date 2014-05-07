@@ -8,21 +8,30 @@ namespace ProjectChallengeRijexamen
 {
     class Verkeersbord :Foto
     {
-        
-        private Foto foto;
         private string uitleg;
-        private Boolean gekozen = false;
+        private Boolean beantwoord;
+
         public Verkeersbord(string uitleg, string foto): base(foto){
             this.uitleg = uitleg;
+            beantwoord = false;
             
         }
-        public Boolean kiezen
+        public Boolean GetSetBeantwoord
         {
-            set{
-                gekozen = false;
+            get
+            {
+                return beantwoord;
             }
-
-            
+            set{
+                beantwoord = false;
+            }         
+        }
+        public string deUitleg
+        {
+            get
+            {
+                return uitleg;
+            }
         }
        
         
