@@ -165,14 +165,31 @@ namespace ProjectChallengeRijexamen
             gevraagdeVerkeersborden = new Verkeersbord[6];
             int tellerAantal = 0;
             int teller = 0;
+            Boolean testing;
             while (tellerAantal<6)
             {
-                if (teller < 20)
+                testing = false;
+                if (teller < 10)
                 {
                     int i = randomGetal.Next(0, alleVerkeersborden.Length);
                     if (alleVerkeersborden[i].GetSetBeantwoord == false)
                     {
-                        gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[i];
+                        
+                        for (int j = 1; j <= tellerAantal; j++)
+                        {
+                            if (gevraagdeVerkeersborden[j-1] == alleVerkeersborden[i])
+                            {
+                                testing = true;
+                                break;
+                            }
+                        }
+                        if (!testing)
+                        {
+                            gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[i];
+                            tellerAantal++;
+                        }
+                        
+                            
                     }
                 }
                 else
@@ -181,13 +198,25 @@ namespace ProjectChallengeRijexamen
                     {
                         if (alleVerkeersborden[j].GetSetBeantwoord == false)
                         {
-                            gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[j];
+                            for (int k = 1; k <= tellerAantal; k++)
+                            {
+                                if (gevraagdeVerkeersborden[k - 1] == alleVerkeersborden[j])
+                                {
+                                    testing = true;
+                                    break;
+                                }
+                            }
+                            if (!testing)
+                            {
+                                gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[j];
+                                tellerAantal++;
+                            }
                         }
                     }
                     
                 }
                 teller++;
-                tellerAantal++;
+                
             }
 
         }
@@ -223,6 +252,19 @@ namespace ProjectChallengeRijexamen
         private void DnD_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void DnD_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+               
+            
+        }
+
+        private void DnD_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ParentForm.Location = this.Location;
+            ParentForm.Show();
         }
        
     }

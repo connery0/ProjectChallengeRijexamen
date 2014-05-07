@@ -288,6 +288,8 @@
             this.Name = "DnD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RijExamen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DnD_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DnD_FormClosed);
             this.Load += new System.EventHandler(this.DnD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
