@@ -150,7 +150,7 @@ namespace ProjectChallengeRijexamen
                     }
                     else
                     {
-                        MessageBox.Show("gelieve eerst een antwoord te kiezen");
+                        MessageBox.Show("Gelieve eerst een antwoord te kiezen!");
                     }
                     break;
                 case "Volgende":
@@ -211,7 +211,7 @@ namespace ProjectChallengeRijexamen
             {
                 timer1.Stop();
                 ProgresTijd();
-                VraagFout("De tijd is om");
+                VraagFout("De tijd is op.");
 
                 if (!tijdPerVraag)
                 {
@@ -227,6 +227,11 @@ namespace ProjectChallengeRijexamen
         private void MC_Form_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
