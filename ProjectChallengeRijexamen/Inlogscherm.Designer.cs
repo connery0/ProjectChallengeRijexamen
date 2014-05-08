@@ -40,11 +40,9 @@
             // 
             this.TextboxAchternaam.Location = new System.Drawing.Point(103, 38);
             this.TextboxAchternaam.Name = "TextboxAchternaam";
-
-            this.TextboxAchternaam.PasswordChar = '*';
-
             this.TextboxAchternaam.Size = new System.Drawing.Size(169, 20);
             this.TextboxAchternaam.TabIndex = 6;
+            this.TextboxAchternaam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextboxNaam_KeyPress);
             // 
             // TextboxNaam
             // 
@@ -52,6 +50,7 @@
             this.TextboxNaam.Name = "TextboxNaam";
             this.TextboxNaam.Size = new System.Drawing.Size(169, 20);
             this.TextboxNaam.TabIndex = 5;
+            this.TextboxNaam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextboxNaam_KeyPress);
             // 
             // Label2
             // 
@@ -81,6 +80,7 @@
             this.BtnAnnuleren.TabIndex = 10;
             this.BtnAnnuleren.Text = "Aflsluiten";
             this.BtnAnnuleren.UseVisualStyleBackColor = false;
+            this.BtnAnnuleren.Click += new System.EventHandler(this.BtnAnnuleren_Click);
             // 
             // BtnAanmelden
             // 
@@ -92,12 +92,7 @@
             this.BtnAanmelden.TabIndex = 9;
             this.BtnAanmelden.Text = "Aanmelden";
             this.BtnAanmelden.UseVisualStyleBackColor = false;
-
             this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
-
-            this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
-  this.BtnAanmelden.Click += new System.EventHandler(this.BtnAanmelden_Click);
-
             // 
             // Inlogscherm
             // 
@@ -111,7 +106,9 @@
             this.Controls.Add(this.BtnAnnuleren);
             this.Controls.Add(this.BtnAanmelden);
             this.Name = "Inlogscherm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inlogscherm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inlogscherm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
