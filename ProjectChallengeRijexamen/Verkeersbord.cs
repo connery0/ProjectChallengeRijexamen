@@ -6,9 +6,34 @@ using System.Threading.Tasks;
 
 namespace ProjectChallengeRijexamen
 {
-    class Verkeersbord //:Foto
+    class Verkeersbord :Foto
     {
-        
+        private string uitleg;
+        private Boolean beantwoord;
+
+        public Verkeersbord(string uitleg, string foto): base(foto){
+            this.uitleg = uitleg;
+            beantwoord = false;
+            
+        }
+        public Boolean GetSetBeantwoord
+        {
+            get
+            {
+                return beantwoord;
+            }
+            set{
+                beantwoord = false;
+            }         
+        }
+        public string deUitleg
+        {
+            get
+            {
+                return uitleg;
+            }
+        }
+       
         
     }
 }

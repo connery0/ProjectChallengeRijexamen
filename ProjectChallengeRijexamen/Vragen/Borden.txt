@@ -1,3 +1,4 @@
+-----------
 Overweg voor twee of meer sporen.
 a47.png
 ------------
@@ -7,7 +8,7 @@ a41.png
 Overweg voor enkel spoor.
 a45.png
 ------------
-Gevaarlijke bocht. Dubbelle bocht of opeenvolging van meer dan twee bochten, de eerste naar links.
+Gevaarlijke bocht, Dubbelle bocht of opeenvolging van meer dan twee bochten, de eerste naar links.
 a1c.png
 ------------
 Doortocht van vee.
@@ -16,13 +17,13 @@ a29.png
 Vallende stenen.
 a19.png
 ------------
-Gevaarlijke bocht.Bocht naar rechts.
+Gevaarlijke bocht, Bocht naar rechts.
 a1b.png
 ------------
 Voorrang verlenen.
 b1.png
 ------------
-Smalle doorgang. Gebod doorgang te verlenen aan de bestuurders die uit de tegenovergestelde richting komen.
+Smalle doorgang, Gebod doorgang te verlenen aan de bestuurders die uit de tegenovergestelde richting komen.
 b19.png
 ------------
 Verplichte weg voor voetgangers.
@@ -66,4 +67,3 @@ c5.png
 ------------
 Uitweg of een kaai of een oever.
 a11.png
-------------

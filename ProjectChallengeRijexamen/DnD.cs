@@ -14,9 +14,20 @@ namespace ProjectChallengeRijexamen
     {
         private PictureBox pic1;
         private PictureBox pic2;
-        public DnD()
+        private Verkeersbord[] alleVerkeersborden;
+        private Verkeersbord[] gevraagdeVerkeersborden;
+        private Form1 Parentform;
+
+
+        public DnD(Form1 Parentform)
         {
             InitializeComponent();
+            this.Parentform = Parentform;
+            setVerkeersborden();
+            randomVerkeersborden();
+            invullen();
+            
+            
             foreach( Control control in this.Controls){
                 
                 if (control is PictureBox)
@@ -30,12 +41,6 @@ namespace ProjectChallengeRijexamen
                     }
                 }
             }
-        }
-
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -99,9 +104,29 @@ namespace ProjectChallengeRijexamen
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+      
+        private void setVerkeersborden()
         {
+            System.IO.StreamReader myFile = new System.IO.StreamReader("..\\..\\Vragen\\Borden.txt");
+            string myString = myFile.ReadToEnd();
 
+            myFile.Close();
+
+            double L = myString.Split('\n').Length / 3;
+            int Lengte = Convert.ToInt32(L);
+            alleVerkeersborden = new Verkeersbord[Lengte];
+
+            ///////////////////////////////////////////////////////////////////////////////////////
+
+            string line;
+            int teller = 0;
+            System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\Borden.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                alleVerkeersborden[teller] = new Verkeersbord(file.ReadLine(), file.ReadLine());
+                teller += 1;
+            }
+            file.Close();
         }
         private Boolean controle()
         {
@@ -131,6 +156,114 @@ namespace ProjectChallengeRijexamen
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void randomVerkeersborden()
+        {
+            Random randomGetal = new Random();
+            gevraagdeVerkeersborden = new Verkeersbord[6];
+            int tellerAantal = 0;
+            int teller = 0;
+            Boolean testing;
+            while (tellerAantal<6)
+            {
+                testing = false;
+                if (teller < 10)
+                {
+                    int i = randomGetal.Next(0, alleVerkeersborden.Length);
+                    if (alleVerkeersborden[i].GetSetBeantwoord == false)
+                    {
+                        
+                        for (int j = 1; j <= tellerAantal; j++)
+                        {
+                            if (gevraagdeVerkeersborden[j-1] == alleVerkeersborden[i])
+                            {
+                                testing = true;
+                                break;
+                            }
+                        }
+                        if (!testing)
+                        {
+                            gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[i];
+                            tellerAantal++;
+                        }
+                        
+                            
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < alleVerkeersborden.Length; j++)
+                    {
+                        if (alleVerkeersborden[j].GetSetBeantwoord == false)
+                        {
+                            for (int k = 1; k <= tellerAantal; k++)
+                            {
+                                if (gevraagdeVerkeersborden[k - 1] == alleVerkeersborden[j])
+                                {
+                                    testing = true;
+                                    break;
+                                }
+                            }
+                            if (!testing)
+                            {
+                                gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[j];
+                                tellerAantal++;
+                            }
+                        }
+                    }
+                    
+                }
+                teller++;
+                
+            }
+
+        }
+
+        private void invullen()
+        {
+            int tellerFoto = 0;
+            int tellerUiteg = 0;
+            foreach (Control control in this.Controls)
+            {
+                if (control is PictureBox)
+                {
+                    PictureBox picture = (PictureBox) control;
+                    if (picture.Name == "pictureBox1" || picture.Name == "pictureBox2" ||
+                        picture.Name == "pictureBox3" || picture.Name == "pictureBox4" || picture.Name == "pictureBox5" ||
+                        picture.Name == "pictureBox6")
+                    {
+                        picture.Image = Image.FromFile(gevraagdeVerkeersborden[tellerFoto].getDoelVerkeersbord());
+                        tellerFoto++;
+                    }
+
+                }
+                else if (control is Label)
+                {
+                    Label uitleg = (Label)control;
+                    uitleg.Text = gevraagdeVerkeersborden[tellerUiteg].deUitleg;
+                    tellerUiteg++;
+                }
+            }
+            
+        }
+
+        private void DnD_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DnD_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Parentform.Location = this.Location;
+            Parentform.Show();
+               
+            
+        }
+
+        private void DnD_FormClosed(object sender, FormClosedEventArgs e)
         {
             
         }

@@ -49,7 +49,7 @@ namespace ProjectChallengeRijexamen
             Boolean EersteText = true;
             for (int i = 0; i < Vragen.Length; i++)
             {
-                if ((!Vragen[i].VraagJuist)||(!Vragen[i].IsBeantwoord))
+                if ((!Vragen[i].VraagJuist) || (!Vragen[i].IsBeantwoord))
                 {
                     if (!EersteText)
                     {
@@ -172,15 +172,7 @@ namespace ProjectChallengeRijexamen
             System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
             while ((line = file.ReadLine()) != null)
             {
-                String test, test2, test3, test4, test5, test6;
-                test = file.ReadLine();
-                test2 = file.ReadLine();
-                test3 = file.ReadLine();
-                test4 = file.ReadLine();
-                test5 = file.ReadLine();
-                test6 = file.ReadLine();
-
-                Vragen[teller] = new Vraag(test,test2,test3,test4,test5,test6, R);
+                Vragen[teller] = new Vraag(file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), R);
                 teller += 1;
             }
             file.Close();
