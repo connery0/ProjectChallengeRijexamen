@@ -23,8 +23,7 @@ namespace ProjectChallengeRijexamen
             Inlogscherm inloggen = new Inlogscherm(this);
 
             DialogResult button = inloggen.ShowDialog();
-            naam = this.Tag.ToString();
-            MessageBox.Show(naam);
+            
             this.Text = "Welkom, " + this.Tag;
             setScherm("Menu");
         }
