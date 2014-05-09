@@ -90,18 +90,10 @@ namespace ProjectChallengeRijexamen
         private void pictureBox7_DragDrop(object sender, DragEventArgs e)
         {
             pic2 = (PictureBox)sender;
-            if (controle())
-            {
-                pic2.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
-                timer1.Stop();
-            }
-            else
-            {
-                pic2.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
-                timer1.Stop();
-                
-            }
-            
+            controle();
+            pic2.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
+            pic2.Tag = pic1.Tag;
+            timer1.Stop();
         }
 
       
@@ -128,7 +120,7 @@ namespace ProjectChallengeRijexamen
             }
             file.Close();
         }
-        private Boolean controle()
+        private void controle()
         {
             foreach (Control control in this.Controls)
             {
@@ -140,13 +132,10 @@ namespace ProjectChallengeRijexamen
                         picture.Name != "pictureBox6")
                     {
                         picture.Image = null; 
-                        return false;
-
-                    }
+                     }
                     
                 }
             }
-            return true;
         }
 
         private void pictureBox10_DoubleClick(object sender, EventArgs e)
@@ -157,7 +146,13 @@ namespace ProjectChallengeRijexamen
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            for (int i = 0; i < gevraagdeVerkeersborden.Length; i++)
+            {
+
+            }
+                MessageBox.Show(pictureBox10.Tag.ToString());
+            MessageBox.Show(pictureBox7.Tag.ToString());
+            MessageBox.Show(pictureBox8.Tag.ToString());
         }
 
         private void randomVerkeersborden()
@@ -236,6 +231,7 @@ namespace ProjectChallengeRijexamen
                         picture.Name == "pictureBox6")
                     {
                         picture.Image = Image.FromFile(gevraagdeVerkeersborden[tellerFoto].getDoelVerkeersbord());
+                        picture.Tag = gevraagdeVerkeersborden[tellerFoto].getDoelVerkeersbord();
                         tellerFoto++;
                     }
 
