@@ -17,7 +17,8 @@ namespace ProjectChallengeRijexamen
         private Verkeersbord[] alleVerkeersborden;
         private Verkeersbord[] gevraagdeVerkeersborden;
         private Form1 Parentform;
-
+        private int randomFoto;
+        private int randomUitleg;
 
         public DnD(Form1 Parentform)
         {
@@ -146,13 +147,28 @@ namespace ProjectChallengeRijexamen
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < gevraagdeVerkeersborden.Length; i++)
-            {
+            
 
-            }
-                MessageBox.Show(pictureBox10.Tag.ToString());
-            MessageBox.Show(pictureBox7.Tag.ToString());
-            MessageBox.Show(pictureBox8.Tag.ToString());
+                if (pictureBox7.Tag.ToString() == label1.Text)
+                {
+                    if (pictureBox8.Tag.ToString() == label2.Text)
+                    {
+                        if (pictureBox9.Tag.ToString() == label3.Text)
+                        {
+                            if (pictureBox10.Tag.ToString() == label4.Text)
+                            {
+                                if (pictureBox11.Tag.ToString() == label5.Text)
+                                {
+                                    if (pictureBox12.Tag.ToString() == label6.Text)
+                                    {
+                                        MessageBox.Show("Alles is just");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            
         }
 
         private void randomVerkeersborden()
@@ -219,8 +235,9 @@ namespace ProjectChallengeRijexamen
 
         private void invullen()
         {
-            int tellerFoto = 0;
-            int tellerUiteg = 0;
+            Random getal = new Random();
+            randomFoto = getal.Next(0,5);
+            randomUitleg = getal.Next(0,5);
             foreach (Control control in this.Controls)
             {
                 if (control is PictureBox)
@@ -230,17 +247,35 @@ namespace ProjectChallengeRijexamen
                         picture.Name == "pictureBox3" || picture.Name == "pictureBox4" || picture.Name == "pictureBox5" ||
                         picture.Name == "pictureBox6")
                     {
-                        picture.Image = Image.FromFile(gevraagdeVerkeersborden[tellerFoto].getDoelVerkeersbord());
-                        picture.Tag = gevraagdeVerkeersborden[tellerFoto].getDoelVerkeersbord();
-                        tellerFoto++;
+                      
+                        picture.Image = Image.FromFile(gevraagdeVerkeersborden[randomFoto].getDoelVerkeersbord());
+                        picture.Tag = gevraagdeVerkeersborden[randomFoto].deUitleg;
+
+                        if (randomFoto == 5)
+                        {
+                            randomFoto = 0;
+                        }
+                        else
+                        {
+                            randomFoto++;
+                        }
+                        
                     }
 
                 }
                 else if (control is Label)
                 {
                     Label uitleg = (Label)control;
-                    uitleg.Text = gevraagdeVerkeersborden[tellerUiteg].deUitleg;
-                    tellerUiteg++;
+           
+                    uitleg.Text = gevraagdeVerkeersborden[randomUitleg].deUitleg;
+                    if (randomUitleg == 5)
+                    {
+                        randomUitleg = 0;
+                    }
+                    else
+                    {
+                        randomUitleg++;
+                    }
                 }
             }
             

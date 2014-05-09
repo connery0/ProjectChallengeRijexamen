@@ -12,6 +12,7 @@ namespace ProjectChallengeRijexamen
 {
     public partial class Inlogscherm : Form
     {
+        private Boolean sluiten = false;
 
         public Inlogscherm()
         {
@@ -39,6 +40,7 @@ namespace ProjectChallengeRijexamen
             if (naam != "" && achternaam != "")
             {
                 parentForm.Tag =  naam + " " + achternaam;
+                sluiten = true;
                 parentForm.Show();
                 this.Close();
             }
@@ -61,6 +63,7 @@ namespace ProjectChallengeRijexamen
 
         private void Inlogscherm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (!sluiten) { 
             DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (test == DialogResult.Yes)
             {
@@ -73,6 +76,7 @@ namespace ProjectChallengeRijexamen
                 e.Cancel = true;
                
             }
+            }
         }
 
         private void TextboxNaam_KeyPress(object sender, KeyPressEventArgs e)
@@ -81,6 +85,11 @@ namespace ProjectChallengeRijexamen
             {
                 e.Handled = true;
             }
+        }
+
+        private void Inlogscherm_Load(object sender, EventArgs e)
+        {
+
         }
 
        
