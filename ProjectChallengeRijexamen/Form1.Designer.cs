@@ -53,6 +53,7 @@
             resources.ApplyResources(this.M_knop3, "M_knop3");
             this.M_knop3.Name = "M_knop3";
             this.M_knop3.UseVisualStyleBackColor = true;
+            this.M_knop3.Click += new System.EventHandler(this.M_knop3_Click);
             // 
             // Form1
             // 

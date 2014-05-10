@@ -78,5 +78,11 @@ namespace ProjectChallengeRijexamen
             DragAndDrop.Show();
             this.Hide();
         }
+
+        private void M_knop3_Click(object sender, EventArgs e)
+        {
+            Memory bla = new Memory();
+            bla.Show();
+        }
     }
 }
