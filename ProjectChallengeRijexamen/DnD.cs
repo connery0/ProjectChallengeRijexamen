@@ -146,29 +146,112 @@ namespace ProjectChallengeRijexamen
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            
+        {            
+            if (button1.Text == "Controle") {
+                foreach (Control control in this.Controls)
+                {
+                    if (control is PictureBox)
+                    {
+                        PictureBox picture = (PictureBox)control;
+                        if (picture.Tag == null)
+                        {
+                            MessageBox.Show("Gelieve alle pictureboxen in te vullen", "Lege pictureboxen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+
+
+                    }
+                }
 
                 if (pictureBox7.Tag.ToString() == label1.Text)
                 {
-                    if (pictureBox8.Tag.ToString() == label2.Text)
+                    label1.BackColor = Color.Green;
+                }
+                else
+                {
+                    label1.BackColor = Color.Red;
+                }
+
+                if (pictureBox8.Tag.ToString() == label2.Text)
+                {
+                    label2.BackColor = Color.Green;
+                }
+                else
+                {
+                    label2.BackColor = Color.Red;
+                }
+
+                if (pictureBox9.Tag.ToString() == label3.Text)
+                {
+                    label3.BackColor = Color.Green;
+                }
+                else
+                {
+                    label3.BackColor = Color.Red;
+                }
+
+                if (pictureBox10.Tag.ToString() == label4.Text)
+                {
+                    label4.BackColor = Color.Green;
+                }
+                else
+                {
+                    label4.BackColor = Color.Red;
+                }
+
+                if (pictureBox11.Tag.ToString() == label5.Text)
+                {
+                    label5.BackColor = Color.Green;
+                }
+                else
+                {
+                    label5.BackColor = Color.Red;
+                }
+
+                if (pictureBox12.Tag.ToString() == label6.Text)
+                {
+                    label6.BackColor = Color.Green;
+                }
+                else
+                {
+                    label6.BackColor = Color.Red;
+                }
+
+                for (int i = 0; i < gevraagdeVerkeersborden.Length; i++)
+                {
+                    gevraagdeVerkeersborden[i].GetSetBeantwoord = true;
+                }
+
+                button1.Text = "Volgende";
+
+            }
+            else if (button1.Text == "Volgende")
+            {
+                foreach (Control control in this.Controls)
+                {
+                    if (control is PictureBox)
                     {
-                        if (pictureBox9.Tag.ToString() == label3.Text)
+                        PictureBox picture = (PictureBox)control;
+                        if (picture.Name != "pictureBox1" && picture.Name != "pictureBox2" &&
+                            picture.Name != "pictureBox3" && picture.Name != "pictureBox4" && picture.Name != "pictureBox5" &&
+                            picture.Name != "pictureBox6")
                         {
-                            if (pictureBox10.Tag.ToString() == label4.Text)
-                            {
-                                if (pictureBox11.Tag.ToString() == label5.Text)
-                                {
-                                    if (pictureBox12.Tag.ToString() == label6.Text)
-                                    {
-                                        MessageBox.Show("Alles is just");
-                                    }
-                                }
-                            }
+                            picture.Image = null;
+                            picture.Tag = null;
                         }
+
+                    }
+                    else if (control is Label)
+                    {
+                        Label uitleg = (Label)control;
+                        uitleg.BackColor = Color.White;
                     }
                 }
-            
+                randomVerkeersborden();
+                invullen();
+                button1.Text = "Controle";
+            }
+        
         }
 
         private void randomVerkeersborden()

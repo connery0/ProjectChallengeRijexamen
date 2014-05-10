@@ -22,8 +22,9 @@ namespace ProjectChallengeRijexamen
             {
                 return beantwoord;
             }
-            set{
-                beantwoord = false;
+            set
+            {
+                beantwoord = value;
             }         
         }
         public string deUitleg
