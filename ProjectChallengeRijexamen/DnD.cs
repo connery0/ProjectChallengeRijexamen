@@ -264,7 +264,7 @@ namespace ProjectChallengeRijexamen
             while (tellerAantal<6)
             {
                 testing = false;
-                if (teller < 10)
+                if (teller < 12)
                 {
                     int i = randomGetal.Next(0, alleVerkeersborden.Length);
                     if (alleVerkeersborden[i].GetSetBeantwoord == false)
@@ -291,6 +291,10 @@ namespace ProjectChallengeRijexamen
                 {
                     for (int j = 0; j < alleVerkeersborden.Length; j++)
                     {
+                        if (tellerAantal == 6)
+                        {
+                            break;
+                        }
                         if (alleVerkeersborden[j].GetSetBeantwoord == false)
                         {
                             for (int k = 1; k <= tellerAantal; k++)
