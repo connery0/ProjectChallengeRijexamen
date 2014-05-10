@@ -227,29 +227,46 @@ namespace ProjectChallengeRijexamen
             }
             else if (button1.Text == "Volgende")
             {
-                foreach (Control control in this.Controls)
+                Boolean nogVerkeersborden = false;
+                for (int i = 0; i < alleVerkeersborden.Length; i++)
                 {
-                    if (control is PictureBox)
+                    if (alleVerkeersborden[i].GetSetBeantwoord == false)
                     {
-                        PictureBox picture = (PictureBox)control;
-                        if (picture.Name != "pictureBox1" && picture.Name != "pictureBox2" &&
-                            picture.Name != "pictureBox3" && picture.Name != "pictureBox4" && picture.Name != "pictureBox5" &&
-                            picture.Name != "pictureBox6")
-                        {
-                            picture.Image = null;
-                            picture.Tag = null;
-                        }
-
-                    }
-                    else if (control is Label)
-                    {
-                        Label uitleg = (Label)control;
-                        uitleg.BackColor = Color.White;
+                        nogVerkeersborden = true;
                     }
                 }
-                randomVerkeersborden();
-                invullen();
-                button1.Text = "Controle";
+
+                if (nogVerkeersborden)
+                {
+
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is PictureBox)
+                        {
+                            PictureBox picture = (PictureBox)control;
+                            if (picture.Name != "pictureBox1" && picture.Name != "pictureBox2" &&
+                                picture.Name != "pictureBox3" && picture.Name != "pictureBox4" && picture.Name != "pictureBox5" &&
+                                picture.Name != "pictureBox6")
+                            {
+                                picture.Image = null;
+                                picture.Tag = null;
+                            }
+
+                        }
+                        else if (control is Label)
+                        {
+                            Label uitleg = (Label)control;
+                            uitleg.BackColor = Color.White;
+                        }
+                    }
+                    randomVerkeersborden();
+                    invullen();
+                    button1.Text = "Controle";
+                }
+                else
+                {
+                    MessageBox.Show("Je hebt alle verkeersborden geoefend", "KLAAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         
         }
@@ -291,6 +308,7 @@ namespace ProjectChallengeRijexamen
                 {
                     for (int j = 0; j < alleVerkeersborden.Length; j++)
                     {
+                        testing = false;
                         if (tellerAantal == 6)
                         {
                             break;
