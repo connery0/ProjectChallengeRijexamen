@@ -16,7 +16,7 @@ namespace ProjectChallengeRijexamen
         public MC_Form MultipleChoice;
         public MC_Start StartMC;
         public DnD DragAndDrop;
-        public string naam;
+        private string UserNaam;
         public Form1()
         {
             InitializeComponent();
@@ -24,13 +24,31 @@ namespace ProjectChallengeRijexamen
 
             DialogResult button = inloggen.ShowDialog();
 
-            
+
 
             naam = this.Tag.ToString();
 
             this.Text = "Welkom, " + this.Tag;
             setScherm("Menu");
         }
+
+        public String naam
+        {
+            get
+            {
+                return UserNaam;
+            }
+            set
+            {
+                UserNaam = value;
+            }
+
+
+
+        }
+
+
+
 
         private void setScherm(String Scherm)
         {

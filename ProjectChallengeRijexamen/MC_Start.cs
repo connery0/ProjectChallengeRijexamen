@@ -20,6 +20,7 @@ namespace ProjectChallengeRijexamen
         {
             InitializeComponent();
             this.ParentForm = ParentForm;
+            Naam = ParentForm.naam;
             button1.Text = "Volgende";
         }
 

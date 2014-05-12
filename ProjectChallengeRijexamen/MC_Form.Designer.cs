@@ -98,7 +98,12 @@
             this.MC_picture.ImageLocation = "";
             this.MC_picture.Location = new System.Drawing.Point(72, 163);
             this.MC_picture.Name = "MC_picture";
+<<<<<<< HEAD
             this.MC_picture.Size = new System.Drawing.Size(274, 200);
+=======
+            this.MC_picture.Size = new System.Drawing.Size(385, 310);
+            this.MC_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+>>>>>>> 1d79b63af3277a203a32773dc652efdd4e107127
             this.MC_picture.TabIndex = 10;
             this.MC_picture.TabStop = false;
             // 
@@ -153,6 +158,7 @@
             // 
             // MC_Label
             // 
+<<<<<<< HEAD
             this.MC_Label.BackColor = System.Drawing.Color.Transparent;
             this.MC_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.MC_Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -161,6 +167,12 @@
             this.MC_Label.Size = new System.Drawing.Size(664, 89);
             this.MC_Label.TabIndex = 17;
             this.MC_Label.Text = "label1";
+=======
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+>>>>>>> 1d79b63af3277a203a32773dc652efdd4e107127
             // 
             // MC_Form
             // 
