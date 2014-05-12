@@ -115,6 +115,7 @@
             this.MC_picture.Location = new System.Drawing.Point(12, 116);
             this.MC_picture.Name = "MC_picture";
             this.MC_picture.Size = new System.Drawing.Size(385, 310);
+            this.MC_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.MC_picture.TabIndex = 10;
             this.MC_picture.TabStop = false;
             // 
@@ -187,7 +188,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
