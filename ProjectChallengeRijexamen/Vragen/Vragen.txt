@@ -21,7 +21,7 @@ Ik bestuur een jeep met een caravan, de MTM van de sleep is 3800 kg. Hoe snel ma
 Feedback: De snelheid voor alle voertuigen en slepen met een MTM van meer de 3,5 ton is op de autosnelwegen beperkt tot 90 km/u.
 ------------
 Je rijdt met een snelheid van 80 km/u. Om je voertuig tot stilstand te brengen, heb je een afstand nodig van:
-4.png
+2.png
 64 tot 72 meter.
 34 tot 40 meter.
 110 tot 120 meter.

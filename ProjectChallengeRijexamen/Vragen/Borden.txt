@@ -35,7 +35,7 @@ D9.png
 Vanaf het verkeersbord tot het volgend kruispunt, verbod te keren
 c33.png
 ------------
-Verboden toegang voor bestuurders van voertuigen, waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide
+Verboden toegang voor bestuurders van voertuigen, waarvan de hoogte, lading inbegrepen, groter is dan het aangeduide.
 c29.png
 ------------
 Stilstaan en parkeren verboden
@@ -67,3 +67,7 @@ c5.png
 ------------
 Uitweg of een kaai of een oever.
 a11.png
+------------
+Vanaf het verkeersbord tot het volgend kruispunt, verbod een gespan of een voertuig met meer dan twee wielen, links in te halen.
+c35.png
+

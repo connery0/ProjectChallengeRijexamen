@@ -78,6 +78,7 @@ namespace ProjectChallengeRijexamen
             {
                 Closing = true;
                 Vragen.EindeVraag();
+               
             }
             ParentForm.Location = this.Location;
             ParentForm.Show();
@@ -85,7 +86,8 @@ namespace ProjectChallengeRijexamen
 
         public void setVraag(String Vraag)
         {
-            MC_tekst.Text = Vraag;
+           // MC_tekst.Text = Vraag;
+            MC_Label.Text = Vraag;
         }
         public void setAntwoord(String Antwoord, int Nr)
         {
@@ -106,11 +108,17 @@ namespace ProjectChallengeRijexamen
         }
         public void setUitleg(String uitleg)
         {
-            MC_tekst.Text = MC_tekst.Text + Environment.NewLine + uitleg;
-            if (MC_tekst.Text.Split('\n').Length > 4)
-            {
-                MC_tekst.ScrollBars = ScrollBars.Vertical;
-            }
+            // MC_tekst.Text = MC_tekst.Text + Environment.NewLine + uitleg;
+            MC_Label.Text = MC_Label.Text + Environment.NewLine + Environment.NewLine + uitleg;
+            //if (MC_tekst.Text.Split('\n').Length > 4)
+            //{
+            //  MC_tekst.ScrollBars = ScrollBars.Vertical;
+            // }
+            //if (MC_Label.Text.Split('\n').Length > 4)
+            //{
+              //  MC_Label.ScrollBars = ScrollBars.Vertical;
+            //}
+
 
         }
         public void setImage(String Doel)
@@ -120,11 +128,13 @@ namespace ProjectChallengeRijexamen
 
         public void VraagJuist()
         {
-            MC_tekst.BackColor = Color.LightGreen;
+           // MC_tekst.BackColor = Color.LightGreen;
+            MC_Label.BackColor = Color.LightGreen;
         }
         public void VraagFout(String Uitleg)
         {
-            MC_tekst.BackColor = Color.IndianRed;
+          //  MC_tekst.BackColor = Color.IndianRed;
+            MC_Label.BackColor = Color.IndianRed;
             setUitleg(Uitleg);
         }
 
@@ -157,8 +167,9 @@ namespace ProjectChallengeRijexamen
 
                     if (maxTijd != 0) { timer1.Start(); }
                     button1.Text = "Antwoord";
-                    MC_tekst.BackColor = Color.Empty;
-                    MC_tekst.ScrollBars = ScrollBars.None;
+                   // MC_tekst.BackColor = Color.Empty;
+                    MC_Label.BackColor = Color.Transparent;
+                  //  MC_tekst.ScrollBars = ScrollBars.None;
                     Vragen.VolgendeVraag();
                     TelVraag();
                     MC_Radio1.Checked = false;

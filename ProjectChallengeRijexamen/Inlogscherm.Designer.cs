@@ -55,6 +55,8 @@
             // Label2
             // 
             this.Label2.AutoSize = true;
+            this.Label2.BackColor = System.Drawing.Color.Transparent;
+            this.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Label2.Location = new System.Drawing.Point(33, 41);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(64, 13);
@@ -64,6 +66,8 @@
             // Label1
             // 
             this.Label1.AutoSize = true;
+            this.Label1.BackColor = System.Drawing.Color.Transparent;
+            this.Label1.ForeColor = System.Drawing.Color.Transparent;
             this.Label1.Location = new System.Drawing.Point(62, 15);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(35, 13);
@@ -74,7 +78,7 @@
             // 
             this.BtnAnnuleren.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BtnAnnuleren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAnnuleren.Location = new System.Drawing.Point(187, 64);
+            this.BtnAnnuleren.Location = new System.Drawing.Point(187, 68);
             this.BtnAnnuleren.Name = "BtnAnnuleren";
             this.BtnAnnuleren.Size = new System.Drawing.Size(85, 23);
             this.BtnAnnuleren.TabIndex = 10;
@@ -86,7 +90,7 @@
             // 
             this.BtnAanmelden.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BtnAanmelden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAanmelden.Location = new System.Drawing.Point(103, 64);
+            this.BtnAanmelden.Location = new System.Drawing.Point(103, 68);
             this.BtnAanmelden.Name = "BtnAanmelden";
             this.BtnAanmelden.Size = new System.Drawing.Size(78, 23);
             this.BtnAanmelden.TabIndex = 9;
@@ -98,7 +102,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 98);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources._original;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(284, 103);
             this.Controls.Add(this.TextboxAchternaam);
             this.Controls.Add(this.TextboxNaam);
             this.Controls.Add(this.Label2);
