@@ -256,7 +256,7 @@ namespace ProjectChallengeRijexamen
                         else if (control is Label)
                         {
                             Label uitleg = (Label)control;
-                            uitleg.BackColor = Color.White;
+                            uitleg.BackColor = Color.Transparent;
                         }
                     }
                     randomVerkeersborden();
