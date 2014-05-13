@@ -181,6 +181,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cmd.ico" />
+    <None Include="Resources\wallpaper-45294.jpg" />
+    <None Include="Resources\traffic-sign-close-up-wallpaper-2560x1600.jpg" />
+    <None Include="Resources\traffic-light-city-busy-free-at-871886.jpg" />
+    <None Include="Resources\traffic-light-city-bokeh-lights-hd-high-definition-fullscreen-257716.jpg" />
+    <None Include="Resources\guinness_traffic_light_signs.jpg" />
+    <None Include="Resources\city_traffic_lights_in_black_and_white-wide.jpg" />
     <None Include="Resources\roads_long_exposure_grimes_canyon_road_1366x768_40298.jpg" />
     <None Include="Resources\dsc_0214.jpg" />
     <None Include="Resources\streets_lights_traffic_city_long_exposure_cities_1366x768_52633.jpg" />

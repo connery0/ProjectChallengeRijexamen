@@ -49,7 +49,7 @@
             this.MC_Radio3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MC_Radio3.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_Radio3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MC_Radio3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.MC_Radio3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MC_Radio3.Location = new System.Drawing.Point(402, 318);
             this.MC_Radio3.Name = "MC_Radio3";
             this.MC_Radio3.Size = new System.Drawing.Size(320, 90);
@@ -65,7 +65,7 @@
             this.MC_Radio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MC_Radio2.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_Radio2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F);
-            this.MC_Radio2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MC_Radio2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MC_Radio2.Location = new System.Drawing.Point(402, 217);
             this.MC_Radio2.Name = "MC_Radio2";
             this.MC_Radio2.Size = new System.Drawing.Size(320, 90);
@@ -81,7 +81,7 @@
             this.MC_Radio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MC_Radio1.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_Radio1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MC_Radio1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MC_Radio1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MC_Radio1.Location = new System.Drawing.Point(402, 119);
             this.MC_Radio1.Name = "MC_Radio1";
             this.MC_Radio1.Size = new System.Drawing.Size(320, 90);
@@ -96,7 +96,7 @@
             this.MC_picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.MC_picture.Cursor = System.Windows.Forms.Cursors.Default;
             this.MC_picture.ImageLocation = "";
-            this.MC_picture.Location = new System.Drawing.Point(72, 163);
+            this.MC_picture.Location = new System.Drawing.Point(62, 165);
             this.MC_picture.Name = "MC_picture";
             this.MC_picture.Size = new System.Drawing.Size(274, 220);
             this.MC_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -132,7 +132,7 @@
             this.ProgresLabel.BackColor = System.Drawing.Color.Transparent;
             this.ProgresLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ProgresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ProgresLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ProgresLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.ProgresLabel.Location = new System.Drawing.Point(579, 421);
             this.ProgresLabel.Name = "ProgresLabel";
             this.ProgresLabel.Size = new System.Drawing.Size(42, 43);
@@ -145,7 +145,7 @@
             this.VraagTeller.AutoSize = true;
             this.VraagTeller.BackColor = System.Drawing.Color.Transparent;
             this.VraagTeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VraagTeller.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.VraagTeller.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.VraagTeller.Location = new System.Drawing.Point(682, 2);
             this.VraagTeller.Name = "VraagTeller";
             this.VraagTeller.Size = new System.Drawing.Size(54, 20);
@@ -157,8 +157,8 @@
             // 
             this.MC_Label.BackColor = System.Drawing.Color.Transparent;
             this.MC_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.MC_Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MC_Label.Location = new System.Drawing.Point(12, 9);
+            this.MC_Label.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.MC_Label.Location = new System.Drawing.Point(58, 27);
             this.MC_Label.Name = "MC_Label";
             this.MC_Label.Size = new System.Drawing.Size(664, 89);
             this.MC_Label.TabIndex = 17;
