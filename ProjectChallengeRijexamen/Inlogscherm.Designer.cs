@@ -57,10 +57,11 @@
             // 
             this.Label2.AutoSize = true;
             this.Label2.BackColor = System.Drawing.Color.Transparent;
+            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Label2.Location = new System.Drawing.Point(33, 41);
+            this.Label2.Location = new System.Drawing.Point(24, 39);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(64, 13);
+            this.Label2.Size = new System.Drawing.Size(73, 15);
             this.Label2.TabIndex = 7;
             this.Label2.Text = "Achternaam";
             // 
@@ -68,12 +69,13 @@
             // 
             this.Label1.AutoSize = true;
             this.Label1.BackColor = System.Drawing.Color.Transparent;
+            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Label1.ForeColor = System.Drawing.Color.Transparent;
-            this.Label1.Location = new System.Drawing.Point(62, 15);
+            this.Label1.Location = new System.Drawing.Point(24, 13);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(35, 13);
+            this.Label1.Size = new System.Drawing.Size(64, 15);
             this.Label1.TabIndex = 8;
-            this.Label1.Text = "Naam";
+            this.Label1.Text = "Voornaam";
             // 
             // BtnAnnuleren
             // 
@@ -104,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources._original;
+            this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources._09fcf2cbb3909a67bfe8fba5bdb17b48;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 103);
             this.Controls.Add(this.TextboxAchternaam);
