@@ -64,9 +64,10 @@
             // 
             // M_knop4
             // 
+            this.M_knop4.BackColor = System.Drawing.Color.LightSteelBlue;
             resources.ApplyResources(this.M_knop4, "M_knop4");
             this.M_knop4.Name = "M_knop4";
-            this.M_knop4.UseVisualStyleBackColor = true;
+            this.M_knop4.UseVisualStyleBackColor = false;
             // 
             // label1
             // 

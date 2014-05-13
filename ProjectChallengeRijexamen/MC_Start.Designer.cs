@@ -42,7 +42,7 @@
             // 
             this.Text_Label.BackColor = System.Drawing.Color.Transparent;
             this.Text_Label.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Text_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Text_Label.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F);
             this.Text_Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Text_Label.Location = new System.Drawing.Point(12, 9);
             this.Text_Label.Name = "Text_Label";
@@ -90,7 +90,7 @@
             // 
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Checked = true;
-            this.radioButton2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F);
+            this.radioButton2.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.radioButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radioButton2.Location = new System.Drawing.Point(33, 232);
             this.radioButton2.Name = "radioButton2";
@@ -105,11 +105,11 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F);
+            this.radioButton1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton1.Location = new System.Drawing.Point(224, 242);
+            this.radioButton1.Location = new System.Drawing.Point(299, 242);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(122, 24);
+            this.radioButton1.Size = new System.Drawing.Size(120, 24);
             this.radioButton1.TabIndex = 9;
             this.radioButton1.Text = "Geen limiet";
             this.radioButton1.UseVisualStyleBackColor = false;
@@ -119,9 +119,9 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F);
+            this.radioButton3.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.radioButton3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton3.Location = new System.Drawing.Point(352, 242);
+            this.radioButton3.Location = new System.Drawing.Point(224, 242);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(69, 24);
             this.radioButton3.TabIndex = 12;

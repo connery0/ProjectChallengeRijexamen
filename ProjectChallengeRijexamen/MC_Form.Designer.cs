@@ -48,7 +48,7 @@
             this.MC_Radio3.BackColor = System.Drawing.Color.Transparent;
             this.MC_Radio3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MC_Radio3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.MC_Radio3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MC_Radio3.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.MC_Radio3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MC_Radio3.Location = new System.Drawing.Point(402, 318);
             this.MC_Radio3.Name = "MC_Radio3";
@@ -64,7 +64,7 @@
             this.MC_Radio2.BackColor = System.Drawing.Color.Transparent;
             this.MC_Radio2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MC_Radio2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.MC_Radio2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F);
+            this.MC_Radio2.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.MC_Radio2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MC_Radio2.Location = new System.Drawing.Point(402, 217);
             this.MC_Radio2.Name = "MC_Radio2";
@@ -80,7 +80,7 @@
             this.MC_Radio1.BackColor = System.Drawing.Color.Transparent;
             this.MC_Radio1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MC_Radio1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.MC_Radio1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MC_Radio1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.MC_Radio1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MC_Radio1.Location = new System.Drawing.Point(402, 119);
             this.MC_Radio1.Name = "MC_Radio1";
@@ -156,7 +156,7 @@
             // MC_Label
             // 
             this.MC_Label.BackColor = System.Drawing.Color.Transparent;
-            this.MC_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MC_Label.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
             this.MC_Label.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MC_Label.Location = new System.Drawing.Point(12, 22);
             this.MC_Label.Name = "MC_Label";
