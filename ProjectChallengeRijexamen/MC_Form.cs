@@ -130,11 +130,13 @@ namespace ProjectChallengeRijexamen
         {
            // MC_tekst.BackColor = Color.LightGreen;
             MC_Label.BackColor = Color.LightGreen;
+            MC_Label.ForeColor = Color.Black;
         }
         public void VraagFout(String Uitleg)
         {
           //  MC_tekst.BackColor = Color.IndianRed;
             MC_Label.BackColor = Color.IndianRed;
+            MC_Label.ForeColor = Color.Black;
             setUitleg(Uitleg);
         }
 
@@ -169,7 +171,9 @@ namespace ProjectChallengeRijexamen
                     button1.Text = "Antwoord";
                    // MC_tekst.BackColor = Color.Empty;
                     MC_Label.BackColor = Color.Transparent;
-                  //  MC_tekst.ScrollBars = ScrollBars.None;
+                    MC_Label.ForeColor = Color.White;
+                    
+                   //  MC_tekst.ScrollBars = ScrollBars.None;
                     Vragen.VolgendeVraag();
                     TelVraag();
                     MC_Radio1.Checked = false;

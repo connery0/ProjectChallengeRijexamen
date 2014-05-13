@@ -70,6 +70,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(118, 118);
             this.label1.Name = "label1";
@@ -80,6 +81,7 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(436, 330);
             this.label6.Name = "label6";
@@ -90,6 +92,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(118, 330);
             this.label3.Name = "label3";
@@ -100,6 +103,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(118, 224);
             this.label2.Name = "label2";
@@ -110,6 +114,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(436, 118);
             this.label4.Name = "label4";
@@ -120,6 +125,7 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(436, 224);
             this.label5.Name = "label5";

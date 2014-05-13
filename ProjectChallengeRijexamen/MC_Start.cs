@@ -52,7 +52,7 @@ namespace ProjectChallengeRijexamen
                 }
                 else
                 {
-                    Text_Label.Text = "U hebt deze test al eerder gemaakt, wilt U de vragen die U fout had opnieuw proberen. Of wilt U opnieuw beginnen?";
+                    Text_Label.Text = "U hebt deze test al eerder gemaakt, wilt U de vragen die U fout had opnieuw proberen of wilt U opnieuw beginnen?";
                     button1.Text = "Opnieuw beginen";
                     button2.Visible = true;
                 }

@@ -156,11 +156,11 @@
             // MC_Label
             // 
             this.MC_Label.BackColor = System.Drawing.Color.Transparent;
-            this.MC_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.MC_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.MC_Label.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.MC_Label.Location = new System.Drawing.Point(58, 27);
+            this.MC_Label.Location = new System.Drawing.Point(12, 22);
             this.MC_Label.Name = "MC_Label";
-            this.MC_Label.Size = new System.Drawing.Size(664, 89);
+            this.MC_Label.Size = new System.Drawing.Size(710, 114);
             this.MC_Label.TabIndex = 17;
             this.MC_Label.Text = "label1";
             // 

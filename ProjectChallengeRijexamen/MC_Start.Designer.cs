@@ -46,11 +46,10 @@
             this.Text_Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Text_Label.Location = new System.Drawing.Point(12, 9);
             this.Text_Label.Name = "Text_Label";
-            this.Text_Label.Size = new System.Drawing.Size(719, 97);
+            this.Text_Label.Size = new System.Drawing.Size(719, 109);
             this.Text_Label.TabIndex = 6;
-            this.Text_Label.Text = "Klik op Volgende om met de test te beginnen.\r\n\r\nAls je je foute vragen van de vor" +
-    "ige keer opnieuw \r\nwil doen, klik op Foute vragen oefenen. ";
-            this.Text_Label.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Text_Label.Text = "Kies je tijdlimiet en klik op Volgende om met de test te beginnen.\r\n";
+            this.Text_Label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
             // 

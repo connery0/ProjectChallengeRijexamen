@@ -185,18 +185,22 @@
     <None Include="Resources\traffic-sign-close-up-wallpaper-2560x1600.jpg" />
     <None Include="Resources\traffic-light-city-busy-free-at-871886.jpg" />
     <None Include="Resources\traffic-light-city-bokeh-lights-hd-high-definition-fullscreen-257716.jpg" />
-    <None Include="Resources\guinness_traffic_light_signs.jpg" />
-    <None Include="Resources\city_traffic_lights_in_black_and_white-wide.jpg" />
+    <None Include="Resources\traffic.jpg" />
     <None Include="Resources\roads_long_exposure_grimes_canyon_road_1366x768_40298.jpg" />
-    <None Include="Resources\dsc_0214.jpg" />
-    <None Include="Resources\streets_lights_traffic_city_long_exposure_cities_1366x768_52633.jpg" />
     <None Include="Resources\lights_california_traffic_long_exposure_light_trails_1366x768_35656.jpg" />
     <None Include="Resources\highway_long_exposure_m14099.jpg" />
+    <None Include="Resources\guinness_traffic_light_signs.jpg" />
+    <None Include="Resources\cityscapes-city-night-photography-long-exposure.jpg" />
+    <None Include="Resources\city-night-desktopnight-city-traffic-desktop-wallpaper-yd13mbsr.jpg" />
+    <None Include="Resources\city_traffic_lights_in_black_and_white-wide.jpg" />
+    <None Include="Resources\cars-traffic-city-lights-long-exposure1.jpg" />
+    <None Include="Resources\23207.jpg" />
+    <None Include="Resources\09fcf2cbb3909a67bfe8fba5bdb17b481.jpg" />
+    <None Include="Resources\_original.jpg" />
+    <None Include="Resources\dsc_0214.jpg" />
+    <None Include="Resources\streets_lights_traffic_city_long_exposure_cities_1366x768_52633.jpg" />
     <None Include="Resources\cars-traffic-city-lights-long-exposure.jpg" />
     <None Include="Resources\09fcf2cbb3909a67bfe8fba5bdb17b48.jpg" />
-    <None Include="Resources\cityscapes-city-night-photography-long-exposure.jpg" />
-    <None Include="Resources\_original.jpg" />
-    <None Include="Resources\23207.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

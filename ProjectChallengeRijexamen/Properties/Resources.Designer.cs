@@ -73,9 +73,29 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _09fcf2cbb3909a67bfe8fba5bdb17b481 {
+            get {
+                object obj = ResourceManager.GetObject("09fcf2cbb3909a67bfe8fba5bdb17b481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _23207 {
             get {
                 object obj = ResourceManager.GetObject("23207", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _232071 {
+            get {
+                object obj = ResourceManager.GetObject("232071", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +113,39 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _original1 {
+            get {
+                object obj = ResourceManager.GetObject("_original1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cars_traffic_city_lights_long_exposure {
             get {
                 object obj = ResourceManager.GetObject("cars-traffic-city-lights-long-exposure", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cars_traffic_city_lights_long_exposure1 {
+            get {
+                object obj = ResourceManager.GetObject("cars-traffic-city-lights-long-exposure1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap city_night_desktopnight_city_traffic_desktop_wallpaper_yd13mbsr {
+            get {
+                object obj = ResourceManager.GetObject("city-night-desktopnight-city-traffic-desktop-wallpaper-yd13mbsr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +163,29 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap city_traffic_lights_in_black_and_white_wide1 {
+            get {
+                object obj = ResourceManager.GetObject("city_traffic_lights_in_black_and_white-wide1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cityscapes_city_night_photography_long_exposure {
             get {
                 object obj = ResourceManager.GetObject("cityscapes-city-night-photography-long-exposure", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cityscapes_city_night_photography_long_exposure1 {
+            get {
+                object obj = ResourceManager.GetObject("cityscapes-city-night-photography-long-exposure1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +213,29 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap guinness_traffic_light_signs1 {
+            get {
+                object obj = ResourceManager.GetObject("guinness_traffic_light_signs1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap highway_long_exposure_m14099 {
             get {
                 object obj = ResourceManager.GetObject("highway_long_exposure_m14099", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap highway_long_exposure_m140991 {
+            get {
+                object obj = ResourceManager.GetObject("highway_long_exposure_m140991", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +253,29 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lights_california_traffic_long_exposure_light_trails_1366x768_356561 {
+            get {
+                object obj = ResourceManager.GetObject("lights_california_traffic_long_exposure_light_trails_1366x768_356561", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap roads_long_exposure_grimes_canyon_road_1366x768_40298 {
             get {
                 object obj = ResourceManager.GetObject("roads_long_exposure_grimes_canyon_road_1366x768_40298", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap roads_long_exposure_grimes_canyon_road_1366x768_402981 {
+            get {
+                object obj = ResourceManager.GetObject("roads_long_exposure_grimes_canyon_road_1366x768_402981", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +293,29 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap traffic {
+            get {
+                object obj = ResourceManager.GetObject("traffic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap traffic_light_city_bokeh_lights_hd_high_definition_fullscreen_257716 {
             get {
                 object obj = ResourceManager.GetObject("traffic-light-city-bokeh-lights-hd-high-definition-fullscreen-257716", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap traffic_light_city_bokeh_lights_hd_high_definition_fullscreen_2577161 {
+            get {
+                object obj = ResourceManager.GetObject("traffic-light-city-bokeh-lights-hd-high-definition-fullscreen-2577161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +333,16 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap traffic_light_city_busy_free_at_8718861 {
+            get {
+                object obj = ResourceManager.GetObject("traffic-light-city-busy-free-at-8718861", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap traffic_sign_close_up_wallpaper_2560x1600 {
             get {
                 object obj = ResourceManager.GetObject("traffic-sign-close-up-wallpaper-2560x1600", resourceCulture);
@@ -213,9 +353,29 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap traffic_sign_close_up_wallpaper_2560x16001 {
+            get {
+                object obj = ResourceManager.GetObject("traffic-sign-close-up-wallpaper-2560x16001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wallpaper_45294 {
             get {
                 object obj = ResourceManager.GetObject("wallpaper-45294", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaper_452941 {
+            get {
+                object obj = ResourceManager.GetObject("wallpaper-452941", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
