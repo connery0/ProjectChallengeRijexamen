@@ -109,6 +109,7 @@
             this.MC_Progres.MarqueeAnimationSpeed = 0;
             this.MC_Progres.Name = "MC_Progres";
             this.MC_Progres.Size = new System.Drawing.Size(567, 23);
+            this.MC_Progres.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.MC_Progres.TabIndex = 9;
             // 
             // button1

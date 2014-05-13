@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace ProjectChallengeRijexamen
 {
     public partial class DnD : Form
@@ -100,20 +100,20 @@ namespace ProjectChallengeRijexamen
       
         private void setVerkeersborden()
         {
-            System.IO.StreamReader myFile = new System.IO.StreamReader("..\\..\\Vragen\\Borden.txt");
+            StreamReader myFile = new StreamReader("..\\..\\Vragen\\Borden.txt");
             string myString = myFile.ReadToEnd();
 
             myFile.Close();
 
-            double L = myString.Split('\n').Length / 3;
-            int Lengte = Convert.ToInt32(L);
-            alleVerkeersborden = new Verkeersbord[Lengte];
+            double l = myString.Split('\n').Length / 3;
+            int lengte = Convert.ToInt32(l);
+            alleVerkeersborden = new Verkeersbord[lengte];
 
             ///////////////////////////////////////////////////////////////////////////////////////
 
             string line;
             int teller = 0;
-            System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\Borden.txt");
+            StreamReader file = new StreamReader("..\\..\\Vragen\\Borden.txt");
             while ((line = file.ReadLine()) != null)
             {
                 alleVerkeersborden[teller] = new Verkeersbord(file.ReadLine(), file.ReadLine());
