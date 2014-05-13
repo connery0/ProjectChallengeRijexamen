@@ -10,20 +10,24 @@ namespace ProjectChallengeRijexamen
     {
         private String antwoord;
         private Boolean juist;
-        public Keuze(String Antwoord, Boolean Juist)
+        public Keuze(String antwoord, Boolean juist)
         {
-            antwoord = Antwoord;
-            juist = Juist;
+            this.antwoord = antwoord;
+            this.juist = juist;
 
         }
 
-        public String getAntwoord()
+        public String getAntwoord
         {
+            get{
             return antwoord;
+            }
         }
-        public Boolean isJuist()
+        public Boolean isJuist
         {
+            get{
             return juist;
+            }
         }
 
 

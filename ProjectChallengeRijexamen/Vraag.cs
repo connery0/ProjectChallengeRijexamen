@@ -13,25 +13,25 @@ namespace ProjectChallengeRijexamen
         private Foto afbeelding;
         private Keuze antwoord1, antwoord2, antwoord3;
         private String uitleg;
-        private int JuistAntwoord;
-        private Boolean Beantwoord = false, JuistBeantwoord = false;
+        private int juistAntwoord;
+        private Boolean beantwoord = false, juistBeantwoord = false;
 
 
         public String PrintVraag()
         {
-            String toPrint = "-------------\n" + vraag + "\n" + afbeelding.getNaam() + "\n";
-            switch (JuistAntwoord)
+            String toPrint = "-------------\n" + vraag + "\n" + afbeelding.getNaam + "\n";
+            switch (juistAntwoord)
             {
                 case 1:
-                    toPrint = toPrint + antwoord1.getAntwoord() + "\n" + antwoord2.getAntwoord() + "\n" + antwoord3.getAntwoord();
+                    toPrint = toPrint + antwoord1.getAntwoord + "\n" + antwoord2.getAntwoord + "\n" + antwoord3.getAntwoord;
                     break;
 
                 case 2:
-                    toPrint = toPrint + antwoord2.getAntwoord() + "\n" + antwoord1.getAntwoord() + "\n" + antwoord3.getAntwoord();
+                    toPrint = toPrint + antwoord2.getAntwoord + "\n" + antwoord1.getAntwoord + "\n" + antwoord3.getAntwoord;
                     break;
 
                 case 3:
-                    toPrint = toPrint + antwoord3.getAntwoord() + "\n" + antwoord2.getAntwoord() + "\n" + antwoord1.getAntwoord();
+                    toPrint = toPrint + antwoord3.getAntwoord + "\n" + antwoord2.getAntwoord + "\n" + antwoord1.getAntwoord;
                     break;
             }
             toPrint = toPrint + "\n" + Uitleg;
@@ -40,16 +40,18 @@ namespace ProjectChallengeRijexamen
 
         public Boolean ControleerVraag(int Antwoord)
         {
-            if (Beantwoord == false)
+            if (beantwoord == false)
             {
-                Beantwoord = true;
-                if (JuistAntwoord == Antwoord)
+                beantwoord = true;
+                if (juistAntwoord == Antwoord)
                 {
-                    JuistBeantwoord = true;
+                    juistBeantwoord = true;
                 }
-                else { JuistBeantwoord = false; }
+                else { 
+                    juistBeantwoord = false; 
+                }
             }
-            return JuistBeantwoord;
+            return juistBeantwoord;
         }
 
 
@@ -58,23 +60,25 @@ namespace ProjectChallengeRijexamen
         {
             get
             {
-                return Beantwoord;
+                return beantwoord;
             }
         }
         public Boolean VraagJuist
         {
             get
             {
-                return JuistBeantwoord;
+                return juistBeantwoord;
             }
         }
 
         public String Uitleg
         {
-            get { return uitleg; }
+            get { 
+                return uitleg; 
+            }
         }
 
-        public Keuze getantwoord(int Nr)
+        public Keuze getAntwoord(int Nr)
         {
             Keuze returnAntwoord;
             switch (Nr)
@@ -115,49 +119,49 @@ namespace ProjectChallengeRijexamen
             afbeelding = new Foto("Error.jpg");
         }
 
-        public Vraag(String Vraag, String Afbeelding, String Antwoord1, String Antwoord2, String Antwoord3, String Uitleg, Random R)
+        public Vraag(String vraag, String afbeelding, String antwoord1, String antwoord2, String antwoord3, String uitleg, Random R)
         {
-            vraag = Vraag; ;
-            afbeelding = new Foto(Afbeelding);
-            this.uitleg = Uitleg;
+            this.vraag = vraag; 
+            this.afbeelding = new Foto(afbeelding);
+            this.uitleg = uitleg;
 
             switch (R.Next(0, 6))
             {
                 case 1:
-                    antwoord1 = new Keuze(Antwoord1, true);
-                    antwoord2 = new Keuze(Antwoord2, false);
-                    antwoord3 = new Keuze(Antwoord3, false);
-                    JuistAntwoord = 1;
+                    this.antwoord1 = new Keuze(antwoord1, true);
+                    this.antwoord2 = new Keuze(antwoord2, false);
+                    this.antwoord3 = new Keuze(antwoord3, false);
+                    juistAntwoord = 1;
                     break;
                 case 2:
-                    antwoord1 = new Keuze(Antwoord1, true);
-                    antwoord2 = new Keuze(Antwoord3, false);
-                    antwoord3 = new Keuze(Antwoord2, false);
-                    JuistAntwoord = 1;
+                    this.antwoord1 = new Keuze(antwoord1, true);
+                    this.antwoord2 = new Keuze(antwoord3, false);
+                    this.antwoord3 = new Keuze(antwoord2, false);
+                    juistAntwoord = 1;
                     break;
                 case 3:
-                    antwoord1 = new Keuze(Antwoord2, false);
-                    antwoord2 = new Keuze(Antwoord1, true);
-                    antwoord3 = new Keuze(Antwoord3, false);
-                    JuistAntwoord = 2;
+                    this.antwoord1 = new Keuze(antwoord2, false);
+                    this.antwoord2 = new Keuze(antwoord1, true);
+                    this.antwoord3 = new Keuze(antwoord3, false);
+                    juistAntwoord = 2;
                     break;
                 case 4:
-                    antwoord1 = new Keuze(Antwoord3, false);
-                    antwoord2 = new Keuze(Antwoord1, true);
-                    antwoord3 = new Keuze(Antwoord2, false);
-                    JuistAntwoord = 2;
+                    this.antwoord1 = new Keuze(antwoord3, false);
+                    this.antwoord2 = new Keuze(antwoord1, true);
+                    this.antwoord3 = new Keuze(antwoord2, false);
+                    juistAntwoord = 2;
                     break;
                 case 5:
-                    antwoord1 = new Keuze(Antwoord2, false);
-                    antwoord2 = new Keuze(Antwoord3, false);
-                    antwoord3 = new Keuze(Antwoord1, true);
-                    JuistAntwoord = 3;
+                    this.antwoord1 = new Keuze(antwoord2, false);
+                    this.antwoord2 = new Keuze(antwoord3, false);
+                    this.antwoord3 = new Keuze(antwoord1, true);
+                    juistAntwoord = 3;
                     break;
                 default:
-                    antwoord1 = new Keuze(Antwoord3, false);
-                    antwoord2 = new Keuze(Antwoord2, false);
-                    antwoord3 = new Keuze(Antwoord1, true);
-                    JuistAntwoord = 3;
+                    this.antwoord1 = new Keuze(antwoord3, false);
+                    this.antwoord2 = new Keuze(antwoord2, false);
+                    this.antwoord3 = new Keuze(antwoord1, true);
+                    juistAntwoord = 3;
                     break;
             }
 

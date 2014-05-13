@@ -3,31 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace ProjectChallengeRijexamen
 {
     class MultipleChoice
     {
-        private Vraag[] Vragen;
-        public MC_Form ParentForm;
-        private Vraag HuidigeVraag;
+        private Vraag[] vragen;
+        public MC_Form parentForm;
+        private Vraag huidigeVraag;
         private int gevraagd = 0;
-        private Random R = new Random();
-        private String Naam;
+        private Random randomGetal = new Random();
+        private String naam;
 
 
-        public MultipleChoice(MC_Form ParentForm, String Naam)
+        public MultipleChoice(MC_Form parentForm, String naam)
         {
-            this.ParentForm = ParentForm;
-            this.Naam = Naam;
-            setVragen(Naam);
+            this.parentForm = parentForm;
+            this.naam = naam;
+            setVragen(naam);
             VolgendeVraag();
         }
 
 
         public void VolgendeVraag()
         {
-            if (gevraagd < Vragen.Length)
+            if (gevraagd < vragen.Length)
             {
                 RandomVraag();
                 gevraagd++;
@@ -43,45 +43,45 @@ namespace ProjectChallengeRijexamen
 
         public void EindeVraag()
         {
-            ParentForm.ShowMessage("einde");
+            parentForm.ShowMessage("einde");
 
-            String PrintVragen = "";
-            Boolean EersteText = true;
-            for (int i = 0; i < Vragen.Length; i++)
+            String printVragen = "";
+            Boolean eersteText = true;
+            for (int i = 0; i < vragen.Length; i++)
             {
-                if ((!Vragen[i].VraagJuist) || (!Vragen[i].IsBeantwoord))
+                if ((!vragen[i].VraagJuist) || (!vragen[i].IsBeantwoord))
                 {
-                    if (!EersteText)
+                    if (!eersteText)
                     {
-                        PrintVragen = PrintVragen + "\n";
+                        printVragen = printVragen + "\n";
                     }
                     else
                     {
-                        EersteText = false;
+                        eersteText = false;
                     }
 
-                    PrintVragen = PrintVragen + Vragen[i].PrintVraag();
+                    printVragen = printVragen + vragen[i].PrintVraag();
                 }
 
             }
-            if (PrintVragen == "")
+            if (printVragen == "")
             {
                 try
                 {
-                    System.IO.File.Delete("..\\..\\Vragen\\Persoon\\" + Naam + ".txt");
+                    File.Delete("..\\..\\Vragen\\Persoon\\" + naam + ".txt");
                 }
-                catch (System.IO.IOException f)
+                catch (IOException fout)
                 {
-                    Console.WriteLine(f.Message);
+                    Console.WriteLine(fout.Message);
                     return;
                 }
             }
             else
             {
-                System.IO.File.WriteAllText("..\\..\\Vragen\\Persoon\\" + Naam + ".txt", PrintVragen);
+                File.WriteAllText("..\\..\\Vragen\\Persoon\\" + naam + ".txt", printVragen);
             }
 
-            ParentForm.Close();
+            parentForm.Close();
 
         }
 
@@ -91,97 +91,98 @@ namespace ProjectChallengeRijexamen
 
         private void RandomVraag()
         {
-            Random R = new Random();
-            HuidigeVraag = null;
+            Random randomGetal2 = new Random();
+            huidigeVraag = null;
             int teller = 0;
-            while (HuidigeVraag == null)
+            while (huidigeVraag == null)
             {
                 if (teller < 20)
                 {
-                    int I = R.Next(0, Vragen.Length);
-                    if (Vragen[I].IsBeantwoord == false)
+                    int I = randomGetal2.Next(0, vragen.Length);
+                    if (vragen[I].IsBeantwoord == false)
                     {
-                        HuidigeVraag = Vragen[I];
+                        huidigeVraag = vragen[I];
                     }
                 }
                 else
                 {
-                    for (int j = 0; j < Vragen.Length; j++)
+                    for (int j = 0; j < vragen.Length; j++)
                     {
-                        if (Vragen[j].IsBeantwoord == false)
+                        if (vragen[j].IsBeantwoord == false)
                         {
-                            HuidigeVraag = Vragen[j];
+                            huidigeVraag = vragen[j];
                         }
                     }
-                    if (HuidigeVraag == null)
+                    if (huidigeVraag == null)
                     {
-                        HuidigeVraag = new Vraag();
-                        ParentForm.ShowMessage("Er is iets misgegaan, sluit het programma en probeer het opnieuw");
+                        huidigeVraag = new Vraag();
+                        parentForm.ShowMessage("Er is iets misgegaan, sluit het programma en probeer het opnieuw");
                     }
                 }
                 teller++;
             }
 
-            setvraag(HuidigeVraag);
+            setvraag(huidigeVraag);
 
 
         }
 
-        public void ControleerVraag(int Antwoord)
+        public void ControleerVraag(int antwoord)
         {
-            if (HuidigeVraag.ControleerVraag(Antwoord))
+            if (huidigeVraag.ControleerVraag(antwoord))
             {
-                ParentForm.VraagJuist();
+                parentForm.VraagJuist();
             }
             else
             {
-                ParentForm.VraagFout(HuidigeVraag.Uitleg);
+                parentForm.VraagFout(huidigeVraag.Uitleg);
             }
         }
 
 
 
 
-        private void setvraag(Vraag V)
+        private void setvraag(Vraag vraag)
         {
-            ParentForm.setVraag(V.getVraag);
+            parentForm.setVraag(vraag.getVraag);
             for (int i = 1; i <= 3; i++)
             {
-                ParentForm.setAntwoord(V.getantwoord(i).getAntwoord(), i);
+                parentForm.setAntwoord(vraag.getAntwoord(i).getAntwoord, i);
             }
-            ParentForm.setImage(V.Img.getDoel());
+            parentForm.setImage(vraag.Img.getDoel());
 
         }
 
         private void setVragen(String bestandsNaam)
         {
-            System.IO.StreamReader myFile =
-            new System.IO.StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
+            StreamReader myFile = new StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
             string myString = myFile.ReadToEnd();
 
             myFile.Close();
 
-            double L = myString.Split('\n').Length / 7;
-            int Lengte = Convert.ToInt32(L);
-            Vragen = new Vraag[Lengte];
+            double volledigeLengte = myString.Split('\n').Length / 7;
+            int lengte = Convert.ToInt32(volledigeLengte);
+            vragen = new Vraag[lengte];
 
             ///////////////////////////////////////////////////////////////////////////////////////
 
             string line;
             int teller = 0;
-            System.IO.StreamReader file = new System.IO.StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
+            StreamReader file = new StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
             while ((line = file.ReadLine()) != null)
             {
-                Vragen[teller] = new Vraag(file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), R);
+                vragen[teller] = new Vraag(file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), randomGetal);
                 teller += 1;
             }
             file.Close();
         }
 
 
-        public int getAantalVragen()
+        public int getAantalVragen
         {
-            return Vragen.Length;
+            get{
+            return vragen.Length;
+            }
         }
 
     }

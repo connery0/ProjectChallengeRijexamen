@@ -7,20 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace ProjectChallengeRijexamen
 {
     public partial class MC_Start : Form
     {
-        private Form1 ParentForm;
-        private Boolean OpenMainMenu = true;
-        private String Naam;
-        private int TijdsLimiet = 0;
-        public MC_Start(Form1 ParentForm)
+        private Form1 parentForm;
+        private Boolean openMainMenu = true;
+        private String naam;
+        private int tijdsLimiet = 0;
+        public MC_Start(Form1 parentForm, string naam)
         {
             InitializeComponent();
-            this.ParentForm = ParentForm;
-            Naam = ParentForm.naam;
+            this.parentForm = parentForm;
+            this.naam = naam;
             button1.Text = "Volgende";
         }
 
@@ -31,7 +31,7 @@ namespace ProjectChallengeRijexamen
 
         private void MC_Start_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (OpenMainMenu)
+            if (openMainMenu)
             {
                 ParentForm.Location = this.Location;
                 ParentForm.Show();
@@ -43,11 +43,11 @@ namespace ProjectChallengeRijexamen
         {
             if (button1.Text == "Volgende")
             {
-                String FileName = "..\\..\\Vragen\\Persoon\\" + Naam + ".txt";
-                if (System.IO.File.Exists(FileName) == false)
+                String fileName = "..\\..\\Vragen\\Persoon\\" + naam + ".txt";
+                if (File.Exists(fileName) == false)
                 {
                     
-                    System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\Persoon\\" + Naam + ".txt"));
+                    File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\Persoon\\" + naam + ".txt"));
                     VolgendScherm();
                 }
                 else
@@ -64,9 +64,9 @@ namespace ProjectChallengeRijexamen
 
                 try
                 {
-                    System.IO.File.Delete("..\\..\\Vragen\\Persoon\\" + Naam + ".txt");
+                    File.Delete("..\\..\\Vragen\\Persoon\\" + naam + ".txt");
                 }
-                catch (System.IO.IOException f)
+                catch (IOException f)
                 {
                     Console.WriteLine(f.Message);
                     return;
@@ -74,17 +74,17 @@ namespace ProjectChallengeRijexamen
 
 
 
-                System.IO.File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\Persoon\\" + Naam + ".txt"));
+                File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\Persoon\\" + naam + ".txt"));
                 VolgendScherm();
             }
         }
 
         private void VolgendScherm()
         {
-            OpenMainMenu = false;
-            ParentForm.MultipleChoice = new MC_Form(ParentForm, Naam,TijdsLimiet);
-            ParentForm.MultipleChoice.Show();
-            ParentForm.MultipleChoice.Location = this.Location;
+            openMainMenu = false;
+            parentForm.multipleChoice = new MC_Form(parentForm, naam, tijdsLimiet);
+            parentForm.multipleChoice.Show();
+            parentForm.multipleChoice.Location = this.Location;
             this.Close();
         }
 
@@ -93,30 +93,11 @@ namespace ProjectChallengeRijexamen
             VolgendScherm();
         }
 
-        private void Box_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-            e.Handled = !IsValidCharacter(e.KeyChar);
-        }
-
-        private bool IsValidCharacter(char c)
-        {
-            bool isValid = false;
-
-            // (char)8 = backspace
-            if (c == (char)8 || c == 'a' || c == 'b' || c == 'c' || c == 'd' || c == 'e' || c == 'f' || c == 'g' || c == 'h' || c == 'i' || c == 'j' || c == 'k' || c == 'l' || c == 'm' || c == 'n' || c == 'o' || c == 'p' || c == 'q' || c == 'r' || c == 's' || c == 't' || c == 'u' || c == 'v' || c == 'w' || c == 'x' || c == 'y' || c == 'z' || c == 'A' || c == 'B' || c == 'C' || c == 'D' || c == 'E' || c == 'F' || c == 'G' || c == 'H' || c == 'I' || c == 'J' || c == 'K' || c == 'L' || c == 'M' || c == 'N' || c == 'O' || c == 'P' || c == 'Q' || c == 'R' || c == 'S' || c == 'T' || c == 'U' || c == 'V' || c == 'W' || c == 'X' || c == 'Y' || c == 'Z')
-            {
-                isValid = true;
-            }
-
-            return isValid;
-        }
-
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
             {
-                TijdsLimiet = 0;
+                tijdsLimiet = 0;
             }
         }
 
@@ -124,7 +105,7 @@ namespace ProjectChallengeRijexamen
         {
             if (radioButton2.Checked)
             {
-                TijdsLimiet = 1;
+                tijdsLimiet = 1;
             }
         }
 
@@ -132,7 +113,7 @@ namespace ProjectChallengeRijexamen
         {
             if (radioButton3.Checked)
             {
-                TijdsLimiet = 2;
+                tijdsLimiet = 2;
             }
         }
     }

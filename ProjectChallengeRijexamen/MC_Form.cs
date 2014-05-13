@@ -12,22 +12,22 @@ namespace ProjectChallengeRijexamen
 {
     public partial class MC_Form : Form
     {
-        private Form1 ParentForm;
-        private String Naam;
-        private MultipleChoice Vragen;
-        private int Antwoord;
+        private Form1 parentForm;
+        private String naam;
+        private MultipleChoice vragen;
+        private int antwoord;
         private Boolean tijdPerVraag;
         private int maxTijd = 0;
-        private int VraagNummer = 0;
-        private Boolean Closing = false;
+        private int vraagNummer = 0;
+        private Boolean closing = false;
 
 
-        public MC_Form(Form1 ParentForm, String Naam, int tijdslimiet)
+        public MC_Form(Form1 parentForm, String naam, int tijdslimiet)
         {
             InitializeComponent();
-            Vragen = new MultipleChoice(this, Naam);
-            this.ParentForm = ParentForm;
-            this.Naam = Naam;
+            vragen = new MultipleChoice(this, naam);
+            this.parentForm = parentForm;
+            this.naam = naam;
             MC_picture.SizeMode = PictureBoxSizeMode.CenterImage;
             if (tijdslimiet > 0)
             {
@@ -74,52 +74,40 @@ namespace ProjectChallengeRijexamen
 
         private void MC_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (!Closing)
+            if (!closing)
             {
-                Closing = true;
-                Vragen.EindeVraag();
+                closing = true;
+                vragen.EindeVraag();
                
             }
-            ParentForm.Location = this.Location;
-            ParentForm.Show();
+            parentForm.Location = this.Location;
+            parentForm.Show();
         }
 
         public void setVraag(String Vraag)
         {
-           // MC_tekst.Text = Vraag;
             MC_Label.Text = Vraag;
         }
-        public void setAntwoord(String Antwoord, int Nr)
+        public void setAntwoord(String antwoord, int Nr)
         {
             switch (Nr)
             {
                 case 1:
-                    MC_Radio1.Text = Antwoord;
+                    MC_Radio1.Text = antwoord;
                     break;
 
                 case 2:
-                    MC_Radio2.Text = Antwoord;
+                    MC_Radio2.Text = antwoord;
                     break;
 
                 case 3:
-                    MC_Radio3.Text = Antwoord;
+                    MC_Radio3.Text = antwoord;
                     break;
             }
         }
         public void setUitleg(String uitleg)
         {
-            // MC_tekst.Text = MC_tekst.Text + Environment.NewLine + uitleg;
             MC_Label.Text = MC_Label.Text + Environment.NewLine + Environment.NewLine + uitleg;
-            //if (MC_tekst.Text.Split('\n').Length > 4)
-            //{
-            //  MC_tekst.ScrollBars = ScrollBars.Vertical;
-            // }
-            //if (MC_Label.Text.Split('\n').Length > 4)
-            //{
-              //  MC_Label.ScrollBars = ScrollBars.Vertical;
-            //}
-
-
         }
         public void setImage(String Doel)
         {
@@ -128,24 +116,19 @@ namespace ProjectChallengeRijexamen
 
         public void VraagJuist()
         {
-           // MC_tekst.BackColor = Color.LightGreen;
             MC_Label.BackColor = Color.LightGreen;
             MC_Label.ForeColor = Color.Black;
         }
         public void VraagFout(String Uitleg)
         {
-          //  MC_tekst.BackColor = Color.IndianRed;
             MC_Label.BackColor = Color.IndianRed;
             MC_Label.ForeColor = Color.Black;
             setUitleg(Uitleg);
         }
 
-
-
-
-        public void ShowMessage(string a)
+        public void ShowMessage(string tekst)
         {
-            MessageBox.Show(a);
+            MessageBox.Show(tekst);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -153,11 +136,11 @@ namespace ProjectChallengeRijexamen
             switch (button1.Text)
             {
                 case "Antwoord":
-                    if (Antwoord > 0)
+                    if (antwoord > 0)
                     {
                         timer1.Stop();
                         button1.Text = "Volgende";
-                        Vragen.ControleerVraag(Antwoord);
+                        vragen.ControleerVraag(antwoord);
 
                     }
                     else
@@ -169,17 +152,15 @@ namespace ProjectChallengeRijexamen
 
                     if (maxTijd != 0) { timer1.Start(); }
                     button1.Text = "Antwoord";
-                   // MC_tekst.BackColor = Color.Empty;
                     MC_Label.BackColor = Color.Transparent;
                     MC_Label.ForeColor = Color.White;
                     
-                   //  MC_tekst.ScrollBars = ScrollBars.None;
-                    Vragen.VolgendeVraag();
+                    vragen.VolgendeVraag();
                     TelVraag();
                     MC_Radio1.Checked = false;
                     MC_Radio2.Checked = false;
                     MC_Radio3.Checked = false;
-                    Antwoord = 0;
+                    antwoord = 0;
                     if (tijdPerVraag)
                     {
                         MC_Progres.Value = 0;
@@ -190,15 +171,15 @@ namespace ProjectChallengeRijexamen
         }
         private void TelVraag()
         {
-            VraagNummer++;
-            VraagTeller.Text = VraagNummer + "/" + Vragen.getAantalVragen();
+            vraagNummer++;
+            VraagTeller.Text = vraagNummer + "/" + vragen.getAantalVragen;
         }
 
         private void MC_Radio1_CheckedChanged(object sender, EventArgs e)
         {
             if (MC_Radio1.Checked)
             {
-                Antwoord = 1;
+                antwoord = 1;
             }
         }
 
@@ -206,7 +187,7 @@ namespace ProjectChallengeRijexamen
         {
             if (MC_Radio2.Checked)
             {
-                Antwoord = 2;
+                antwoord = 2;
             }
         }
 
@@ -214,7 +195,7 @@ namespace ProjectChallengeRijexamen
         {
             if (MC_Radio3.Checked)
             {
-                Antwoord = 3;
+                antwoord = 3;
             }
         }
 
@@ -230,7 +211,7 @@ namespace ProjectChallengeRijexamen
 
                 if (!tijdPerVraag)
                 {
-                    Vragen.EindeVraag();
+                    vragen.EindeVraag();
                 }
                 else
                 {

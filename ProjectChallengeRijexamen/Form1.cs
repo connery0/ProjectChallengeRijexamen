@@ -13,10 +13,10 @@ namespace ProjectChallengeRijexamen
     public partial class Form1 : Form
     {
         // private String Scherm;
-        public MC_Form MultipleChoice;
-        public MC_Start StartMC;
-        public DnD DragAndDrop;
-        private string UserNaam;
+        public MC_Form multipleChoice;
+        public MC_Start startMC;
+        public DnD dragAndDrop;
+        private string naam;
         public Form1()
         {
             InitializeComponent();
@@ -32,27 +32,10 @@ namespace ProjectChallengeRijexamen
             setScherm("Menu");
         }
 
-        public String naam
+
+        private void setScherm(String scherm)
         {
-            get
-            {
-                return UserNaam;
-            }
-            set
-            {
-                UserNaam = value;
-            }
-
-
-
-        }
-
-
-
-
-        private void setScherm(String Scherm)
-        {
-            switch (Scherm)
+            switch (scherm)
             {
                 case "Menu":
                     break;
@@ -65,42 +48,31 @@ namespace ProjectChallengeRijexamen
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-
-
-
-        }
-
         private void M_knop1_Click(object sender, EventArgs e)
         {
-            StartMC = new MC_Start(this);
-            StartMC.Show();
-            StartMC.Location = this.Location;
+            startMC = new MC_Start(this, naam);
+            startMC.Show();
+            startMC.Location = this.Location;
             this.Hide();
 
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            StartMC = new MC_Start(this);
-            StartMC.Show();
-            StartMC.Location = this.Location;
-            this.Hide();
         }
 
         private void M_knop2_Click(object sender, EventArgs e)
         {
-            DragAndDrop = new DnD(this);
-            DragAndDrop.Show();
+            dragAndDrop = new DnD(this);
+            dragAndDrop.Show();
             this.Hide();
         }
 
         private void M_knop3_Click(object sender, EventArgs e)
         {
-            Memory bla = new Memory();
-            bla.Show();
+            Memory memory = new Memory();
+            memory.Show();
+        }
+
+        private void M_knop4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

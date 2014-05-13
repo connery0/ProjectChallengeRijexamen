@@ -9,24 +9,26 @@ namespace ProjectChallengeRijexamen
     class Foto
     {
         
-        string Naam;
+        string naam;
 
-        public Foto(string Naam)
+        public Foto(string naam)
         {
-            this.Naam = Naam;
+            this.naam = naam;
         }
 
         public string getDoel()
         {
-            return "..\\..\\img/" + Naam;
+            return "..\\..\\img/" + naam;
         }
         public string getDoelVerkeersbord()
         {
-            return "..\\..\\img\\Verkeersborden\\" + Naam;
+            return "..\\..\\img\\Verkeersborden\\" + naam;
         }
-        public string getNaam()
+        public string getNaam
         {
-            return Naam;
+            get{
+            return naam;
+            }
         }
 
     }
