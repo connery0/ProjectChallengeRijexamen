@@ -23,6 +23,7 @@ namespace ProjectChallengeRijexamen
         private int aantalVerkeersborden;
         private Boolean sluiten = false;
 
+
         public DnD(Form1 Parentform)
         {
             InitializeComponent();
@@ -158,7 +159,7 @@ namespace ProjectChallengeRijexamen
                         PictureBox picture = (PictureBox)control;
                         if (picture.Tag == null)
                         {
-                            MessageBox.Show("Gelieve alle pictureboxen in te vullen", "Lege pictureboxen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Gelieve alle verkeersborden te matchen!", "Lege plaatsen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             return;
                         }
 
@@ -183,7 +184,7 @@ namespace ProjectChallengeRijexamen
                 }
                 else
                 {
-                    label2.BackColor = Color.Red;              
+                    label2.BackColor = Color.Red;
                 }
 
                 if (pictureBox9.Tag.ToString() == label3.Text)
@@ -278,7 +279,7 @@ namespace ProjectChallengeRijexamen
                     MessageBox.Show("Je hebt alle verkeersborden geoefend." + Environment.NewLine + "Je hebt " + aantalJuist.ToString() + "/24" + " gescoord.", "KLAAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     sluiten = true;
                     this.Close();
-               
+
                 }
             }
         
@@ -406,7 +407,8 @@ namespace ProjectChallengeRijexamen
 
         private void DnD_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (!sluiten) { 
+            if (!sluiten)
+            {
                 DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (test == DialogResult.Yes)
                 {
@@ -425,6 +427,7 @@ namespace ProjectChallengeRijexamen
                 Parentform.Location = this.Location;
                 Parentform.Show();
             }
+
                
             
         }
