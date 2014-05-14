@@ -15,7 +15,7 @@ namespace ProjectChallengeRijexamen
         private Form1 parentForm;
         private Boolean openMainMenu = true;
         private String naam;
-        private int tijdsLimiet = 0;
+        private int tijdsLimiet = 1;
         public MC_Start(Form1 parentForm, string naam)
         {
             InitializeComponent();

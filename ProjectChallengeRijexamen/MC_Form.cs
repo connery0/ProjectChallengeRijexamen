@@ -40,7 +40,11 @@ namespace ProjectChallengeRijexamen
 
         private void ProgresTijd()
         {
-            double tijdOver = MC_Progres.Maximum - MC_Progres.Value;
+            double tijdOver = Math.Ceiling((MC_Progres.Maximum - MC_Progres.Value)/(double)10);
+            if (tijdOver == 0 && (MC_Progres.Maximum - MC_Progres.Value) > 1)
+            {
+                tijdOver = 1;
+            }
             int tijdMin;
             ProgresLabel.Text = "";
             if (tijdOver > 60)
@@ -67,7 +71,7 @@ namespace ProjectChallengeRijexamen
             }
 
             MC_Progres.Value = 0;
-            MC_Progres.Maximum = maxTijd;
+            MC_Progres.Maximum = maxTijd*10;
             ProgresTijd();
             timer1.Start();
         }
