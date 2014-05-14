@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.dsc_0214;
+            this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(734, 299);
             this.Controls.Add(this.radioButton3);

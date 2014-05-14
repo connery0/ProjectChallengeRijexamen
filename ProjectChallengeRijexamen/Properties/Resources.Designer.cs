@@ -123,6 +123,16 @@ namespace ProjectChallengeRijexamen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap argus {
+            get {
+                object obj = ResourceManager.GetObject("argus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cars_traffic_city_lights_long_exposure {
             get {
                 object obj = ResourceManager.GetObject("cars-traffic-city-lights-long-exposure", resourceCulture);
@@ -286,6 +296,16 @@ namespace ProjectChallengeRijexamen.Properties {
         internal static System.Drawing.Bitmap streets_lights_traffic_city_long_exposure_cities_1366x768_52633 {
             get {
                 object obj = ResourceManager.GetObject("streets_lights_traffic_city_long_exposure_cities_1366x768_52633", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Test__750x502_ {
+            get {
+                object obj = ResourceManager.GetObject("Test (750x502)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

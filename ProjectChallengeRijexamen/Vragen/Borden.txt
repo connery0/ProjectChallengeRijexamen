@@ -59,7 +59,7 @@ f60.png
 Noodstopstrook
 f95.png
 ------------
-Weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers en ruiters. Het verkeersbord mag aangepast worden volgens de categorie(ën) van weggebruiker(s) die tot deze weg is/zijn toegelaten
+Weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers en ruiters.
 f99c.png
 ------------
 Verboden toegang voor bestuurders van motorvoertuigen met meer dan twee wielen en van motorfietsen met zijspan.

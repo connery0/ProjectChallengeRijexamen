@@ -181,6 +181,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cmd.ico" />
+    <None Include="Resources\Test %28750x502%29.jpg" />
+    <None Include="Resources\argus.png" />
     <None Include="Resources\wallpaper-45294.jpg" />
     <None Include="Resources\traffic-sign-close-up-wallpaper-2560x1600.jpg" />
     <None Include="Resources\traffic-light-city-busy-free-at-871886.jpg" />

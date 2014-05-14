@@ -157,7 +157,7 @@
             // 
             this.MC_Label.BackColor = System.Drawing.Color.Transparent;
             this.MC_Label.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F);
-            this.MC_Label.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.MC_Label.ForeColor = System.Drawing.Color.Transparent;
             this.MC_Label.Location = new System.Drawing.Point(12, 22);
             this.MC_Label.Name = "MC_Label";
             this.MC_Label.Size = new System.Drawing.Size(710, 114);
@@ -170,7 +170,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.dsc_0214;
+            this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(734, 462);
             this.Controls.Add(this.MC_Label);
