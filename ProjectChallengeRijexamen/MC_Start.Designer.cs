@@ -54,9 +54,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(91, 121);
+            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
+            this.button1.Location = new System.Drawing.Point(100, 121);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(234, 49);
+            this.button1.Size = new System.Drawing.Size(212, 41);
             this.button1.TabIndex = 7;
             this.button1.Text = "Volgende";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,9 +65,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(421, 121);
+            this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
+            this.button2.Location = new System.Drawing.Point(410, 121);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(234, 49);
+            this.button2.Size = new System.Drawing.Size(212, 41);
             this.button2.TabIndex = 8;
             this.button2.Text = "Foute vragen oefenen";
             this.button2.UseVisualStyleBackColor = true;
@@ -90,10 +92,9 @@
             // radioButton2
             // 
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Checked = true;
             this.radioButton2.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.radioButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton2.Location = new System.Drawing.Point(33, 232);
+            this.radioButton2.Location = new System.Drawing.Point(322, 232);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(185, 44);
             this.radioButton2.TabIndex = 11;
@@ -121,7 +122,7 @@
             this.radioButton3.BackColor = System.Drawing.Color.Transparent;
             this.radioButton3.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.radioButton3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton3.Location = new System.Drawing.Point(224, 242);
+            this.radioButton3.Location = new System.Drawing.Point(247, 242);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(69, 24);
             this.radioButton3.TabIndex = 12;
@@ -132,12 +133,14 @@
             // radioButton4
             // 
             this.radioButton4.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton4.Checked = true;
             this.radioButton4.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.radioButton4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton4.Location = new System.Drawing.Point(299, 232);
+            this.radioButton4.Location = new System.Drawing.Point(28, 232);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(208, 44);
             this.radioButton4.TabIndex = 13;
+            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "30 seconden per vraag";
             this.radioButton4.UseVisualStyleBackColor = false;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
@@ -161,7 +164,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MC_Start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Proefexamen";
+            this.Text = "Keuzemenu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MC_Start_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

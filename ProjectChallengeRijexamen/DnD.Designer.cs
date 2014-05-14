@@ -135,9 +135,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(648, 12);
+            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
+            this.button1.Location = new System.Drawing.Point(648, 29);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 418);
+            this.button1.Size = new System.Drawing.Size(70, 68);
             this.button1.TabIndex = 69;
             this.button1.Text = "Controle";
             this.button1.UseVisualStyleBackColor = true;
@@ -302,7 +303,7 @@
             this.MaximizeBox = false;
             this.Name = "DnD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RijExamen";
+            this.Text = "Verkeersborden";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DnD_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
