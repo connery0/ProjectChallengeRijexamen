@@ -187,7 +187,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MC_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MC_Form";
+            this.Text = "Proefexamen";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MC_Form_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.MC_picture)).EndInit();
             this.ResumeLayout(false);

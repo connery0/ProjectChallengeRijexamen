@@ -81,6 +81,7 @@
             // 
             this.BtnAnnuleren.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BtnAnnuleren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAnnuleren.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
             this.BtnAnnuleren.Location = new System.Drawing.Point(187, 68);
             this.BtnAnnuleren.Name = "BtnAnnuleren";
             this.BtnAnnuleren.Size = new System.Drawing.Size(85, 23);
@@ -93,6 +94,7 @@
             // 
             this.BtnAanmelden.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BtnAanmelden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAanmelden.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
             this.BtnAanmelden.Location = new System.Drawing.Point(103, 68);
             this.BtnAanmelden.Name = "BtnAanmelden";
             this.BtnAanmelden.Size = new System.Drawing.Size(78, 23);
