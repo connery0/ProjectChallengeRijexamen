@@ -36,6 +36,7 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // Text_Label
@@ -96,7 +97,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(185, 44);
             this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "1 minuut per vraag";
             this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
@@ -107,7 +107,7 @@
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton1.Location = new System.Drawing.Point(299, 242);
+            this.radioButton1.Location = new System.Drawing.Point(513, 242);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(120, 24);
             this.radioButton1.TabIndex = 9;
@@ -129,6 +129,19 @@
             this.radioButton3.UseVisualStyleBackColor = false;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
+            // radioButton4
+            // 
+            this.radioButton4.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton4.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
+            this.radioButton4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButton4.Location = new System.Drawing.Point(299, 232);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(208, 44);
+            this.radioButton4.TabIndex = 13;
+            this.radioButton4.Text = "30 seconden per vraag";
+            this.radioButton4.UseVisualStyleBackColor = false;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
             // MC_Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,6 +149,7 @@
             this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(734, 299);
+            this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.label4);
@@ -148,8 +162,7 @@
             this.Name = "MC_Start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proefexamen";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MC_Start_FormClosed);
-            this.Load += new System.EventHandler(this.MC_Start_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MC_Start_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +177,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
     }
 }

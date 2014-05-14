@@ -111,6 +111,7 @@
             this.MC_Progres.Size = new System.Drawing.Size(567, 23);
             this.MC_Progres.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.MC_Progres.TabIndex = 9;
+            this.MC_Progres.Visible = false;
             // 
             // button1
             // 
@@ -138,6 +139,7 @@
             this.ProgresLabel.TabIndex = 15;
             this.ProgresLabel.Text = "00M 00S";
             this.ProgresLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ProgresLabel.Visible = false;
             // 
             // VraagTeller
             // 
@@ -187,7 +189,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MC_Form";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MC_Form_FormClosed);
-            this.Load += new System.EventHandler(this.MC_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MC_picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

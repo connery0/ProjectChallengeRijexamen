@@ -24,21 +24,6 @@ namespace ProjectChallengeRijexamen
             button1.Text = "Volgende";
         }
 
-        private void MC_Start_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MC_Start_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (openMainMenu)
-            {
-                ParentForm.Location = this.Location;
-                ParentForm.Show();
-            }
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (button1.Text == "Volgende")
@@ -114,6 +99,23 @@ namespace ProjectChallengeRijexamen
             if (radioButton3.Checked)
             {
                 tijdsLimiet = 2;
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked)
+            {
+                tijdsLimiet = 3;
+            }
+        }
+
+        private void MC_Start_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (openMainMenu)
+            {
+                parentForm.Location = this.Location;
+                parentForm.Show();
             }
         }
     }

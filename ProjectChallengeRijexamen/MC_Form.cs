@@ -38,9 +38,23 @@ namespace ProjectChallengeRijexamen
             TelVraag();
         }
 
+
+        public MC_Form(Form1 parentForm)
+        {
+            InitializeComponent();
+            vragen = new MultipleChoice(this);
+            this.parentForm = parentForm;
+            MC_picture.SizeMode = PictureBoxSizeMode.CenterImage;
+            MC_Progres.Visible = true;
+            ProgresLabel.Visible = true;
+            SetTijdsLimiet(3);
+            TelVraag();
+        }
+
+
         private void ProgresTijd()
         {
-            double tijdOver = Math.Ceiling((MC_Progres.Maximum - MC_Progres.Value)/(double)10);
+            double tijdOver = Math.Ceiling((MC_Progres.Maximum - MC_Progres.Value) / (double)10);
             if (tijdOver == 0 && (MC_Progres.Maximum - MC_Progres.Value) > 1)
             {
                 tijdOver = 1;
@@ -68,10 +82,14 @@ namespace ProjectChallengeRijexamen
                     tijdPerVraag = false;
                     maxTijd = 3600;
                     break;
+                case 3:
+                    tijdPerVraag = true;
+                    maxTijd = 30;
+                    break;
             }
 
             MC_Progres.Value = 0;
-            MC_Progres.Maximum = maxTijd*10;
+            MC_Progres.Maximum = maxTijd * 10;
             ProgresTijd();
             timer1.Start();
         }
@@ -82,7 +100,7 @@ namespace ProjectChallengeRijexamen
             {
                 closing = true;
                 vragen.EindeVraag();
-               
+
             }
             parentForm.Location = this.Location;
             parentForm.Show();
@@ -158,7 +176,7 @@ namespace ProjectChallengeRijexamen
                     button1.Text = "Antwoord";
                     MC_Label.BackColor = Color.Transparent;
                     MC_Label.ForeColor = Color.White;
-                    
+
                     vragen.VolgendeVraag();
                     TelVraag();
                     MC_Radio1.Checked = false;
@@ -222,11 +240,6 @@ namespace ProjectChallengeRijexamen
                     button1.Text = "Volgende";
                 }
             }
-        }
-
-        private void MC_Form_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

@@ -14,12 +14,20 @@ namespace ProjectChallengeRijexamen
         private int gevraagd = 0;
         private Random randomGetal = new Random();
         private String naam;
+        private Boolean examen = false;
 
 
         public MultipleChoice(MC_Form parentForm, String naam)
         {
             this.parentForm = parentForm;
             this.naam = naam;
+            setVragen(naam);
+            VolgendeVraag();
+        }
+        public MultipleChoice(MC_Form parentForm)
+        {
+            examen = true;
+            this.parentForm = parentForm;
             setVragen(naam);
             VolgendeVraag();
         }
@@ -35,21 +43,17 @@ namespace ProjectChallengeRijexamen
             else
             {
                 EindeVraag();
-
             }
 
         }
 
-
         public void EindeVraag()
         {
-            parentForm.ShowMessage("einde");
-
             String printVragen = "";
             Boolean eersteText = true;
             for (int i = 0; i < vragen.Length; i++)
             {
-                if ((!vragen[i].VraagJuist) || (!vragen[i].IsBeantwoord))
+                if (examen || ((!vragen[i].VraagJuist) || (!vragen[i].IsBeantwoord)))
                 {
                     if (!eersteText)
                     {
@@ -82,7 +86,6 @@ namespace ProjectChallengeRijexamen
             }
 
             parentForm.Close();
-
         }
 
 
@@ -180,8 +183,9 @@ namespace ProjectChallengeRijexamen
 
         public int getAantalVragen
         {
-            get{
-            return vragen.Length;
+            get
+            {
+                return vragen.Length;
             }
         }
 
