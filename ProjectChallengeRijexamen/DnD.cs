@@ -446,22 +446,16 @@ namespace ProjectChallengeRijexamen
             {
                 Parentform.Location = this.Location;
                 Parentform.Show();
-            }
-<<<<<<< HEAD
-                  
+            }    
         }       
-=======
+
 
 
                
             
         }
 
-        private void DnD_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            
-        }
+        
        
->>>>>>> 9ff98d1475a30af0f1b243e1b57129249e98e3b6
-    }
+    
 }
