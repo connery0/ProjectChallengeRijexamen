@@ -20,16 +20,8 @@ namespace ProjectChallengeRijexamen
         public Form1()
         {
             InitializeComponent();
-            Inlogscherm inloggen = new Inlogscherm(this);
-
-            DialogResult button = inloggen.ShowDialog();
-
-
-
-            naam = this.Tag.ToString();
-
-            this.Text = "Welkom, " + this.Tag;
-            setScherm("Menu");
+            OmAantemelden();
+            
         }
 
 
@@ -73,6 +65,25 @@ namespace ProjectChallengeRijexamen
         private void M_knop4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            OmAantemelden();
+            e.Cancel = true;
+        }
+
+        private void OmAantemelden()
+        {
+            Inlogscherm inloggen = new Inlogscherm(this);
+
+            DialogResult button = inloggen.ShowDialog();
+
+            naam = this.Tag.ToString();
+
+            this.Text = "Welkom, " + this.Tag;
+            setScherm("Menu");
         }
     }
 }
