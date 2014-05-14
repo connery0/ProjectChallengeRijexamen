@@ -24,6 +24,7 @@ namespace ProjectChallengeRijexamen
         private Boolean sluiten = false;
 
 
+
         public DnD(Form1 Parentform)
         {
             InitializeComponent();
@@ -185,7 +186,7 @@ namespace ProjectChallengeRijexamen
                 else
                 {
                     label2.BackColor = Color.Red;
-                }
+                                    }
 
                 if (pictureBox9.Tag.ToString() == label3.Text)
                 {
@@ -231,7 +232,6 @@ namespace ProjectChallengeRijexamen
                 {
                     gevraagdeVerkeersborden[i].GetSetBeantwoord = true;
                 }
-
                 aantalVerkeersborden += 6;
                 button1.Text = "Volgende";
 
@@ -276,6 +276,7 @@ namespace ProjectChallengeRijexamen
                 }
                 else
                 {
+
                     MessageBox.Show("Je hebt alle verkeersborden geoefend." + Environment.NewLine + "Je hebt " + aantalJuist.ToString() + "/24" + " gescoord.", "KLAAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     sluiten = true;
                     this.Close();
@@ -407,6 +408,7 @@ namespace ProjectChallengeRijexamen
 
         private void DnD_FormClosing(object sender, FormClosingEventArgs e)
         {
+
             if (!sluiten)
             {
                 DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
@@ -427,6 +429,7 @@ namespace ProjectChallengeRijexamen
                 Parentform.Location = this.Location;
                 Parentform.Show();
             }
+
 
                
             
