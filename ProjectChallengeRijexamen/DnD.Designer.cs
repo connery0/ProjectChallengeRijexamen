@@ -135,9 +135,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(648, 36);
+            this.button1.Location = new System.Drawing.Point(648, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 56);
+            this.button1.Size = new System.Drawing.Size(70, 418);
             this.button1.TabIndex = 69;
             this.button1.Text = "Controle";
             this.button1.UseVisualStyleBackColor = true;
@@ -289,7 +289,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(718, 432);
+            this.ClientSize = new System.Drawing.Size(725, 436);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
