@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApplication1;
 
 namespace ProjectChallengeRijexamen
 {
@@ -64,7 +65,9 @@ namespace ProjectChallengeRijexamen
 
         private void M_knop4_Click(object sender, EventArgs e)
         {
-
+            TheorieViewer theorieviewer = new TheorieViewer(this);
+            theorieviewer.Show();
+            this.Hide();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
