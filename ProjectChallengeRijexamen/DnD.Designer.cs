@@ -152,8 +152,6 @@
             this.pictureBox12.Size = new System.Drawing.Size(100, 100);
             this.pictureBox12.TabIndex = 66;
             this.pictureBox12.TabStop = false;
-            this.pictureBox12.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
-            this.pictureBox12.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox12.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox11
@@ -165,8 +163,6 @@
             this.pictureBox11.Size = new System.Drawing.Size(100, 100);
             this.pictureBox11.TabIndex = 65;
             this.pictureBox11.TabStop = false;
-            this.pictureBox11.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
-            this.pictureBox11.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox11.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox10
@@ -178,8 +174,6 @@
             this.pictureBox10.Size = new System.Drawing.Size(100, 100);
             this.pictureBox10.TabIndex = 64;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
-            this.pictureBox10.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox10.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox9
@@ -191,8 +185,6 @@
             this.pictureBox9.Size = new System.Drawing.Size(100, 100);
             this.pictureBox9.TabIndex = 63;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
-            this.pictureBox9.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox9.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox8
@@ -204,8 +196,6 @@
             this.pictureBox8.Size = new System.Drawing.Size(100, 100);
             this.pictureBox8.TabIndex = 62;
             this.pictureBox8.TabStop = false;
-            this.pictureBox8.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
-            this.pictureBox8.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox8.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox7
@@ -217,8 +207,6 @@
             this.pictureBox7.Size = new System.Drawing.Size(100, 100);
             this.pictureBox7.TabIndex = 61;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
-            this.pictureBox7.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox7.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox1
@@ -227,57 +215,57 @@
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 53;
+            this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(224, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(227, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 54;
+            this.pictureBox3.TabIndex = 71;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(436, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(439, 12);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox5.TabIndex = 55;
+            this.pictureBox5.TabIndex = 72;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(118, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(121, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox2.TabIndex = 56;
+            this.pictureBox2.TabIndex = 73;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Location = new System.Drawing.Point(330, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(333, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox4.TabIndex = 57;
+            this.pictureBox4.TabIndex = 74;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Location = new System.Drawing.Point(542, 12);
+            this.pictureBox6.Location = new System.Drawing.Point(545, 12);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox6.TabIndex = 58;
+            this.pictureBox6.TabIndex = 75;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
@@ -290,6 +278,12 @@
             this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(725, 436);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
@@ -297,12 +291,6 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
@@ -316,8 +304,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RijExamen";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DnD_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DnD_FormClosed);
-            this.Load += new System.EventHandler(this.DnD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -339,11 +325,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox12;
@@ -355,7 +336,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox6;
 
     }
 }

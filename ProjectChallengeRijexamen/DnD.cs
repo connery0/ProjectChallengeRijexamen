@@ -30,10 +30,11 @@ namespace ProjectChallengeRijexamen
             setVerkeersborden();
             randomVerkeersborden();
             invullen();
-            
-            
-            foreach( Control control in this.Controls){
-                
+
+
+            foreach (Control control in this.Controls)
+            {
+
                 if (control is PictureBox)
                 {
                     PictureBox picture = (PictureBox)control;
@@ -53,19 +54,52 @@ namespace ProjectChallengeRijexamen
             pic1.Location = new Point(Cursor.Position.X - this.Location.X - 60, Cursor.Position.Y - this.Location.Y - 80);
         }
 
-        private void pictureBox7_DragEnter(object sender, DragEventArgs e)
-        {
-            e.Effect = DragDropEffects.Copy;
-        }
-
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
-            pic1 = (PictureBox)sender;
-            timer1.Start();
-            DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
-            timer1.Stop();
+                pic1 = (PictureBox)sender;
+                timer1.Start();
+                DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
+                timer1.Stop();
+                int picX = pic1.Location.X+50;
+                int picY = pic1.Location.Y+50;
+                if (picX >= 12 && picX <= 112 && picY >= 118 && picY <= 218)
+                {
+                    controle();
+                    pictureBox7.Image = pic1.Image;
+                    pictureBox7.Tag = pic1.Tag;
+                }
+                else if (picX >= 12 && picX <= 112 && picY >= 224 && picY <= 324){
+                    controle();
+                    pictureBox8.Image = pic1.Image;
+                    pictureBox8.Tag = pic1.Tag;
+                }
+                else if (picX >= 12 && picX <= 112 && picY >= 330 && picY <= 430)
+                {
+                    controle();
+                    pictureBox9.Image = pic1.Image;
+                    pictureBox9.Tag = pic1.Tag;
+                }
+                else if (picX >= 330 && picX <= 430 && picY >= 118 && picY <= 218)
+                {
+                    controle();
+                    pictureBox10.Image = pic1.Image;
+                    pictureBox10.Tag = pic1.Tag;
+                }
+                else if (picX >= 330 && picX <= 430 && picY >= 224 && picY <= 324)
+                {
+                    controle();
+                    pictureBox11.Image = pic1.Image;
+                    pictureBox11.Tag = pic1.Tag;
+                }
+                else if (picX >= 330 && picX <= 430 && picY >= 330 && picY <= 430)
+                {
+                    controle();
+                    pictureBox12.Image = pic1.Image;
+                    pictureBox12.Tag = pic1.Tag;
+                }
+
                 switch (pic1.Name)
                 {
                     case "pictureBox1":
@@ -89,17 +123,6 @@ namespace ProjectChallengeRijexamen
                 }
             }
         }
-
-       
-        private void pictureBox7_DragDrop(object sender, DragEventArgs e)
-        {
-            pic2 = (PictureBox)sender;
-            controle();
-            pic2.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
-            pic2.Tag = pic1.Tag;
-            timer1.Stop();
-        }
-
       
         private void setVerkeersborden()
         {
@@ -399,11 +422,6 @@ namespace ProjectChallengeRijexamen
             
         }
 
-        private void DnD_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void DnD_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!sluiten) { 
@@ -425,14 +443,7 @@ namespace ProjectChallengeRijexamen
                 Parentform.Location = this.Location;
                 Parentform.Show();
             }
-               
-            
-        }
-
-        private void DnD_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            
-        }
-       
+                  
+        }       
     }
 }
