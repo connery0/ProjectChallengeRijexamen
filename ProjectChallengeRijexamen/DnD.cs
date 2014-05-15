@@ -62,9 +62,15 @@ namespace ProjectChallengeRijexamen
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
                 pic1 = (PictureBox)sender;
-                timer1.Start();
+                //timer1.Start();
+                if (pic1.Name == "pictureBox1")
+                {
+                    Cursor.Current = new Cursor(gevraagdeVerkeersborden[1].getDoelVerkeersbord());
+                }
+                
                 DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
-                timer1.Stop();
+                
+                //timer1.Stop();
              
                 switch (pic1.Name)
                 {
