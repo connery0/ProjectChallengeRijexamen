@@ -136,11 +136,16 @@
             // 
             // button1
             // 
+<<<<<<< HEAD
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(330, 449);
+=======
+            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
+            this.button1.Location = new System.Drawing.Point(12, 436);
+>>>>>>> 73bbea742cfab1df8f6580795936797295419eb4
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 45);
             this.button1.TabIndex = 69;
@@ -157,6 +162,8 @@
             this.pictureBox12.Size = new System.Drawing.Size(100, 100);
             this.pictureBox12.TabIndex = 66;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
+            this.pictureBox12.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox12.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox11
@@ -168,6 +175,8 @@
             this.pictureBox11.Size = new System.Drawing.Size(100, 100);
             this.pictureBox11.TabIndex = 65;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
+            this.pictureBox11.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox11.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox10
@@ -179,6 +188,8 @@
             this.pictureBox10.Size = new System.Drawing.Size(100, 100);
             this.pictureBox10.TabIndex = 64;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
+            this.pictureBox10.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox10.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox9
@@ -190,6 +201,8 @@
             this.pictureBox9.Size = new System.Drawing.Size(100, 100);
             this.pictureBox9.TabIndex = 63;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
+            this.pictureBox9.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox9.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox8
@@ -201,6 +214,8 @@
             this.pictureBox8.Size = new System.Drawing.Size(100, 100);
             this.pictureBox8.TabIndex = 62;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
+            this.pictureBox8.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox8.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox7
@@ -212,6 +227,8 @@
             this.pictureBox7.Size = new System.Drawing.Size(100, 100);
             this.pictureBox7.TabIndex = 61;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragDrop);
+            this.pictureBox7.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox7_DragEnter);
             this.pictureBox7.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
             // 
             // pictureBox1
@@ -276,11 +293,16 @@
             // 
             // button2
             // 
+<<<<<<< HEAD
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Location = new System.Drawing.Point(12, 449);
+=======
+            this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
+            this.button2.Location = new System.Drawing.Point(330, 436);
+>>>>>>> 73bbea742cfab1df8f6580795936797295419eb4
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 45);
             this.button2.TabIndex = 69;
@@ -296,7 +318,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(662, 506);
+            this.ClientSize = new System.Drawing.Size(660, 489);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox2);
@@ -324,6 +346,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verkeersborden";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DnD_FormClosing);
+            this.BackColorChanged += new System.EventHandler(this.ds);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();

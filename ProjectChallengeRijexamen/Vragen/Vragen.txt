@@ -2,15 +2,15 @@
 De reactietijd is de tijd die verloopt tussen:
 1.png
 Het zien van het gevaar en het indrukken van het rempedaal.
-Het zien van het gevaar en de plaats van stilstand.
 Het indrukken van het rempedaal en de plaats van stilstand.
+Het zien van het gevaar en de plaats van stilstand.
 Feedback: De reactietijd is de tijd die verloopt tussen het zien van het gevaar en het indrukken van het rempedaal. Deze bedraagt ongeveer 1 seconde.
 -------------
 Op deze weg bedraagt de maximumsnelheid 90 km/u
 2.png
 voor alle voertuigen, behalve voor autobussen, autocars en voertuigen met een MTM van meer dan 7.5 ton.
-voor autobussen en autocars.
 voor alle voertuigen.
+voor autobussen en autocars.
 Feedback: Op een gewone weg, buiten de bebouwde kom, bedraagt de maximale toegelaten snelheid 75 km/u voor autobussen en autocars en 60km/u voor voertuigen met een MTM van meer dan 7.5 ton.
 -------------
 Ik bestuur een jeep met een caravan, de MTM van de sleep is 3800 kg. Hoe snel mag ik rijden op een autosnelweg?
@@ -100,15 +100,15 @@ Feedback: Verkeersbord B5: stoppen en voorrang verlenen.
 Autosnelweg. De auto die de autosnelweg wil oprijden:
 15.png
 mag ik voorrang verlenen.
-moet ik voorrang verlenen, omdat hij van rechts komt.
 mag ik geen voorrang verlenen, omdat ik op de autosnelweg rijd.
+moet ik voorrang verlenen, omdat hij van rechts komt.
 Feedback: Een bestuurder die van rijstrook verandert, voert een manoeuvre uit en heeft bijgevolg geen voorrang.
 -------------
 Geldt de regel 'rechts heeft voorrang' ook voor de bestuurder die uit een priv�garage komt gereden?
 16.png
 Neen.
-Ja.
 Ja, op voorwaarde dat hij niet is gestopt.
+Ja.
 Feedback: De voorrangsregels gelden op de kruispunten van een openbare weg. Wie uit een privaat eigendom komt, voert een manoeuvre uit en heeft bijgevolg geen voorrang.
 -------------
 De rode auto is gestopt. Wie moet voorrang verlenen?
@@ -142,8 +142,8 @@ Feedback: Verkeersbord B9: voorrangsweg. Dit verkeersbord wordt telkens voorbij 
 De tram komt van links.
 21.png
 Ik moet voorrang verlenen.
-Ik heb voorrang.
 Ik heb voorrang op de tram, maar moet de voetganger voorrang verlenen.
+Ik heb voorrang.
 Feedback: Elke weggebruiker moet voorrang verlenen aan een spoorvoertuig, ook als deze van links komt.
 -------------
 Ik wil verderop rechts parkeren. Ik heb voorrang op de fietser.
@@ -198,8 +198,8 @@ Feedback: Je moet geen voorrang verlenen. Dat zou wel moeten als de voetganger a
 De leerling-bestuurder met een lesauto van een rijschool mag:
 29.png
 rijden op een autosnelweg
-rijden op een autosnelweg met een maximumsnelheid van 90 km/u.
 niet rijden op een autosnelweg.
+rijden op een autosnelweg met een maximumsnelheid van 90 km/u.
 Feedback: Een leerling-bestuurder mag op de autosnelweg rijden. 
 -------------
 Op een autoweg is het verboden te rijden met:
@@ -289,8 +289,8 @@ Feedback: Het grootlicht moet worden gedoofd en de dimlichten ontstoken, als je 
 De ondeelbare lading mag achter de personenauto niet verder uitsteken dan:
 42.png
 3 meter.
-1 meter.
 0,50 meter.
+1 meter.
 Feedback: De ondeelbare lading van een personenauto mag achteraan niet verder dan 3 meter buiten het voertuig uitsteken, een deelbare lading mag slechts 1 meter uitsteken.
 -------------
 Moet ik de standlichten ontsteken als ik 's avonds mijn voertuig parkeer op een gelijkgrondse berm?
@@ -303,8 +303,8 @@ Feedback: Tijdens stilstaan of parkeren op de openbare weg moeten ten minste de 
 De lading maakt de lichten van mijn wagen onzichtbaar.
 44.png
 Dat is nooit toegelaten.
-Dat is 's nachts toegelaten als het de lichten langs de rechterkant betreft.
 Dat is overdag toegelaten.
+Dat is 's nachts toegelaten als het de lichten langs de rechterkant betreft.
 Feedback: De lading mag de lichten, de reflectoren en de kentekenplaat niet onzichtbaar maken.
 -------------
 De maximumbreedte van een beladen personenauto bedraagt:
@@ -401,8 +401,8 @@ Feedback: De bandenspanning voor normaal gebruik moet meestal met 0,3 bar worden
 Tijdens het afrijden van een gevaarlijke daling
 58.png
 rem ik via de motor af.
-zet ik de versnellingspook in neutraal.
 rem ik altijd met het rempedaal.
+zet ik de versnellingspook in neutraal.
 Feedback: Het afrijden van een gevaarlijke daling doe je door naar een lagere versnelling te schakelen (en zo af te remmen via de motor).
 -------------
 Ik trap tijdens het remmen op mijn rempedaal en voel dat het te gemakkelijk kan worden ingedrukt. Wat is de oorzaak hiervan?
@@ -457,8 +457,8 @@ Feedback: Zomerdiesel kan in de winter beginnen vlokken (dit zijn paraffinekrist
 Ik rem en mijn voertuig wijkt naar links of rechts uit. Dat is te wijten aan:
 62.png
 de reminrichting.
-de slechte kwaliteiten van de banden.
 de stuurinrichting.
+de slechte kwaliteiten van de banden.
 Feedback: Als de auto tijdens het remmen uitwijkt naar links of recht kan dat te wijten zijn aan de reminrichting.
 -------------
 Bij het instappen ga ik:
@@ -471,8 +471,8 @@ Feedback: Bij het instappen ga je liefst langs de voorkant van de auto naar het 
 Fietsen plaats je best:
 42.png
 op de fietsendrager achteraan.
-recht op het dak.
 plat op het dak.
+recht op het dak.
 Feedback: Skiboxen, bagagedragers en fietsendragers veroorzaken een hoger brandstofverbruik. Fietsen plaatsen op een fietsendrager achteraan is dus beter dan ze op het dak te plaatsen.
 -------------
 Welke diesel is het vriendelijkst voor het milieu?

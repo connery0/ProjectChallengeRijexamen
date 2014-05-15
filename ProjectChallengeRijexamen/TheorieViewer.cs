@@ -14,12 +14,12 @@ namespace WindowsFormsApplication1
 {
     public partial class TheorieViewer : Form
     {
-        public Form1 ParentForm;
+        private Form1 parentForm;
 
-        public TheorieViewer(Form1 ParentForm)
+        public TheorieViewer(Form1 parentForm)
         {
             InitializeComponent();
-            this.ParentForm = ParentForm;
+            this.parentForm = parentForm;
             
         }         
 
@@ -65,8 +65,8 @@ namespace WindowsFormsApplication1
         private void TheorieViewer_FormClosed(object sender, FormClosedEventArgs e)
         {
 
-            ParentForm.Location = this.Location;
-            ParentForm.Show();
+            parentForm.Location = this.Location;
+            parentForm.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

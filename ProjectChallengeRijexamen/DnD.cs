@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+
 namespace ProjectChallengeRijexamen
 {
     public partial class DnD : Form
@@ -61,47 +62,16 @@ namespace ProjectChallengeRijexamen
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
                 pic1 = (PictureBox)sender;
-                timer1.Start();
+                //timer1.Start();
+                if (pic1.Name == "pictureBox1")
+                {
+                    Cursor.Current = new Cursor(gevraagdeVerkeersborden[1].getDoelVerkeersbord());
+                }
+                
                 DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
-                timer1.Stop();
-                int picX = pic1.Location.X+50;
-                int picY = pic1.Location.Y+50;
-                if (picX >= 12 && picX <= 112 && picY >= 118 && picY <= 218)
-                {
-                    controle();
-                    pictureBox7.Image = pic1.Image;
-                    pictureBox7.Tag = pic1.Tag;
-                }
-                else if (picX >= 12 && picX <= 112 && picY >= 224 && picY <= 324){
-                    controle();
-                    pictureBox8.Image = pic1.Image;
-                    pictureBox8.Tag = pic1.Tag;
-                }
-                else if (picX >= 12 && picX <= 112 && picY >= 330 && picY <= 430)
-                {
-                    controle();
-                    pictureBox9.Image = pic1.Image;
-                    pictureBox9.Tag = pic1.Tag;
-                }
-                else if (picX >= 330 && picX <= 430 && picY >= 118 && picY <= 218)
-                {
-                    controle();
-                    pictureBox10.Image = pic1.Image;
-                    pictureBox10.Tag = pic1.Tag;
-                }
-                else if (picX >= 330 && picX <= 430 && picY >= 224 && picY <= 324)
-                {
-                    controle();
-                    pictureBox11.Image = pic1.Image;
-                    pictureBox11.Tag = pic1.Tag;
-                }
-                else if (picX >= 330 && picX <= 430 && picY >= 330 && picY <= 430)
-                {
-                    controle();
-                    pictureBox12.Image = pic1.Image;
-                    pictureBox12.Tag = pic1.Tag;
-                }
-
+                
+                //timer1.Stop();
+             
                 switch (pic1.Name)
                 {
                     case "pictureBox1":
@@ -171,6 +141,7 @@ namespace ProjectChallengeRijexamen
         {
             pic2 = (PictureBox)sender;
             pic2.Image = null;
+            pic2.Tag = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -452,13 +423,27 @@ namespace ProjectChallengeRijexamen
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }       
-
-
-
-               
-            
         }
+
+        private void pictureBox7_DragDrop(object sender, DragEventArgs e)
+        {
+            pic2 = (PictureBox)sender;
+            controle();
+            pic2.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
+            pic2.Tag = pic1.Tag;
+            timer1.Stop();
+        }
+
+        private void pictureBox7_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void ds(object sender, EventArgs e)
+        {
+
+        }       
+    }
 
         
        
