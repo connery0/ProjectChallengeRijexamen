@@ -115,12 +115,15 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(627, 418);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Location = new System.Drawing.Point(627, 425);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 42);
+            this.button1.Size = new System.Drawing.Size(95, 29);
             this.button1.TabIndex = 8;
             this.button1.Text = "Antwoord";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // timer1
@@ -188,6 +191,7 @@
             this.Name = "MC_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proefexamen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MC_Form_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MC_Form_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.MC_picture)).EndInit();
             this.ResumeLayout(false);

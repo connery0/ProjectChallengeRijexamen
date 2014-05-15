@@ -242,9 +242,30 @@ namespace ProjectChallengeRijexamen
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+      //  private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+       //////  }
+
+        private void MC_Form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            if (!closing)
+            {
+                DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (test == DialogResult.Yes)
+                {
+                  
+                    parentForm.Location = this.Location;
+                    parentForm.Show();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                parentForm.Location = this.Location;
+                parentForm.Show();
+            }    
         }
     }
 }

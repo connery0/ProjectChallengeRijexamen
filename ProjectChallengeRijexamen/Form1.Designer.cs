@@ -40,34 +40,41 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // M_knop1
             // 
-            this.M_knop1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.M_knop1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.M_knop1, "M_knop1");
+            this.M_knop1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.M_knop1.Name = "M_knop1";
-            this.M_knop1.UseVisualStyleBackColor = true;
+            this.M_knop1.UseVisualStyleBackColor = false;
             this.M_knop1.Click += new System.EventHandler(this.M_knop1_Click);
             // 
             // M_knop2
             // 
+            this.M_knop2.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.M_knop2, "M_knop2");
+            this.M_knop2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.M_knop2.Name = "M_knop2";
-            this.M_knop2.UseVisualStyleBackColor = true;
+            this.M_knop2.UseVisualStyleBackColor = false;
             this.M_knop2.Click += new System.EventHandler(this.M_knop2_Click);
             // 
             // M_knop3
             // 
+            this.M_knop3.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.M_knop3, "M_knop3");
+            this.M_knop3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.M_knop3.Name = "M_knop3";
-            this.M_knop3.UseVisualStyleBackColor = true;
+            this.M_knop3.UseVisualStyleBackColor = false;
             this.M_knop3.Click += new System.EventHandler(this.M_knop3_Click);
             // 
             // M_knop4
             // 
-            this.M_knop4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.M_knop4.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.M_knop4, "M_knop4");
+            this.M_knop4.ForeColor = System.Drawing.Color.White;
             this.M_knop4.Name = "M_knop4";
             this.M_knop4.UseVisualStyleBackColor = false;
             this.M_knop4.Click += new System.EventHandler(this.M_knop4_Click);
@@ -109,10 +116,11 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
@@ -122,11 +130,20 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Name = "label6";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightSteelBlue;
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
@@ -160,6 +177,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button3;
 
 
     }

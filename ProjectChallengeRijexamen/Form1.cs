@@ -96,5 +96,15 @@ namespace ProjectChallengeRijexamen
             multipleChoice.Location = this.Location;
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        
+
+        
+        
     }
 }

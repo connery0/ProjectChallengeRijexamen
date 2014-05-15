@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="M_knop1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="M_knop1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="M_knop1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -136,7 +139,7 @@
     <value>10</value>
   </data>
   <data name="M_knop1.Text" xml:space="preserve">
-    <value>Oefen Theorie</value>
+    <value>Start Oefenvragen</value>
   </data>
   <data name="&gt;&gt;M_knop1.Name" xml:space="preserve">
     <value>M_knop1</value>
@@ -148,7 +151,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;M_knop1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
+  </data>
+  <data name="M_knop2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
   </data>
   <data name="M_knop2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
@@ -157,7 +163,7 @@
     <value>NoControl</value>
   </data>
   <data name="M_knop2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 252</value>
+    <value>551, 250</value>
   </data>
   <data name="M_knop2.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 25</value>
@@ -178,19 +184,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;M_knop2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
+  </data>
+  <data name="M_knop3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
   </data>
   <data name="M_knop3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
   </data>
   <data name="M_knop3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 362</value>
+    <value>551, 377</value>
   </data>
   <data name="M_knop3.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 27</value>
   </data>
   <data name="M_knop3.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="M_knop3.Text" xml:space="preserve">
     <value>Start Memory</value>
@@ -205,10 +214,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;M_knop3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="M_knop4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
+    <value>Popup</value>
   </data>
   <data name="M_knop4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
@@ -217,7 +226,7 @@
     <value>NoControl</value>
   </data>
   <data name="M_knop4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>552, 219</value>
+    <value>552, 212</value>
   </data>
   <data name="M_knop4.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 25</value>
@@ -238,7 +247,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;M_knop4.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 11pt</value>
@@ -274,7 +283,7 @@ Je kan hier de theorie van je  rijexamen inoefenen, enkel de verkeersborden inoe
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -304,7 +313,7 @@ Je kan hier de theorie van je  rijexamen inoefenen, enkel de verkeersborden inoe
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -334,7 +343,7 @@ Je kan hier de theorie van je  rijexamen inoefenen, enkel de verkeersborden inoe
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -343,7 +352,7 @@ Je kan hier de theorie van je  rijexamen inoefenen, enkel de verkeersborden inoe
     <value>Lucida Sans Unicode, 11pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 319</value>
+    <value>30, 333</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>421, 36</value>
@@ -365,7 +374,7 @@ hier het proefexamen starten:</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -374,7 +383,7 @@ hier het proefexamen starten:</value>
     <value>Lucida Sans Unicode, 11pt</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 362</value>
+    <value>31, 377</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>395, 36</value>
@@ -396,7 +405,10 @@ spelletje Memory spelen:</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
@@ -405,13 +417,13 @@ spelletje Memory spelen:</value>
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 321</value>
+    <value>551, 333</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 27</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>11</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Start Proefexamen</value>
@@ -426,7 +438,7 @@ spelletje Memory spelen:</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -438,16 +450,17 @@ spelletje Memory spelen:</value>
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 289</value>
+    <value>30, 279</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>439, 18</value>
+    <value>354, 36</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Als je de theorie vragen wilt oefenen kan je hier beginnen</value>
+    <value>Als je de theorievragen wilt oefenen door 
+oefenvragen in te vullen, kan je hier beginnen:</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -459,6 +472,33 @@ spelletje Memory spelen:</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 438</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 23</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Afmelden</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -471,7 +511,7 @@ spelletje Memory spelen:</value>
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>734, 416</value>
+    <value>745, 496</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
