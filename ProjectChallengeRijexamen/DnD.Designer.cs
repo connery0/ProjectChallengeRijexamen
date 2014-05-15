@@ -136,16 +136,16 @@
             // 
             // button1
             // 
-<<<<<<< HEAD
+
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(330, 449);
-=======
+
             this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
             this.button1.Location = new System.Drawing.Point(12, 436);
->>>>>>> 73bbea742cfab1df8f6580795936797295419eb4
+
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 45);
             this.button1.TabIndex = 69;
@@ -293,16 +293,16 @@
             // 
             // button2
             // 
-<<<<<<< HEAD
+
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Location = new System.Drawing.Point(12, 449);
-=======
+
             this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
             this.button2.Location = new System.Drawing.Point(330, 436);
->>>>>>> 73bbea742cfab1df8f6580795936797295419eb4
+
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 45);
             this.button2.TabIndex = 69;
