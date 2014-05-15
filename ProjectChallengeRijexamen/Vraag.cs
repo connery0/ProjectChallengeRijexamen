@@ -15,7 +15,7 @@ namespace ProjectChallengeRijexamen
         private String uitleg;
         private int juistAntwoord;
         private Boolean beantwoord = false, juistBeantwoord = false;
-
+        private Boolean overgeslagen = false;
 
         public String PrintVraag()
         {
@@ -38,6 +38,8 @@ namespace ProjectChallengeRijexamen
             return toPrint;
         }
 
+
+
         public Boolean ControleerVraag(int Antwoord)
         {
             if (beantwoord == false)
@@ -47,13 +49,22 @@ namespace ProjectChallengeRijexamen
                 {
                     juistBeantwoord = true;
                 }
-                else { 
-                    juistBeantwoord = false; 
+                else
+                {
+                    juistBeantwoord = false;
                 }
             }
             return juistBeantwoord;
         }
 
+        public Boolean Overgeslagen
+        {
+            get { return overgeslagen; }
+            set
+            {
+                beantwoord = true; 
+                overgeslagen = value; }
+        }
 
 
         public Boolean IsBeantwoord
@@ -73,8 +84,9 @@ namespace ProjectChallengeRijexamen
 
         public String Uitleg
         {
-            get { 
-                return uitleg; 
+            get
+            {
+                return uitleg;
             }
         }
 
@@ -121,7 +133,7 @@ namespace ProjectChallengeRijexamen
 
         public Vraag(String vraag, String afbeelding, String antwoord1, String antwoord2, String antwoord3, String uitleg, Random R)
         {
-            this.vraag = vraag; 
+            this.vraag = vraag;
             this.afbeelding = new Foto(afbeelding);
             this.uitleg = uitleg;
 

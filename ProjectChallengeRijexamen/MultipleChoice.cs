@@ -27,8 +27,15 @@ namespace ProjectChallengeRijexamen
         public MultipleChoice(MC_Form parentForm)
         {
             examen = true;
+            naam = "..\\Vragen";
             this.parentForm = parentForm;
             setVragen(naam);
+            for (int i = vragen.Length; i > 50; i--)
+            {
+                VolgendeVraag();
+                huidigeVraag.Overgeslagen = true;
+                if (gevraagd == 0) { }         
+            }
             VolgendeVraag();
         }
 
@@ -185,7 +192,14 @@ namespace ProjectChallengeRijexamen
         {
             get
             {
-                return vragen.Length;
+                if (examen)
+                {
+                    return 50;
+                }
+                else
+                {
+                    return vragen.Length;
+                }
             }
         }
 

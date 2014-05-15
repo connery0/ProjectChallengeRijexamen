@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////AbRhUv+0YVL/tGFS/7RhUv+0YVL/tGFS/7RhUv+0YVL/tGFS/7RhUv+0YVL/////Af//
+        /wH///8B////Af///wG0YVL//Pz8//z8/P/8/Pz//Pz8//z8/P/8/Pz//Pz8//z8/P/8/Pz/tGFS////
+        /wH///8B////Af///wH///8BtGFS//z8/P+0YVL/tGFS/7RhUv+0YVL/tGFS/7RhUv+0YVL//Pz8/7Rh
+        Uv////8B////Af///wH///8B////AbRhUv/8/Pz/tGFS/7RhUv+0YVL//Pz8/7RhUv+0YVL/tGFS//z8
+        /P+0YVL/////Af///wH///8B////Af///wG0YVL//Pz8/7RhUv+0YVL/tGFS/7RhUv+0YVL/tGFS/7Rh
+        Uv/8/Pz/tGFS/////wH///8B////Af///wH///8BtGFS//z8/P+0YVL/tGFS/7RhUv/8/Pz/tGFS/7Rh
+        Uv+0YVL//Pz8/7RhUv////8B////Af///wH///8B////AbRhUv/8/Pz/tGFS/7RhUv+0YVL//Pz8/7Rh
+        Uv+0YVL/tGFS//z8/P+0YVL/////Af///wH///8B////Af///wG0YVL//Pz8/7RhUv+0YVL/tGFS//z8
+        /P+0YVL/tGFS/7RhUv/8/Pz/tGFS/////wH///8B////Af///wH///8BtGFS//z8/P+0YVL/tGFS/7Rh
+        Uv+0YVL//Pz8/7RhUv+0YVL//Pz8/7RhUv////8B////Af///wH///8B////AbRhUv/8/Pz/tGFS//z8
+        /P+0YVL/tGFS/7RhUv/8/Pz/tGFS//z8/P+0YVL/////Af///wH///8B////Af///wG0YVL//Pz8/7Rh
+        Uv/8/Pz/tGFS/7RhUv+0YVL//Pz8/7RhUv/8/Pz/tGFS/////wH///8B////Af///wH///8BtGFS//z8
+        /P+0YVL/tGFS//z8/P/8/Pz//Pz8/7RhUv+0YVL//Pz8/7RhUv////8B////Af///wH///8B////AbRh
+        Uv/8/Pz/tGFS/7RhUv+0YVL/tGFS/7RhUv+0YVL/tGFS//z8/P+0YVL/////Af///wH///8B////Af//
+        /wG0YVL//Pz8/7RhUv+0YVL/tGFS/7RhUv+0YVL/tGFS/7RhUv/8/Pz/tGFS/////wH///8B////Af//
+        /wH///8BtGFS//z8/P/8/Pz//Pz8//z8/P/8/Pz//Pz8//z8/P/8/Pz//Pz8/7RhUv////8B////Af//
+        /wH///8B////AbRhUv+0YVL/tGFS/7RhUv+0YVL/tGFS/7RhUv+0YVL/tGFS/7RhUv+0YVL/////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
 </root>
