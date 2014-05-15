@@ -447,6 +447,11 @@ namespace ProjectChallengeRijexamen
                 Parentform.Location = this.Location;
                 Parentform.Show();
             }    
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }       
 
 

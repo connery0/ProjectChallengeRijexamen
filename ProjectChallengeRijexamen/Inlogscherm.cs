@@ -80,8 +80,8 @@ namespace ProjectChallengeRijexamen
 
         private void Aanmelden()
         {
-            string naam = TextboxNaam.Text;
-            string achternaam = TextboxAchternaam.Text;
+            string naam = TextboxNaam.Text.Trim();
+            string achternaam = TextboxAchternaam.Text.Trim();
 
             if (naam != "" && achternaam != "")
             {

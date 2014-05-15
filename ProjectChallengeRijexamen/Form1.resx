@@ -129,7 +129,7 @@
     <value>551, 286</value>
   </data>
   <data name="M_knop1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 27</value>
+    <value>159, 29</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="M_knop1.TabIndex" type="System.Int32, mscorlib">
@@ -217,7 +217,7 @@
     <value>NoControl</value>
   </data>
   <data name="M_knop4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 206</value>
+    <value>552, 219</value>
   </data>
   <data name="M_knop4.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 25</value>
@@ -257,7 +257,7 @@
 
 In dit programma proberen we je zo goed mogelijk voor te bereiden voor je theoretisch rijexamen.
 
-Dit doen we dankzij enkele mogelijkheden die we voor jou hebben voorbereidt.
+Dit doen we dankzij enkele mogelijkheden die we voor jou hebben voorbereid.
 
 Je kan hier de theorie van je  rijexamen inoefenen, enkel de verkeersborden inoefenen en zelfs een proefexamen doorlopen. 
 
@@ -280,19 +280,19 @@ Je kan hier de theorie van je  rijexamen inoefenen, enkel de verkeersborden inoe
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 12pt</value>
+    <value>Lucida Sans Unicode, 11pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 206</value>
+    <value>31, 219</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 20</value>
+    <value>505, 18</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Als je de theorie wilt inoefenen kan je hier terecht:</value>
+    <value>Als je de theorie wilt instuderen of wil bekijken kan je hier terecht:</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>

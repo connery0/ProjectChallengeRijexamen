@@ -69,6 +69,20 @@ namespace WindowsFormsApplication1
             ParentForm.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void theorie_MouseEnter(object sender, EventArgs e)
+        {
+            panel1.Focus();
+        }
+
+       
+
+      
+
             
     }
 }   

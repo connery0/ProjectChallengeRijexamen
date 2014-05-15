@@ -49,6 +49,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -136,9 +137,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
-            this.button1.Location = new System.Drawing.Point(648, 29);
+            this.button1.Location = new System.Drawing.Point(12, 449);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 68);
+            this.button1.Size = new System.Drawing.Size(100, 45);
             this.button1.TabIndex = 69;
             this.button1.Text = "Controle";
             this.button1.UseVisualStyleBackColor = true;
@@ -270,6 +271,17 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F);
+            this.button2.Location = new System.Drawing.Point(330, 449);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 45);
+            this.button2.TabIndex = 69;
+            this.button2.Text = "Terug";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // DnD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,13 +290,14 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(725, 436);
+            this.ClientSize = new System.Drawing.Size(662, 506);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
@@ -343,6 +356,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button2;
 
     }
 }
