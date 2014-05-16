@@ -135,7 +135,7 @@ namespace ProjectChallengeRijexamen
                 else
                 {
 
-                    if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
+                    if (!laatsteKeuze.Equals(picture) && !((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
                     {
 
 
@@ -146,9 +146,8 @@ namespace ProjectChallengeRijexamen
 
                         if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
                         {
-                            MessageBox.Show("Fout");
+                            
                             laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
-
                             picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
                         }
                         else
