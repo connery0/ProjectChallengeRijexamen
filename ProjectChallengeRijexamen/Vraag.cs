@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectChallengeRijexamen
 {
-    class Vraag
+    class Vraag : IBeantwoord
     {
 
         private String vraag;
@@ -66,27 +66,11 @@ namespace ProjectChallengeRijexamen
                 overgeslagen = value; }
         }
 
-
-        public Boolean IsBeantwoord
-        {
-            get
-            {
-                return beantwoord;
-            }
-        }
         public Boolean VraagJuist
         {
             get
             {
                 return juistBeantwoord;
-            }
-        }
-
-        public String Uitleg
-        {
-            get
-            {
-                return uitleg;
             }
         }
 
@@ -179,5 +163,25 @@ namespace ProjectChallengeRijexamen
 
         }
 
+
+        public bool Beantwoord
+        {
+            get
+            {
+                return beantwoord;
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public String Uitleg
+        {
+            get
+            {
+                return uitleg;
+            }
+        }
     }
 }

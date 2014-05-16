@@ -86,6 +86,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Foto.cs" />
+    <Compile Include="IBeantwoord.cs" />
     <Compile Include="Inlogscherm.cs">
       <SubType>Form</SubType>
     </Compile>

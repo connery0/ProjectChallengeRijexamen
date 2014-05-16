@@ -220,7 +220,7 @@ namespace ProjectChallengeRijexamen
 
                 for (int i = 0; i < gevraagdeVerkeersborden.Length; i++)
                 {
-                    gevraagdeVerkeersborden[i].GetSetBeantwoord = true;
+                    gevraagdeVerkeersborden[i].Beantwoord = true;
                 }
                 aantalVerkeersborden += 6;
                 button1.Text = "Volgende";
@@ -231,7 +231,7 @@ namespace ProjectChallengeRijexamen
                 Boolean nogVerkeersborden = false;
                 for (int i = 0; i < alleVerkeersborden.Length; i++)
                 {
-                    if (alleVerkeersborden[i].GetSetBeantwoord == false)
+                    if (alleVerkeersborden[i].Beantwoord == false)
                     {
                         nogVerkeersborden = true;
                     }
@@ -289,7 +289,7 @@ namespace ProjectChallengeRijexamen
                 if (teller < 12)
                 {
                     int i = randomGetal.Next(0, alleVerkeersborden.Length);
-                    if (alleVerkeersborden[i].GetSetBeantwoord == false)
+                    if (alleVerkeersborden[i].Beantwoord == false)
                     {
                         
                         for (int j = 1; j <= tellerAantal; j++)
@@ -318,7 +318,7 @@ namespace ProjectChallengeRijexamen
                         {
                             break;
                         }
-                        if (alleVerkeersborden[j].GetSetBeantwoord == false)
+                        if (alleVerkeersborden[j].Beantwoord == false)
                         {
                             for (int k = 1; k <= tellerAantal; k++)
                             {
@@ -359,7 +359,7 @@ namespace ProjectChallengeRijexamen
                     {
                       
                         picture.Image = Image.FromFile(gevraagdeVerkeersborden[randomFoto].GetDoel());
-                        picture.Tag = gevraagdeVerkeersborden[randomFoto].DeUitleg;
+                        picture.Tag = gevraagdeVerkeersborden[randomFoto].Uitleg;
 
                         if (randomFoto == 5)
                         {
@@ -377,7 +377,7 @@ namespace ProjectChallengeRijexamen
                 {
                     Label uitleg = (Label)control;
            
-                    uitleg.Text = gevraagdeVerkeersborden[randomUitleg].DeUitleg;
+                    uitleg.Text = gevraagdeVerkeersborden[randomUitleg].Uitleg;
                     if (randomUitleg == 5)
                     {
                         randomUitleg = 0;

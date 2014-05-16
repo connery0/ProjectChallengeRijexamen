@@ -120,9 +120,9 @@ namespace ProjectChallengeRijexamen
         {
 
             PictureBox picture = (PictureBox)sender;
-            
-            
-            
+
+
+
             if (picture.Tag != "Gevonden")
             {
                 picture.Load((String)picture.Tag);
@@ -135,48 +135,41 @@ namespace ProjectChallengeRijexamen
                 else
                 {
 
-<<<<<<< HEAD
-
-
-                    
-                    
-
                     if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
                     {
-                        
-                  
+
+
                         picture.Refresh();
                         System.Threading.Thread.Sleep(500);
-                        
+
                         laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
-                        
-=======
-                    if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
-                    {
-                        MessageBox.Show("Fout");
-                        laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
->>>>>>> 03950a28f4a2ab670c04db1d1001961ab10bb858
-                        picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
+
+                        if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
+                        {
+                            MessageBox.Show("Fout");
+                            laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
+
+                            picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
+                        }
+                        else
+                        {
+                            laatsteKeuze.Tag = "Gevonden";
+                            picture.Tag = "Gevonden";
+                        }
+                        laatsteKeuze = null;
                     }
-                    else
-                    {
-                        laatsteKeuze.Tag = "Gevonden";
-                        picture.Tag = "Gevonden";
-                    }
-                    laatsteKeuze = null;
                 }
             }
         }
 
-<<<<<<< HEAD
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-=======
+        }
         private void Memory_Load(object sender, EventArgs e)
         {
 
->>>>>>> 03950a28f4a2ab670c04db1d1001961ab10bb858
         }
     }
 }

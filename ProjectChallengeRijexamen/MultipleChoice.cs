@@ -60,7 +60,7 @@ namespace ProjectChallengeRijexamen
             Boolean eersteText = true;
             for (int i = 0; i < vragen.Length; i++)
             {
-                if (examen || ((!vragen[i].VraagJuist) || (!vragen[i].IsBeantwoord)))
+                if (examen || ((!vragen[i].VraagJuist) || (!vragen[i].Beantwoord)))
                 {
                     if (!eersteText)
                     {
@@ -109,7 +109,7 @@ namespace ProjectChallengeRijexamen
                 if (teller < 20)
                 {
                     int I = randomGetal2.Next(0, vragen.Length);
-                    if (vragen[I].IsBeantwoord == false)
+                    if (vragen[I].Beantwoord == false)
                     {
                         huidigeVraag = vragen[I];
                     }
@@ -118,7 +118,7 @@ namespace ProjectChallengeRijexamen
                 {
                     for (int j = 0; j < vragen.Length; j++)
                     {
-                        if (vragen[j].IsBeantwoord == false)
+                        if (vragen[j].Beantwoord == false)
                         {
                             huidigeVraag = vragen[j];
                         }
