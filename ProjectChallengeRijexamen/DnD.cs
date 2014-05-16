@@ -62,12 +62,52 @@ namespace ProjectChallengeRijexamen
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
                 pic1 = (PictureBox)sender;
-                //timer1.Start();
-                               
+
+                timer1.Start();
+                      
                 DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
+
+
                 
-                //timer1.Stop();
-             
+                timer1.Stop();
+                int picX = pic1.Location.X + 50;
+                int picY = pic1.Location.Y + 50;
+                if (picX >= 12 && picX <= 112 && picY >= 118 && picY <= 218)
+                {
+                    controle();
+                    pictureBox7.Image = pic1.Image;
+                    pictureBox7.Tag = pic1.Tag;
+                }
+                else if (picX >= 12 && picX <= 112 && picY >= 224 && picY <= 324)
+                {
+                    controle();
+                    pictureBox8.Image = pic1.Image;
+                    pictureBox8.Tag = pic1.Tag;
+                }
+                else if (picX >= 12 && picX <= 112 && picY >= 330 && picY <= 430)
+                {
+                    controle();
+                    pictureBox9.Image = pic1.Image;
+                    pictureBox9.Tag = pic1.Tag;
+                }
+                else if (picX >= 330 && picX <= 430 && picY >= 118 && picY <= 218)
+                {
+                    controle();
+                    pictureBox10.Image = pic1.Image;
+                    pictureBox10.Tag = pic1.Tag;
+                }
+                else if (picX >= 330 && picX <= 430 && picY >= 224 && picY <= 324)
+                {
+                    controle();
+                    pictureBox11.Image = pic1.Image;
+                    pictureBox11.Tag = pic1.Tag;
+                }
+                else if (picX >= 330 && picX <= 430 && picY >= 330 && picY <= 430)
+                {
+                    controle();
+                    pictureBox12.Image = pic1.Image;
+                    pictureBox12.Tag = pic1.Tag;
+                }         
                 switch (pic1.Name)
                 {
                     case "pictureBox1":
@@ -85,9 +125,7 @@ namespace ProjectChallengeRijexamen
                     case "pictureBox5":
                         pic1.Location = new Point(439, 12);
                         break;
-                    case "pictureBox6":
-                        pic1.Location = new Point(545, 12);
-                        break;
+                    
                 }
             }
         }
@@ -435,9 +473,21 @@ namespace ProjectChallengeRijexamen
             e.Effect = DragDropEffects.Copy;
         }
 
-        private void ds(object sender, EventArgs e)
+        private void pictureBox6_MouseDown(object sender, MouseEventArgs e)
         {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                pic1 = (PictureBox)sender;
 
+                timer1.Start();
+
+                DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
+
+                timer1.Stop();
+                
+                pic1.Location = new Point(545, 12);
+                        
+            }
         }       
     }
 
