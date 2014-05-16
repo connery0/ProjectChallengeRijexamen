@@ -159,7 +159,7 @@ namespace ProjectChallengeRijexamen
             {
                 parentForm.setAntwoord(vraag.getAntwoord(i).getAntwoord, i);
             }
-            parentForm.setImage(vraag.Img.getDoel());
+            parentForm.setImage(vraag.Img.GetDoel());
 
         }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectChallengeRijexamen
 {
-    class Verkeersbord :Foto
+    class Verkeersbord : Foto
     {
         private string uitleg;
         private Boolean beantwoord;
@@ -16,6 +16,7 @@ namespace ProjectChallengeRijexamen
             beantwoord = false;
             
         }
+
         public Boolean GetSetBeantwoord
         {
             get
@@ -27,12 +28,16 @@ namespace ProjectChallengeRijexamen
                 beantwoord = value;
             }         
         }
-        public string deUitleg
+        public string DeUitleg
         {
             get
             {
                 return uitleg;
             }
+        }
+        public override string GetDoel()
+        {
+            return "..\\..\\img\\Verkeersborden\\" + naam;
         }
        
         

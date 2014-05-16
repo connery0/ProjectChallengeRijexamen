@@ -358,8 +358,8 @@ namespace ProjectChallengeRijexamen
                         picture.Name == "pictureBox6")
                     {
                       
-                        picture.Image = Image.FromFile(gevraagdeVerkeersborden[randomFoto].getDoelVerkeersbord());
-                        picture.Tag = gevraagdeVerkeersborden[randomFoto].deUitleg;
+                        picture.Image = Image.FromFile(gevraagdeVerkeersborden[randomFoto].GetDoel());
+                        picture.Tag = gevraagdeVerkeersborden[randomFoto].DeUitleg;
 
                         if (randomFoto == 5)
                         {
@@ -377,7 +377,7 @@ namespace ProjectChallengeRijexamen
                 {
                     Label uitleg = (Label)control;
            
-                    uitleg.Text = gevraagdeVerkeersborden[randomUitleg].deUitleg;
+                    uitleg.Text = gevraagdeVerkeersborden[randomUitleg].DeUitleg;
                     if (randomUitleg == 5)
                     {
                         randomUitleg = 0;
