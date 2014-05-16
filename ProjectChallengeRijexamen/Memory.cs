@@ -135,6 +135,7 @@ namespace ProjectChallengeRijexamen
                 else
                 {
 
+<<<<<<< HEAD
 
 
                     
@@ -149,6 +150,12 @@ namespace ProjectChallengeRijexamen
                         
                         laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
                         
+=======
+                    if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
+                    {
+                        MessageBox.Show("Fout");
+                        laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
+>>>>>>> 03950a28f4a2ab670c04db1d1001961ab10bb858
                         picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
                     }
                     else
@@ -161,9 +168,15 @@ namespace ProjectChallengeRijexamen
             }
         }
 
+<<<<<<< HEAD
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+=======
+        private void Memory_Load(object sender, EventArgs e)
+        {
+
+>>>>>>> 03950a28f4a2ab670c04db1d1001961ab10bb858
         }
     }
 }

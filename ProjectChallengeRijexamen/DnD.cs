@@ -63,11 +63,7 @@ namespace ProjectChallengeRijexamen
             {
                 pic1 = (PictureBox)sender;
                 //timer1.Start();
-                if (pic1.Name == "pictureBox1")
-                {
-                    Cursor.Current = new Cursor(gevraagdeVerkeersborden[1].getDoelVerkeersbord());
-                }
-                
+                               
                 DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
                 
                 //timer1.Stop();
@@ -78,19 +74,19 @@ namespace ProjectChallengeRijexamen
                         pic1.Location = new Point(12, 12);
                         break;
                     case "pictureBox2":
-                        pic1.Location = new Point(118, 12);
+                        pic1.Location = new Point(121, 12);
                         break;
                     case "pictureBox3":
-                        pic1.Location = new Point(224, 12);
+                        pic1.Location = new Point(227, 12);
                         break;
                     case "pictureBox4":
-                        pic1.Location = new Point(330, 12);
+                        pic1.Location = new Point(333, 12);
                         break;
                     case "pictureBox5":
-                        pic1.Location = new Point(436, 12);
+                        pic1.Location = new Point(439, 12);
                         break;
                     case "pictureBox6":
-                        pic1.Location = new Point(542, 12);
+                        pic1.Location = new Point(545, 12);
                         break;
                 }
             }

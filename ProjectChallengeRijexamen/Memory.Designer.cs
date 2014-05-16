@@ -255,7 +255,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(13, 358);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 23);
+            this.button1.Size = new System.Drawing.Size(99, 23);
             this.button1.TabIndex = 18;
             this.button1.Text = "Terug";
             this.button1.UseVisualStyleBackColor = false;
@@ -267,7 +267,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectChallengeRijexamen.Properties.Resources.Test__750x502_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(745, 393);
+            this.ClientSize = new System.Drawing.Size(721, 393);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox17);
@@ -289,6 +289,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Memory";
             this.Text = "Memory";
+            this.Load += new System.EventHandler(this.Memory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
