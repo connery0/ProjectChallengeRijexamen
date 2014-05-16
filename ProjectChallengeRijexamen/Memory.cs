@@ -119,37 +119,41 @@ namespace ProjectChallengeRijexamen
         private void pictureBox_Click(object sender, EventArgs e)
         {
 
-            PictureBox A = (PictureBox)sender;
+            PictureBox picture = (PictureBox)sender;
             
             
             
-            if (A.Tag != "Gevonden")
+            if (picture.Tag != "Gevonden")
             {
-                A.Load((String)A.Tag);
+                picture.Load((String)picture.Tag);
 
                 if (laatsteKeuze == null)
                 {
-                    laatsteKeuze = A;
+                    laatsteKeuze = picture;
                 }
 
                 else
                 {                                 
 
-                    if (!((String)laatsteKeuze.Tag).Equals(((String)(A.Tag)), StringComparison.Ordinal))
+                    if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
                     {
                         MessageBox.Show("Fout");
-
                         laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
-                        A.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
+                        picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
                     }
                     else
                     {
                         laatsteKeuze.Tag = "Gevonden";
-                        A.Tag = "Gevonden";
+                        picture.Tag = "Gevonden";
                     }
                     laatsteKeuze = null;
                 }
             }
+        }
+
+        private void Memory_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
