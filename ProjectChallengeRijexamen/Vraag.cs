@@ -20,6 +20,62 @@ namespace ProjectChallengeRijexamen
         private Boolean beantwoord = false, juistBeantwoord = false;
         private Boolean overgeslagen = false;
 
+        //Een constructor zodat als er iets foutgaat met het inlezen van vragen (bevoorbeeld als het gewijzigd is van buiten af) 
+        public Vraag()
+        {
+            vraag = "Error";
+            afbeelding = new Foto("Error.jpg");
+        }
+
+        //Constructor van Vraag
+        public Vraag(String vraag, String afbeelding, String antwoord1, String antwoord2, String antwoord3, String uitleg, Random R)
+        {
+            this.vraag = vraag;
+            this.afbeelding = new Foto(afbeelding);
+            this.uitleg = uitleg;
+
+            switch (R.Next(0, 6))
+            {
+                case 1:
+                    this.antwoord1 = new Keuze(antwoord1, true);
+                    this.antwoord2 = new Keuze(antwoord2, false);
+                    this.antwoord3 = new Keuze(antwoord3, false);
+                    juistAntwoord = 1;
+                    break;
+                case 2:
+                    this.antwoord1 = new Keuze(antwoord1, true);
+                    this.antwoord2 = new Keuze(antwoord3, false);
+                    this.antwoord3 = new Keuze(antwoord2, false);
+                    juistAntwoord = 1;
+                    break;
+                case 3:
+                    this.antwoord1 = new Keuze(antwoord2, false);
+                    this.antwoord2 = new Keuze(antwoord1, true);
+                    this.antwoord3 = new Keuze(antwoord3, false);
+                    juistAntwoord = 2;
+                    break;
+                case 4:
+                    this.antwoord1 = new Keuze(antwoord3, false);
+                    this.antwoord2 = new Keuze(antwoord1, true);
+                    this.antwoord3 = new Keuze(antwoord2, false);
+                    juistAntwoord = 2;
+                    break;
+                case 5:
+                    this.antwoord1 = new Keuze(antwoord2, false);
+                    this.antwoord2 = new Keuze(antwoord3, false);
+                    this.antwoord3 = new Keuze(antwoord1, true);
+                    juistAntwoord = 3;
+                    break;
+                default:
+                    this.antwoord1 = new Keuze(antwoord3, false);
+                    this.antwoord2 = new Keuze(antwoord2, false);
+                    this.antwoord3 = new Keuze(antwoord1, true);
+                    juistAntwoord = 3;
+                    break;
+            }
+        }
+
+        // Geeft een String terug om opgeslagen te worden in het juiste formaat in het .txt bestand
         public String PrintVraag()
         {
             String toPrint = "-------------\n" + vraag + "\n" + afbeelding.getNaam + "\n";
@@ -41,6 +97,7 @@ namespace ProjectChallengeRijexamen
             return toPrint;
         }
 
+        // Controleert of de gebruiker het antwoord juist heeft
         public Boolean ControleerVraag(int Antwoord)
         {
             if (beantwoord == false)
@@ -58,9 +115,13 @@ namespace ProjectChallengeRijexamen
             return juistBeantwoord;
         }
 
+        // Dit wordt gebruikt bij de vragen die het examen "overslaat"
         public Boolean Overgeslagen
         {
-            get { return overgeslagen; }
+            get
+            {
+                return overgeslagen;
+            }
             set
             {
                 juistBeantwoord = false;
@@ -111,59 +172,6 @@ namespace ProjectChallengeRijexamen
             get
             {
                 return afbeelding;
-            }
-        }
-
-        public Vraag()
-        {
-            vraag = "Error";
-            afbeelding = new Foto("Error.jpg");
-        }
-
-        public Vraag(String vraag, String afbeelding, String antwoord1, String antwoord2, String antwoord3, String uitleg, Random R)
-        {
-            this.vraag = vraag;
-            this.afbeelding = new Foto(afbeelding);
-            this.uitleg = uitleg;
-
-            switch (R.Next(0, 6))
-            {
-                case 1:
-                    this.antwoord1 = new Keuze(antwoord1, true);
-                    this.antwoord2 = new Keuze(antwoord2, false);
-                    this.antwoord3 = new Keuze(antwoord3, false);
-                    juistAntwoord = 1;
-                    break;
-                case 2:
-                    this.antwoord1 = new Keuze(antwoord1, true);
-                    this.antwoord2 = new Keuze(antwoord3, false);
-                    this.antwoord3 = new Keuze(antwoord2, false);
-                    juistAntwoord = 1;
-                    break;
-                case 3:
-                    this.antwoord1 = new Keuze(antwoord2, false);
-                    this.antwoord2 = new Keuze(antwoord1, true);
-                    this.antwoord3 = new Keuze(antwoord3, false);
-                    juistAntwoord = 2;
-                    break;
-                case 4:
-                    this.antwoord1 = new Keuze(antwoord3, false);
-                    this.antwoord2 = new Keuze(antwoord1, true);
-                    this.antwoord3 = new Keuze(antwoord2, false);
-                    juistAntwoord = 2;
-                    break;
-                case 5:
-                    this.antwoord1 = new Keuze(antwoord2, false);
-                    this.antwoord2 = new Keuze(antwoord3, false);
-                    this.antwoord3 = new Keuze(antwoord1, true);
-                    juistAntwoord = 3;
-                    break;
-                default:
-                    this.antwoord1 = new Keuze(antwoord3, false);
-                    this.antwoord2 = new Keuze(antwoord2, false);
-                    this.antwoord3 = new Keuze(antwoord1, true);
-                    juistAntwoord = 3;
-                    break;
             }
         }
 
