@@ -20,13 +20,9 @@ namespace ProjectChallengeRijexamen
         private Verkeersbord[] alleVerkeersborden;
         private Random r = new Random();
         private Form1 parentform;
-<<<<<<< HEAD
         
-=======
         private Boolean closing = false;
 
-
->>>>>>> e1b1e4041744aeba4bb39bf4753b41d1ab851c56
         public Memory(Form1 parentform)
         {
             InitializeComponent();
