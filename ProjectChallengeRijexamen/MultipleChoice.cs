@@ -178,26 +178,34 @@ namespace ProjectChallengeRijexamen
 
         private void setVragen(String bestandsNaam)
         {
-            StreamReader myFile = new StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
-            string myString = myFile.ReadToEnd();
-
-            myFile.Close();
-
-            double volledigeLengte = myString.Split('\n').Length / 7;
-            int lengte = Convert.ToInt32(volledigeLengte);
-            vragen = new Vraag[lengte];
-
-            ///////////////////////////////////////////////////////////////////////////////////////
-
-            string line;
-            int teller = 0;
-            StreamReader file = new StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
-            while ((line = file.ReadLine()) != null)
+            try
             {
-                vragen[teller] = new Vraag(file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), randomGetal);
-                teller += 1;
+                StreamReader myFile = new StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
+                string myString = myFile.ReadToEnd();
+
+                myFile.Close();
+
+                double volledigeLengte = myString.Split('\n').Length / 7;
+                int lengte = Convert.ToInt32(volledigeLengte);
+                vragen = new Vraag[lengte];
+
+                ///////////////////////////////////////////////////////////////////////////////////////
+
+                string line;
+                int teller = 0;
+                StreamReader file = new StreamReader("..\\..\\Vragen\\Persoon\\" + bestandsNaam + ".txt");
+                while ((line = file.ReadLine()) != null)
+                {
+                    vragen[teller] = new Vraag(file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), file.ReadLine(), randomGetal);
+                    teller += 1;
+                }
+                file.Close();
             }
-            file.Close();
+            catch (FileNotFoundException)
+            {
+                //hier moet error komen
+            }
+            
         }
 
 
