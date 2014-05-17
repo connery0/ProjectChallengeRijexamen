@@ -53,7 +53,7 @@
             "De autoweg",
             "Speciale plaatsen",
             "De voetgangers",
-            "De bestuurrders",
+            "De bestuurders",
             "Personenauto",
             "Lading-zitplaatsen",
             "De lichten",
