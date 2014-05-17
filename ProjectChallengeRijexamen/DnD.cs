@@ -17,7 +17,7 @@ namespace ProjectChallengeRijexamen
         private PictureBox pic2;
         private Verkeersbord[] alleVerkeersborden;
         private Verkeersbord[] gevraagdeVerkeersborden;
-        private Form1 Parentform;
+        private Form1 parentform;
         private int randomFoto;
         private int randomUitleg;
         private int aantalJuist;
@@ -29,26 +29,18 @@ namespace ProjectChallengeRijexamen
         public DnD(Form1 Parentform)
         {
             InitializeComponent();
-            this.Parentform = Parentform;
+            this.parentform = Parentform;
             setVerkeersborden();
             randomVerkeersborden();
             invullen();
 
-
-            foreach (Control control in this.Controls)
-            {
-
-                if (control is PictureBox)
-                {
-                    PictureBox picture = (PictureBox)control;
-                    if (picture.Name != "pictureBox1" && picture.Name != "pictureBox2" &&
-                        picture.Name != "pictureBox3" && picture.Name != "pictureBox4" && picture.Name != "pictureBox5" &&
-                        picture.Name != "pictureBox6")
-                    {
-                        control.AllowDrop = true;
-                    }
-                }
-            }
+            pictureBox7.AllowDrop = true;
+            pictureBox8.AllowDrop = true;
+            pictureBox9.AllowDrop = true;
+            pictureBox10.AllowDrop = true;
+            pictureBox11.AllowDrop = true;
+            pictureBox12.AllowDrop = true;
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -151,6 +143,7 @@ namespace ProjectChallengeRijexamen
                 alleVerkeersborden[teller] = new Verkeersbord(file.ReadLine(), file.ReadLine());
                 teller += 1;
             }
+
             file.Close();
         }
         private void controle()
@@ -439,8 +432,8 @@ namespace ProjectChallengeRijexamen
                 {
                     MessageBox.Show("Je hebt " + aantalJuist.ToString() + "/" + aantalVerkeersborden.ToString() + " gescoord.", "GESTOPT", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    Parentform.Location = this.Location;
-                    Parentform.Show();
+                    parentform.Location = this.Location;
+                    parentform.Show();
                 }
                 else
                 {
@@ -449,8 +442,8 @@ namespace ProjectChallengeRijexamen
             }
             else
             {
-                Parentform.Location = this.Location;
-                Parentform.Show();
+                parentform.Location = this.Location;
+                parentform.Show();
             }    
         }
 
@@ -459,6 +452,7 @@ namespace ProjectChallengeRijexamen
             this.Close();
         }
 
+        //http://msdn.microsoft.com/en-us/library/aa984430(v=vs.71).aspx
         private void pictureBox7_DragDrop(object sender, DragEventArgs e)
         {
             pic2 = (PictureBox)sender;
