@@ -1,0 +1,72 @@
+-----------
+Overweg voor twee of meer sporen.
+a47.png
+------------
+Overweg met slagbomen.
+a41.png
+------------
+Overweg voor enkel spoor.
+a45.png
+------------
+Gevaarlijke bocht, Dubbelle bocht of opeenvolging van meer dan twee bochten, de eerste naar links.
+a1c.png
+------------
+Doortocht van vee.
+a29.png
+------------
+Vallende stenen.
+a19.png
+------------
+Gevaarlijke bocht, Bocht naar rechts.
+a1b.png
+------------
+Voorrang verlenen.
+b1.png
+------------
+Smalle doorgang, Gebod doorgang te verlenen aan de bestuurders die uit de tegenovergestelde richting komen.
+b19.png
+------------
+Verplichte weg voor voetgangers.
+D11.png
+------------
+Deel van de openbare weg voorbehouden voor het verkeer van voetgangers, van fietsen en van tweewielige bromfietsen klasse A.
+D9.png
+------------
+Vanaf het verkeersbord tot het volgend kruispunt, verbod te keren
+c33.png
+------------
+Verboden toegang voor bestuurders van voertuigen, waarvan de hoogte, lading inbegrepen, groter is dan het aangeduide.
+c29.png
+------------
+Stilstaan en parkeren verboden
+e3.png
+------------
+Parkeerverbod van de 16e tot het einde van de maand
+e7.png
+------------
+Einde van een autosnelweg
+f7.png
+------------
+Begin van een woonerf of van een erf
+f12a.png
+------------
+Ondergrondse of bovengrondse oversteekplaats voor voetgangers
+f51.png
+------------
+Aankondiging van een overdekte parking
+f60.png
+------------
+Noodstopstrook
+f95.png
+------------
+Weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers en ruiters.
+f99c.png
+------------
+Verboden toegang voor bestuurders van motorvoertuigen met meer dan twee wielen en van motorfietsen met zijspan.
+c5.png
+------------
+Uitweg of een kaai of een oever.
+a11.png
+------------
+Vanaf het verkeersbord tot het volgend kruispunt, verbod een gespan of een voertuig met meer dan twee wielen, links in te halen.
+c35.png
