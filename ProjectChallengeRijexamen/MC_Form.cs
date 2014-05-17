@@ -20,8 +20,7 @@ namespace ProjectChallengeRijexamen
         private int maxTijd = 0;
         private int vraagNummer = 0;
         private Boolean closing = false;
-
-
+    
         public MC_Form(Form1 parentForm, String naam, int tijdslimiet)//oefen vragen
         {
             InitializeComponent();
@@ -38,7 +37,6 @@ namespace ProjectChallengeRijexamen
             TelVraag();
         }
 
-
         public MC_Form(Form1 parentForm)//examen
         {
             InitializeComponent();
@@ -50,7 +48,6 @@ namespace ProjectChallengeRijexamen
             SetTijdsLimiet(3);
             TelVraag();
         }
-
 
         private void ProgresTijd()
         {
@@ -68,8 +65,8 @@ namespace ProjectChallengeRijexamen
                 ProgresLabel.Text = tijdMin + "M ";
             }
             ProgresLabel.Text = ProgresLabel.Text + tijdOver + "S";
-
         }
+
         private void SetTijdsLimiet(int tijdsL)
         {
             switch (tijdsL)
@@ -100,7 +97,6 @@ namespace ProjectChallengeRijexamen
             {
                 closing = true;
                 vragen.EindeVraag();
-
             }
             parentForm.Location = this.Location;
             parentForm.Show();
@@ -163,7 +159,6 @@ namespace ProjectChallengeRijexamen
                         timer1.Stop();
                         button1.Text = "Volgende";
                         vragen.ControleerVraag(antwoord);
-
                     }
                     else
                     {
@@ -241,9 +236,6 @@ namespace ProjectChallengeRijexamen
                 }
             }
         }
-
-      //  private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-       //////  }
 
         private void MC_Form_FormClosing(object sender, FormClosingEventArgs e)
         {

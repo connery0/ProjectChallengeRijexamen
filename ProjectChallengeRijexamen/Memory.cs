@@ -20,9 +20,7 @@ namespace ProjectChallengeRijexamen
         private Verkeersbord[] alleVerkeersborden;
         private Random r = new Random();
         private Form1 parentform;
-
-
-
+        
         public Memory(Form1 parentform)
         {
             InitializeComponent();
@@ -30,8 +28,7 @@ namespace ProjectChallengeRijexamen
             PictureBox[] Box = { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8, pictureBox9, pictureBox10, pictureBox11, pictureBox12, pictureBox13, pictureBox14, pictureBox15, pictureBox16, pictureBox17, pictureBox18 };
             this.Box = Box;
             setVerkeersborden();
-
-
+            
             int[] Temp = new int[Box.Length];
             for (int i = 0; i < this.Box.Length; i++)
             {
@@ -52,11 +49,9 @@ namespace ProjectChallengeRijexamen
                     j = true;
                 }
             }
-
             }
-
-
         }
+
         private void Settag(String Naam)
         {
             Boolean geplaatst = false;
@@ -82,12 +77,8 @@ namespace ProjectChallengeRijexamen
                     }
                 }
             }
-
-
         }
-
-
-
+        
         private void setVerkeersborden()
         {
             StreamReader myFile = new StreamReader("..\\..\\Vragen\\Borden.txt");
@@ -112,19 +103,10 @@ namespace ProjectChallengeRijexamen
             file.Close();
         }
 
-
-
-
-
-
-
         private void pictureBox_Click(object sender, EventArgs e)
         {
-
             PictureBox picture = (PictureBox)sender;
-
-
-
+            
             if (picture.Tag != "Gevonden")
             {
                 picture.Load((String)picture.Tag);
@@ -136,11 +118,8 @@ namespace ProjectChallengeRijexamen
 
                 else
                 {
-
                     if (!laatsteKeuze.Equals(picture) && !((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
-                    {
-
-
+                    {                        
                         picture.Refresh();
                         System.Threading.Thread.Sleep(500);
 
@@ -148,7 +127,6 @@ namespace ProjectChallengeRijexamen
 
                         if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
                         {
-                            
                             laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
                             picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
                         }
@@ -163,16 +141,11 @@ namespace ProjectChallengeRijexamen
             }
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        private void Memory_Load(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void Memory_FormClosing(object sender, FormClosingEventArgs e)
         {
             parentform.Location = this.Location;

@@ -30,8 +30,7 @@ namespace ProjectChallengeRijexamen
             {
                 String fileName = "..\\..\\Vragen\\Persoon\\" + naam + ".txt";
                 if (File.Exists(fileName) == false)
-                {
-                    
+                {                    
                     File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\Persoon\\" + naam + ".txt"));
                     VolgendScherm();
                 }
@@ -41,12 +40,9 @@ namespace ProjectChallengeRijexamen
                     button1.Text = "Opnieuw beginen";
                     button2.Visible = true;
                 }
-
-
             }
             else
             {
-
                 try
                 {
                     File.Delete("..\\..\\Vragen\\Persoon\\" + naam + ".txt");
@@ -56,9 +52,6 @@ namespace ProjectChallengeRijexamen
                     Console.WriteLine(f.Message);
                     return;
                 }
-
-
-
                 File.Copy("..\\..\\Vragen\\Vragen.txt", ("..\\..\\Vragen\\Persoon\\" + naam + ".txt"));
                 VolgendScherm();
             }

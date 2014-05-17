@@ -37,34 +37,24 @@ namespace WindowsFormsApplication1
                     do{
                         regel = sr.ReadLine();
                     }while (regel != ("--"+ hfdstk + "----") && regel != null);
-
-
+                    
                     do{
                         regel = sr.ReadLine();
                         if (regel != "------") { 
                             theorie.Text = theorie.Text + regel + Environment.NewLine;
                         }            
-                    }while (regel != "------"& regel != null);
+                    }
+                    while (regel != "------"& regel != null);
                 }
-
             }
             catch 
             {
                 MessageBox.Show("fout");
             }
-            
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-           
         }
 
         private void TheorieViewer_FormClosed(object sender, FormClosedEventArgs e)
         {
-
             parentForm.Location = this.Location;
             parentForm.Show();
         }
@@ -78,11 +68,5 @@ namespace WindowsFormsApplication1
         {
             panel1.Focus();
         }
-
-       
-
-      
-
-            
     }
 }   

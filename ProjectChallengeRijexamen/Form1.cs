@@ -25,12 +25,10 @@ namespace ProjectChallengeRijexamen
         {
             InitializeComponent();
             OmAantemelden();
-
         }
         
       private void M_knop1_Click(object sender, EventArgs e)
         {
-
             startMC = new MC_Start(this, naam);
             startMC.Show();
             startMC.Location = this.Location;
@@ -74,8 +72,7 @@ namespace ProjectChallengeRijexamen
 
             naam = this.Tag.ToString();
 
-            this.Text = "Welkom, " + this.Tag;
-            
+            this.Text = "Welkom, " + this.Tag;            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -90,7 +87,5 @@ namespace ProjectChallengeRijexamen
         {
             this.Close();
         }
-
-
     }
 }

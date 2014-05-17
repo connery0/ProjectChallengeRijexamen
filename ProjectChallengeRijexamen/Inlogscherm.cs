@@ -25,27 +25,18 @@ namespace ProjectChallengeRijexamen
         public Inlogscherm(Form1 parentForm)
         {
             InitializeComponent();
-            this.parentForm = parentForm;
-
-           
+            this.parentForm = parentForm;           
         }
-
-        
 
         private void BtnAanmelden_Click(object sender, EventArgs e)
         {
-            Aanmelden();
-
-           
+            Aanmelden();   
         }
 
         private void BtnAnnuleren_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
-
-        
-        
 
         private void Inlogscherm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -67,15 +58,11 @@ namespace ProjectChallengeRijexamen
             if (e.KeyChar == (char)Keys.Enter)
             {
                 Aanmelden();
-            }else if (!(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space))
+            }
+            else if (!(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space))
             {
                 e.Handled = true;
             }
-        }
-
-        private void Inlogscherm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void Aanmelden()
@@ -96,7 +83,5 @@ namespace ProjectChallengeRijexamen
                 MessageBox.Show("Gelieve uw voor- en achternaam in te geven.", "ERROR");
             } 
         }
-       
-
     }
 }

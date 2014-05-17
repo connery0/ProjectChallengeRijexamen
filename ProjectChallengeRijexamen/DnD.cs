@@ -24,8 +24,6 @@ namespace ProjectChallengeRijexamen
         private int aantalVerkeersborden;
         private Boolean sluiten = false;
 
-
-
         public DnD(Form1 Parentform)
         {
             InitializeComponent();
@@ -58,8 +56,6 @@ namespace ProjectChallengeRijexamen
                 timer1.Start();
                       
                 DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
-
-
                 
                 timer1.Stop();
                 int picX = pic1.Location.X + 50;
@@ -117,7 +113,6 @@ namespace ProjectChallengeRijexamen
                     case "pictureBox5":
                         pic1.Location = new Point(439, 12);
                         break;
-                    
                 }
             }
         }
@@ -184,8 +179,6 @@ namespace ProjectChallengeRijexamen
                             MessageBox.Show("Gelieve alle verkeersborden te matchen!", "Lege plaatsen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             return;
                         }
-
-
                     }
                 }
 
@@ -297,11 +290,9 @@ namespace ProjectChallengeRijexamen
                 }
                 else
                 {
-
                     MessageBox.Show("Je hebt alle verkeersborden geoefend." + Environment.NewLine + "Je hebt " + aantalJuist.ToString() + "/24" + " gescoord.", "KLAAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     sluiten = true;
                     this.Close();
-
                 }
             }
         
@@ -321,8 +312,7 @@ namespace ProjectChallengeRijexamen
                 {
                     int i = randomGetal.Next(0, alleVerkeersborden.Length);
                     if (alleVerkeersborden[i].Beantwoord == false)
-                    {
-                        
+                    {            
                         for (int j = 1; j <= tellerAantal; j++)
                         {
                             if (gevraagdeVerkeersborden[j-1] == alleVerkeersborden[i])
@@ -335,9 +325,7 @@ namespace ProjectChallengeRijexamen
                         {
                             gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[i];
                             tellerAantal++;
-                        }
-                        
-                            
+                        }                      
                     }
                 }
                 else
@@ -368,10 +356,8 @@ namespace ProjectChallengeRijexamen
                     }
                     
                 }
-                teller++;
-                
+                teller++;                
             }
-
         }
 
         private void invullen()
@@ -387,8 +373,7 @@ namespace ProjectChallengeRijexamen
                     if (picture.Name == "pictureBox1" || picture.Name == "pictureBox2" ||
                         picture.Name == "pictureBox3" || picture.Name == "pictureBox4" || picture.Name == "pictureBox5" ||
                         picture.Name == "pictureBox6")
-                    {
-                      
+                    {                      
                         picture.Image = Image.FromFile(gevraagdeVerkeersborden[randomFoto].GetDoel());
                         picture.Tag = gevraagdeVerkeersborden[randomFoto].Uitleg;
 
@@ -399,10 +384,8 @@ namespace ProjectChallengeRijexamen
                         else
                         {
                             randomFoto++;
-                        }
-                        
+                        }                        
                     }
-
                 }
                 else if (control is Label)
                 {
@@ -418,13 +401,11 @@ namespace ProjectChallengeRijexamen
                         randomUitleg++;
                     }
                 }
-            }
-            
+            }            
         }
 
         private void DnD_FormClosing(object sender, FormClosingEventArgs e)
         {
-
             if (!sluiten)
             {
                 DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
@@ -453,6 +434,7 @@ namespace ProjectChallengeRijexamen
         }
 
         //http://msdn.microsoft.com/en-us/library/aa984430(v=vs.71).aspx
+        
         private void pictureBox7_DragDrop(object sender, DragEventArgs e)
         {
             pic2 = (PictureBox)sender;
@@ -479,13 +461,8 @@ namespace ProjectChallengeRijexamen
 
                 timer1.Stop();
                 
-                pic1.Location = new Point(545, 12);
-                        
+                pic1.Location = new Point(545, 12);  
             }
         }       
     }
-
-        
-       
-    
 }
