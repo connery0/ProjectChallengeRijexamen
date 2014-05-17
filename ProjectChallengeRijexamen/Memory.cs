@@ -20,7 +20,13 @@ namespace ProjectChallengeRijexamen
         private Verkeersbord[] alleVerkeersborden;
         private Random r = new Random();
         private Form1 parentform;
+<<<<<<< HEAD
         
+=======
+        private Boolean closing = false;
+
+
+>>>>>>> e1b1e4041744aeba4bb39bf4753b41d1ab851c56
         public Memory(Form1 parentform)
         {
             InitializeComponent();
@@ -134,6 +140,20 @@ namespace ProjectChallengeRijexamen
                         {
                             laatsteKeuze.Tag = "Gevonden";
                             picture.Tag = "Gevonden";
+                            closing = true;
+                            for (int i = 0; i < Box.Length; i++)
+                            {
+                                if (!Box[i].Tag.Equals("Gevonden"))
+                                {
+                                    closing = false;
+                                }
+                            }
+                            if (closing)
+                            {
+                                MessageBox.Show("Gefeliciteerd je hebt alle paren gevonden.");
+                                this.Close();
+                            }
+
                         }
                         laatsteKeuze = null;
                     }
@@ -148,8 +168,24 @@ namespace ProjectChallengeRijexamen
       
         private void Memory_FormClosing(object sender, FormClosingEventArgs e)
         {
-            parentform.Location = this.Location;
-            parentform.Show();
+            if (!closing)
+            {
+                DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (test == DialogResult.Yes)
+                {
+                    parentform.Location = this.Location;
+                    parentform.Show();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                parentform.Location = this.Location;
+                parentform.Show();
+            } 
         }
     }
 }
