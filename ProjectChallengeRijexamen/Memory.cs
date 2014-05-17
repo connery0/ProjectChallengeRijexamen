@@ -35,7 +35,7 @@ namespace ProjectChallengeRijexamen
             for (int i = 0; i < this.Box.Length; i++)
             {
                 Temp[i] = -1;
-                Box[i].Load("..\\..\\img\\Verkeersborden\\ico.png");
+                Box[i].Load("..\\..\\img\\Verkeersborden\\ico3.png");
                 Box[i].Tag = "";
             }
             for (int i = 0; i < Box.Length / 2; i++)
@@ -131,8 +131,8 @@ namespace ProjectChallengeRijexamen
                         if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
                         {
 
-                            laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
-                            picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico.png");
+                            laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico3.png");
+                            picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico3.png");
                         }
                     }
                     else
