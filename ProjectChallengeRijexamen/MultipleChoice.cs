@@ -28,7 +28,7 @@ namespace ProjectChallengeRijexamen
 
         public Vraag vraag(int i)
         {
-            return vragen[i];            
+            return vragen[i];
         }
 
 
@@ -45,7 +45,7 @@ namespace ProjectChallengeRijexamen
             {
                 VolgendeVraag();
                 huidigeVraag.Overgeslagen = true;
-                if (gevraagd == 0) { }         
+                if (gevraagd == 0) { }
             }
             VolgendeVraag();
         }
@@ -67,42 +67,44 @@ namespace ProjectChallengeRijexamen
 
         public void EindeVraag()
         {
-            String printVragen = "";
-            Boolean eersteText = true;
-            for (int i = 0; i < vragen.Length; i++)
+            if (!examen)
             {
-                if (examen || ((!vragen[i].VraagJuist) || (!vragen[i].Beantwoord)))
+                String printVragen = "";
+                Boolean eersteText = true;
+                for (int i = 0; i < vragen.Length; i++)
                 {
-                    if (!eersteText)
+                    if (examen || ((!vragen[i].VraagJuist) || (!vragen[i].Beantwoord)))
                     {
-                        printVragen = printVragen + "\n";
+                        if (!eersteText)
+                        {
+                            printVragen = printVragen + "\n";
+                        }
+                        else
+                        {
+                            eersteText = false;
+                        }
+
+                        printVragen = printVragen + vragen[i].PrintVraag();
                     }
-                    else
+
+                }
+                if (printVragen == "")
+                {
+                    try
                     {
-                        eersteText = false;
+                        File.Delete("..\\..\\Vragen\\Persoon\\" + naam + ".txt");
                     }
-
-                    printVragen = printVragen + vragen[i].PrintVraag();
+                    catch (IOException fout)
+                    {
+                        Console.WriteLine(fout.Message);
+                        return;
+                    }
                 }
-
-            }
-            if (printVragen == "")
-            {
-                try
+                else
                 {
-                    File.Delete("..\\..\\Vragen\\Persoon\\" + naam + ".txt");
-                }
-                catch (IOException fout)
-                {
-                    Console.WriteLine(fout.Message);
-                    return;
+                    File.WriteAllText("..\\..\\Vragen\\Persoon\\" + naam + ".txt", printVragen);
                 }
             }
-            else
-            {
-                File.WriteAllText("..\\..\\Vragen\\Persoon\\" + naam + ".txt", printVragen);
-            }
-
             parentForm.Close();
         }
 
