@@ -119,27 +119,35 @@ namespace ProjectChallengeRijexamen
       
         private void setVerkeersborden()
         {
-            StreamReader myFile = new StreamReader("..\\..\\Vragen\\Borden.txt");
-            string myString = myFile.ReadToEnd();
-
-            myFile.Close();
-
-            double l = myString.Split('\n').Length / 3;
-            int lengte = Convert.ToInt32(l);
-            alleVerkeersborden = new Verkeersbord[lengte];
-
-            ///////////////////////////////////////////////////////////////////////////////////////
-
-            string line;
-            int teller = 0;
-            StreamReader file = new StreamReader("..\\..\\Vragen\\Borden.txt");
-            while ((line = file.ReadLine()) != null)
+            try
             {
-                alleVerkeersborden[teller] = new Verkeersbord(file.ReadLine(), file.ReadLine());
-                teller += 1;
-            }
+                StreamReader myFile = new StreamReader("..\\..\\Vragen\\Borden.txt");
+                string myString = myFile.ReadToEnd();
 
-            file.Close();
+                myFile.Close();
+
+                double l = myString.Split('\n').Length / 3;
+                int lengte = Convert.ToInt32(l);
+                alleVerkeersborden = new Verkeersbord[lengte];
+
+                ///////////////////////////////////////////////////////////////////////////////////////
+
+                string line;
+                int teller = 0;
+                StreamReader file = new StreamReader("..\\..\\Vragen\\Borden.txt");
+                while ((line = file.ReadLine()) != null)
+                {
+                    alleVerkeersborden[teller] = new Verkeersbord(file.ReadLine(), file.ReadLine());
+                    teller += 1;
+                }
+
+                file.Close();
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Het bestand is niet gevonden." + Environment.NewLine + "Gelieve te herinstalleren","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            }
+           
         }
         private void controle()
         {

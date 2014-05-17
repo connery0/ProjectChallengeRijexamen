@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Theorieviewer om theorie te kunnen lezen en in te leren.
+//Author: Thibaut Vandeput
+//Date : ma 5/5/2014
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +30,7 @@ namespace WindowsFormsApplication1
         {
             
             String regel = "";
-            String hfdstk = Convert.ToString(listBox1.SelectedIndex + 1);
+            String hfdstk = Convert.ToString(listBox1.SelectedIndex + 1);               //kijkt naar welk hoofdstuk geselecteerd is in de listbox
             theorie.Text = "";
 
             try
@@ -35,38 +38,38 @@ namespace WindowsFormsApplication1
                 using (StreamReader sr = new StreamReader("../../Theorie.txt"))
                 {
                     do{
-                        regel = sr.ReadLine();
-                    }while (regel != ("--"+ hfdstk + "----") && regel != null);
-                    
+                        regel = sr.ReadLine();                                          //streamreader zoekt in deze lus naar het juiste hoofdstuk
+                    }while (regel != ("--"+ hfdstk + "----") && regel != null);         //en negeert de rest. eens hij het heeft gevonden,
+                                                                                        //stopt de lus
                     do{
                         regel = sr.ReadLine();
-                        if (regel != "------") { 
-                            theorie.Text = theorie.Text + regel + Environment.NewLine;
-                        }            
-                    }
+                        if (regel != "------") {                                        //streamreader plaats regel per regel van de theorie
+                            theorie.Text = theorie.Text + regel + Environment.NewLine;  //in de label, tot hij aan het einde van het hoofd-
+                        }                                                               //stuk komt. het eidne is aangeduid met 6 liggende                
+                    }                                                                   //streepjes en wordt niet meer afgedrukt("------")
                     while (regel != "------"& regel != null);
                 }
             }
             catch 
             {
-                MessageBox.Show("fout");
+                MessageBox.Show("fout");                                                 
             }
         }
 
         private void TheorieViewer_FormClosed(object sender, FormClosedEventArgs e)
         {
-            parentForm.Location = this.Location;
-            parentForm.Show();
+            parentForm.Location = this.Location;                                         //bij het sluiten wordt het hoofdmenu terug getoond
+            parentForm.Show();      
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();                                                               //knop om te slutien en naar het hoofdmenu te gaan
         }
 
         private void theorie_MouseEnter(object sender, EventArgs e)
         {
-            panel1.Focus();
-        }
-    }
+            panel1.Focus();                         //door te focussen op de panel, kan de scrollbar bedient woden met het scroll-
+        }                                          //wiel van de muis. anders moet de scrollbar gesleept worden.
+    }                                          
 }   

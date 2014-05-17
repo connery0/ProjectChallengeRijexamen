@@ -1,4 +1,8 @@
-﻿--1----
+﻿//theorie rijbewijs B
+//Author: Thibaut Vandeput
+//date: di 13/05/2014
+
+--1----
 HET VERSCHIL TUSSEN OPENBARE WEG - OPENBAAR TERREIN - 
 NIET OPENBAAR TERREIN.
 
@@ -8,17 +12,42 @@ Een openbare weg, zoals een, een brug, een tunnel, een pad,
 een aardeweg, een plein, een autosnelweg ...,
 is een openbare plaats waar we zonder probleem met alle, of met sommige 
 voertuigen mogen komen.
-We hoeven aan niemand uitleg te geven waarom we nu net daar willen rijden.2. Een openbaar terrein.Een openbaar terrein, zoals de parking van een restaurant of 
+We hoeven aan niemand uitleg te geven waarom we nu net daar willen rijden.
+
+
+2. Een openbaar terrein.
+
+Een openbaar terrein, zoals de parking van een restaurant of 
 een benzinestation, is een openbare plaats waar we enkel met onze 
-voertuigen zullen komen, als we er echt voor iets moeten zijn.3. Een niet-openbaar terrein.Op een niet-openbaar terrein, zoals het oefenterrein van een rijschool 
-of een fabrieksparking, mogen we enkel rijden, als we er een speciale toelating of vergunning voor hebben.4. Waar geldt het verkeersreglement?Eigenlijk geldt het verkeersreglement alleen maar op de openbare weg. 
+voertuigen zullen komen, als we er echt voor iets moeten zijn.
+
+
+3. Een niet-openbaar terrein.
+
+Op een niet-openbaar terrein, zoals het oefenterrein van een rijschool 
+of een fabrieksparking, mogen we enkel rijden, als we er een speciale 
+toelating of vergunning voor hebben.
+
+
+4. Waar geldt het verkeersreglement?
+
+Eigenlijk geldt het verkeersreglement alleen maar op de openbare weg. 
 Voor overtredingen die je op de openbare weg begaat, krijg je een 
 bekeuring.
 Toch mag je op een openbaar terrein en een niet-openbaar terrein 
 niet zomaar doen wat je wil. 
 Voor zware inbreuken die je daar begaat, kun je 
-ook beboet of strafrechtelijk vervolgd worden.5. Privaat weg.Wegen waar het bord "privaat" staat, zijn geen openbare wegen. 
-Daar geldt het verkeersreglement niet. Behalve als het een privaatweg is die toch door iedereen mag gebruikt worden.
+ook beboet of strafrechtelijk vervolgd worden.
+
+
+5. Privaat weg.
+
+Wegen waar het bord "privaat" staat, zijn geen openbare wegen. 
+Daar geldt het verkeersreglement niet. 
+Behalve als het een privaatweg is die toch door iedereen mag 
+gebruikt worden.
+
+
 6. Trambestuurders.
 
 Wanneer tramsporen op de openbare weg liggen, moeten trambestuurders 
@@ -36,7 +65,9 @@ Sommige jongeren denken wel eens dat de openbare weg alleen maar het
 verharde deel is waarop de wagens rijden. Maar dat is niet juist.
 Ook het fietspad en de zachte of verharde berm en het voetpad zijn een 
 onderdeel van de openbare weg.
-De openbare weg rijkt immers tot aan een gracht of tot aan een prive-eigendom.
+De openbare weg rijkt immers tot aan een gracht of tot aan een prive-
+eigendom.
+
 
 
 DE RIJBAAN.
@@ -46,7 +77,9 @@ DE RIJBAAN.
 De rijbaan is het verharde deel van de openbare weg, waar voertuigen 
 zoals een auto, autobussen, motorfietsen en tractors rijden.
 Wanneer er geen fietspad is, mogen ook tweewielige bromfietsen en 
-fietsers op de rijbaan rijden. En is er geen berm of geen voetpad, dan mogen de voetgangers ook op de rijbaan stappen.
+fietsers op de rijbaan rijden. En is er geen berm of geen voetpad, 
+dan mogen de voetgangers ook op de rijbaan stappen.
+
 
 2. Streep op de rand van de rijbaan.
 
@@ -57,7 +90,10 @@ Deze streep wijst enkel de buitenrand van de rijbaan aan en heeft
 voor de rest geen enkele betekenis.
 
 Opgelet: aardeweg.
-Wanneer de laatste meters van een aardeweg verhard zijn met klinkers, asfalt of beton dan blijft het toch een aardeweg en wordt het geen rijbaan.
+Wanneer de laatste meters van een aardeweg verhard zijn met klinkers, 
+asfalt of beton dan blijft het toch een aardeweg en wordt het geen 
+rijbaan.
+
 
 3. Waar moet je rijden?
 
