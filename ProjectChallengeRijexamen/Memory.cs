@@ -39,9 +39,11 @@ namespace ProjectChallengeRijexamen
             int[] Temp = new int[Box.Length];
             for (int i = 0; i < this.Box.Length; i++)
             {
-                //Hier wordt de tag "" gegeven aan ico3, wat gebruikt wordt om de verkeersborden te 'verstoppen'.
+                
                 Temp[i] = -1;
+                //Hier word de afbeelding van de picturebox ingesteld op ico3 wat gebruikt word om de verkeersborden te "verstoppen"
                 Box[i].Load("..\\..\\img\\Verkeersborden\\ico3.png");
+                //Hier wordt de tag "" gegeven aan alle pictureboxen zodat Settag weet welke leeg zijn
                 Box[i].Tag = "";
             }
             for (int i = 0; i < Box.Length / 2; i++)

@@ -10,12 +10,16 @@ using System.Windows.Forms;
 using System.IO;
 namespace ProjectChallengeRijexamen
 {
+    // het formulier waar je een tijdslimiet kiest en je kan kiezen om opnieuw te beginnen of je foute vragen te oefenen
+    // aangemaakt op: 18/04/2014
+    // gemaakt door: Tom Partoens
     public partial class MC_Start : Form
     {
         private Form1 parentForm;
         private Boolean openMainMenu = true;
         private String naam;
         private int tijdsLimiet = 3;
+
         public MC_Start(Form1 parentForm, string naam)
         {
             InitializeComponent();
@@ -24,6 +28,9 @@ namespace ProjectChallengeRijexamen
             button1.Text = "Volgende";
         }
 
+        // Als op volgende word geklikt word gecontroleerd of de gebruiker een bestand heeft met foute vragen.
+        //      Als er geen bestand gevonden word begint de vraag.
+        //      Als er wel een bestand gevonden word kan de gebruiker kiezen om opnieuw te beginnen of de fouten in te oefenen.
         private void button1_Click(object sender, EventArgs e)
         {
             if (button1.Text == "Volgende")
@@ -71,6 +78,7 @@ namespace ProjectChallengeRijexamen
             VolgendScherm();
         }
 
+        // Met de radio buttons kiest de gebruiker de tijdslimiet
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -103,6 +111,7 @@ namespace ProjectChallengeRijexamen
             }
         }
 
+        // Gaat terug naar het hoofmenu als het formulier niet sluit om mc_form te openen.
         private void MC_Start_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (openMainMenu)

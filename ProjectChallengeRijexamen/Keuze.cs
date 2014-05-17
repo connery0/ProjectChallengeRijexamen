@@ -13,6 +13,7 @@ namespace ProjectChallengeRijexamen
     {
         private String antwoord;
         private Boolean juist;
+
         public Keuze(String antwoord, Boolean juist)
         {
             this.antwoord = antwoord;

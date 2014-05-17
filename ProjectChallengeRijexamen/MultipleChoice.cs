@@ -20,8 +20,8 @@ namespace ProjectChallengeRijexamen
         private String naam;
         private Boolean examen = false;
 
-
-        public MultipleChoice(MC_Form parentForm, String naam) //oefenvragen
+        //oefenvragen
+        public MultipleChoice(MC_Form parentForm, String naam)
         {
             this.parentForm = parentForm;
             this.naam = naam;
@@ -29,17 +29,8 @@ namespace ProjectChallengeRijexamen
             VolgendeVraag();
         }
 
-
-        public Vraag vraag(int i)
-        {
-            return vragen[i];
-        }
-
-
-
-
-
-        public MultipleChoice(MC_Form parentForm) //examen
+        //examen
+        public MultipleChoice(MC_Form parentForm)
         {
             examen = true;
             naam = "..\\Vragen";
@@ -54,7 +45,12 @@ namespace ProjectChallengeRijexamen
             VolgendeVraag();
         }
 
+        public Vraag vraag(int i)
+        {
+            return vragen[i];
+        }
 
+        //Kijkt of men al aan het einde van de vragen zit, anders genereerd het een nieuwe vraag
         public void VolgendeVraag()
         {
             if (gevraagd < vragen.Length)
@@ -66,9 +62,10 @@ namespace ProjectChallengeRijexamen
             {
                 EindeVraag();
             }
-
         }
 
+        // Word aanroepen als de gebruiker alles heeft beantwoord of af sluit.
+        // Het slaat alle foute antwoorden op, als er geen foute antwoorden zijn, word het bestand verwijderd.
         public void EindeVraag()
         {
             if (!examen)
@@ -98,24 +95,30 @@ namespace ProjectChallengeRijexamen
                     {
                         File.Delete("..\\..\\Vragen\\Persoon\\" + naam + ".txt");
                     }
-                    catch (IOException fout)
+                    catch 
                     {
-                        Console.WriteLine(fout.Message);
+                        parentForm.ShowMessage();
                         return;
                     }
                 }
                 else
-                {
-                    File.WriteAllText("..\\..\\Vragen\\Persoon\\" + naam + ".txt", printVragen);
+                {                   
+                    try
+                    {
+                        File.WriteAllText("..\\..\\Vragen\\Persoon\\" + naam + ".txt", printVragen);
+                    }
+                    catch
+                    {
+                        parentForm.ShowMessage();
+                        return;
+                    }                
                 }
             }
             parentForm.Close();
         }
+        
 
-
-
-
-
+        // Zet een random onbeantwoorde vraag als huidigeVraag.
         private void RandomVraag()
         {
             Random randomGetal2 = new Random();
@@ -148,10 +151,7 @@ namespace ProjectChallengeRijexamen
                 }
                 teller++;
             }
-
             setvraag(huidigeVraag);
-
-
         }
 
         public void ControleerVraag(int antwoord)
@@ -165,8 +165,6 @@ namespace ProjectChallengeRijexamen
                 parentForm.VraagFout(huidigeVraag.Uitleg);
             }
         }
-
-
 
 
         private void setvraag(Vraag vraag)
@@ -207,11 +205,10 @@ namespace ProjectChallengeRijexamen
             }
             catch (FileNotFoundException)
             {
-                //hier moet error komen
+                parentForm.ShowMessage();
             }
             
         }
-
 
         public int getAantalVragen
         {

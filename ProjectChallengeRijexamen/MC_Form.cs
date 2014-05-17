@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace ProjectChallengeRijexamen
 {
+    // Het formulier waar je theorie kunt oefenen met multiple choice vragen
+    // aangemaakt op: 18/04/2014
+    // gemaakt door: Tom Partoens
+
     public partial class MC_Form : Form
     {
         private Form1 parentForm;
@@ -20,8 +24,9 @@ namespace ProjectChallengeRijexamen
         private int maxTijd = 0;
         private int vraagNummer = 0;
         private Boolean closing = false;
-    
-        public MC_Form(Form1 parentForm, String naam, int tijdslimiet)//oefen vragen
+
+        //constructor voor oefen vragen
+        public MC_Form(Form1 parentForm, String naam, int tijdslimiet)
         {
             InitializeComponent();
             vragen = new MultipleChoice(this, naam);
@@ -37,7 +42,8 @@ namespace ProjectChallengeRijexamen
             TelVraag();
         }
 
-        public MC_Form(Form1 parentForm)//examen
+        //constructor voor het examen
+        public MC_Form(Form1 parentForm)
         {
             InitializeComponent();
             vragen = new MultipleChoice(this);
@@ -49,9 +55,10 @@ namespace ProjectChallengeRijexamen
             TelVraag();
         }
 
+        //Deze functie wordt aangeroepen door de klok en past de progresbar en het label met de tijd aan
         private void ProgresTijd()
         {
-            double tijdOver = Math.Ceiling((MC_Progres.Maximum - MC_Progres.Value) / (double)10);
+            double tijdOver = Math.Ceiling((MC_Progres.Maximum - MC_Progres.Value) / (double)10);// het wordt gedeeld door 10 omdat de klok een interval van 100 heeft
             if (tijdOver == 0 && (MC_Progres.Maximum - MC_Progres.Value) > 1)
             {
                 tijdOver = 1;
@@ -67,6 +74,7 @@ namespace ProjectChallengeRijexamen
             ProgresLabel.Text = ProgresLabel.Text + tijdOver + "S";
         }
 
+        //indien er een tijdslimiet werd gekozen in mc_start stelt deze functie de limiet in en maakt de progresbar en tijdslabel zichtbaar
         private void SetTijdsLimiet(int tijdsL)
         {
             switch (tijdsL)
@@ -91,6 +99,7 @@ namespace ProjectChallengeRijexamen
             timer1.Start();
         }
 
+        // sluit de vragen af als het formulier sluit
         private void MC_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (!closing)
@@ -102,10 +111,45 @@ namespace ProjectChallengeRijexamen
             parentForm.Show();
         }
 
+        // Vraagt de gebruiker of deze wel zeker is dat het programma gesloten moet worden.
+        private void MC_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!closing)
+            {
+                DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (test == DialogResult.Yes)
+                {
+                    String formtext = "U behaalde een score van ";
+                    int teller = 0;
+                    for (int i = 0; i < vragen.getAantalVragen; i++)
+                    {
+                        if (!vragen.vraag(i).Overgeslagen && vragen.vraag(i).VraagJuist)
+                        {
+                            teller++;
+                        }
+                    }
+                    formtext = formtext + teller + "/" + vragen.getAantalVragen + ".";
+                    MessageBox.Show(formtext);
+                    parentForm.Location = this.Location;
+                    parentForm.Show();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                parentForm.Location = this.Location;
+                parentForm.Show();
+            }
+        }
+
         public void setVraag(String Vraag)
         {
             MC_Label.Text = Vraag;
         }
+
         public void setAntwoord(String antwoord, int Nr)
         {
             switch (Nr)
@@ -123,6 +167,7 @@ namespace ProjectChallengeRijexamen
                     break;
             }
         }
+
         public void setUitleg(String uitleg)
         {
             MC_Label.Text = MC_Label.Text + Environment.NewLine + Environment.NewLine + uitleg;
@@ -144,11 +189,20 @@ namespace ProjectChallengeRijexamen
             setUitleg(Uitleg);
         }
 
+        // Een functie zodat andere klassen zoals memory een mesagebox kunnen oproepen
         public void ShowMessage(string tekst)
         {
             MessageBox.Show(tekst);
         }
 
+        // de ShowMessage functie als memory een fout heeft bij het lezen van een bestand
+        public void ShowMessage()
+        {
+            MessageBox.Show("Het bestand is niet gevonden." + Environment.NewLine + "Gelieve te herinstalleren", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);    
+        }
+        
+        //De eerste keer dat men op de knop klikt word de vraag gecontroleerd en de tijd gepauzeerd.
+        //De tweede keer dat men op de knop klikt word de volgende vraag getoond en de tijd gereset of gewoon opnieuw gestart.
         private void button1_Click(object sender, EventArgs e)
         {
             switch (button1.Text)
@@ -186,6 +240,8 @@ namespace ProjectChallengeRijexamen
                     break;
             }
         }
+
+        //Word gebruikt om het label met de vraag nummers bij te werken.
         private void TelVraag()
         {
             vraagNummer++;
@@ -235,39 +291,6 @@ namespace ProjectChallengeRijexamen
                     button1.Text = "Volgende";
                 }
             }
-        }
-
-        private void MC_Form_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (!closing)
-            {
-                DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-                if (test == DialogResult.Yes)
-                {
-                    String formtext = "U behaalde een score van ";
-                    int teller = 0;
-                    for (int i = 0; i < vragen.getAantalVragen; i++)
-                    {
-                        if (!vragen.vraag(i).Overgeslagen && vragen.vraag(i).VraagJuist)
-                        {
-                            teller++;
-                        }
-                    }
-                    formtext = formtext + teller+"/"+vragen.getAantalVragen+".";
-                    MessageBox.Show(formtext);
-                        parentForm.Location = this.Location;
-                    parentForm.Show();
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
-            }
-            else
-            {
-                parentForm.Location = this.Location;
-                parentForm.Show();
-            }    
         }
     }
 }
