@@ -44,8 +44,8 @@ Feedback: Een personenauto mag maximaal 120 km/u rijden op de autosnelweg. De au
 Voorbij het verkeersbord is de snelheid van mijn personenauto beperkt tot:
 7.png
 90 km/u.
-70 km/u.
 50 km/u.
+70 km/u.
 Feedback: Buiten de bebouwde kom, op een gewone weg, bedraagt de maximumsnelheid 90 km/u, voor een personenwagen.
 -------------
 Ik verlaat een straat waar mijn snelheid beperkt is tot:
@@ -93,8 +93,8 @@ Feedback: Wie een doorlopend trottoir oversteekt, moet voorrang verlenen aan de 
 Op het kruispunt
 14.png
 moet ik stoppen en voorrang verlenen.
-heb ik voorrang.
 moet ik voorrang verlenen.
+heb ik voorrang.
 Feedback: Verkeersbord B5: stoppen en voorrang verlenen.
 -------------
 Autosnelweg. De auto die de autosnelweg wil oprijden:
@@ -198,15 +198,15 @@ Feedback: Je moet geen voorrang verlenen. Dat zou wel moeten als de voetganger a
 De leerling-bestuurder met een lesauto van een rijschool mag:
 29.png
 rijden op een autosnelweg
-rijden op een autosnelweg met een maximumsnelheid van 90 km/u.
 niet rijden op een autosnelweg.
+rijden op een autosnelweg met een maximumsnelheid van 90 km/u.
 Feedback: Een leerling-bestuurder mag op de autosnelweg rijden. 
 -------------
 Op een autoweg is het verboden te rijden met:
 30.png
 een vierwieler met motor zonder passagiersruimte (quad).
-een aanhangwagen op luchtbanden.
 een motorfiets met passagier.
+een aanhangwagen op luchtbanden.
 Feedback: Het is verboden op een autoweg te rijden met een vierwieler met motor zonder passagiersruimte.
 -------------
 Op een autosnelweg is het verboden:
@@ -247,8 +247,8 @@ Feedback: Op een autoweg buiten de bebouwde kom met 2x2 rijstroken gescheiden do
 Op de openbare weg moet ik mijn dimlichten ontsteken zodra het zicht minder wordt dan:
 36.png
 200 meter.
-100 meter.
 50 meter.
+100 meter.
 Feedback: Je moet de lichten ontsteken zodra het zicht minder wordt dan 200 meter. 
 -------------
 Bij felle regen
@@ -282,8 +282,8 @@ Feedback: Geluidssignalen zijn alleen toegelaten om een noodzakelijke waarschuwi
 Het grootlicht moet worden gedoofd en de dimlichten ontstoken, als ik een ander voertuig op minder dan
 41.png
 100 meter volg, behalve als ik inhaal.
-50 meter volg, zelfs als ik inhaal.
 50 meter volg, behalve als ik inhaal.
+50 meter volg, zelfs als ik inhaal.
 Feedback: Het grootlicht moet worden gedoofd en de dimlichten ontstoken, als je een ander voertuig op minder dan 50 meter volgt, behalve als je inhaalt.
 -------------
 De ondeelbare lading mag achter de personenauto niet verder uitsteken dan:
@@ -317,8 +317,8 @@ Feedback: De maximumbreedte van een beladen voertuig bedraagt 2,55 meter.
 Bij sneeuwval als de zichtbaarheid minder is dan 200 meter moet ik vooraan
 46.png
 de dimlichten of de mistlichten ontsteken.
-de dim- en de mistlichten ontsteken.
 de mistlichten ontsteken.
+de dim- en de mistlichten ontsteken.
 Feedback: Voormistlichten zijn niet verplicht maar mogen de dimlichten vervangen bij mist, sneeuwval of felle regen.
 -------------
 De lading van een personenauto mag vooraan
@@ -394,15 +394,15 @@ Feedback: Voor de eigen veiligheid en die van de andere weggebruikers is een per
 Ik mag de bandenspanning verhogen
 57.png
 bij een lange rit met hoge snelheid of bij een zware lading.
-bij regen.
 in de winter.
+bij regen.
 Feedback: De bandenspanning voor normaal gebruik moet meestal met 0,3 bar worden verhoogd bij zware belasting, sportief rijden, rijden op bochtige wegen en voor het afleggen van lange trajecten met hoge snelheid.
 -------------
 Tijdens het afrijden van een gevaarlijke daling
 58.png
 rem ik via de motor af.
-rem ik altijd met het rempedaal.
 zet ik de versnellingspook in neutraal.
+rem ik altijd met het rempedaal.
 Feedback: Het afrijden van een gevaarlijke daling doe je door naar een lagere versnelling te schakelen (en zo af te remmen via de motor).
 -------------
 Ik trap tijdens het remmen op mijn rempedaal en voel dat het te gemakkelijk kan worden ingedrukt. Wat is de oorzaak hiervan?
@@ -464,8 +464,8 @@ Feedback: Als de auto tijdens het remmen uitwijkt naar links of recht kan dat te
 Bij het instappen ga ik:
 67.png
 liefst langs de voorkant van de auto naar het bestuurdersportier toe.
-nooit langs de voorkant van de auto naar het bestuurdersportier toe.
 best langs de achterkant van de auto naar het bestuurdersportier toe.
+nooit langs de voorkant van de auto naar het bestuurdersportier toe.
 Feedback: Bij het instappen ga je liefst langs de voorkant van de auto naar het bestuurdersportier toe.
 -------------
 Fietsen plaats je best:
@@ -506,15 +506,15 @@ Feedback: Een arm recht opgestoken betekent dat alle weggebruikers moeten stoppe
 Als ik door een rood licht rijd,
 73.png
 kan de politie mijn rijbewijs onmiddellijk intrekken.
-is er een rechterlijk vonnis nodig om mijn rijbewijs te kunnen intrekken.
 kan de politie mijn voertuig onmiddellijk in beslag nemen.
+is er een rechterlijk vonnis nodig om mijn rijbewijs te kunnen intrekken.
 Feedback: Bij een overtreding van de derde graad (bv. door een rood licht rijden) kan de politie het rijbewijs onmiddellijk intrekken. Dit gebeurt na advies en op bevel van het parket.
 -------------
 Mag de groene auto links afslaan?
 74.png
 Ja.
-Neen, want de rode auto heeft voorrang.
 Neen.
+Neen, want de rode auto heeft voorrang.
 Feedback: Een arm of beide armen horizontaal uitgestrekt betekent dat de weggebruikers komende uit de richting links en rechts van een bevoegd persoon mogen doorrijden of links of rechts afslaan.
 -------------
 Hoeveel categorie�n van overtredingen bestaan er?
