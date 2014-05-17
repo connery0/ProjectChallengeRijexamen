@@ -95,6 +95,8 @@ namespace ProjectChallengeRijexamen
 
         private void setVerkeersborden()
         {
+            //Het inlezen van alle verkeersborden in een array.
+
             StreamReader myFile = new StreamReader("..\\..\\Vragen\\Borden.txt");
             string myString = myFile.ReadToEnd();
 
@@ -119,10 +121,12 @@ namespace ProjectChallengeRijexamen
 
         private void pictureBox_Click(object sender, EventArgs e)
         {
+            //Verkeersbord verschijnt
             PictureBox picture = (PictureBox)sender;
 
             if (picture.Tag.ToString() != "Gevonden" && (laatsteKeuze == null || !laatsteKeuze.Equals(picture)))
             {
+                //Vergelijken van de verkeersborden met elkaar.
                 picture.Load((String)picture.Tag);
 
                 if (laatsteKeuze == null)
@@ -154,6 +158,7 @@ namespace ProjectChallengeRijexamen
                         closing = true;
                         for (int i = 0; i < Box.Length; i++)
                         {
+                            //Zolang niet alle paren gevonden zijn, blijft het spel lopen.
                             if (!Box[i].Tag.Equals("Gevonden"))
                             {
                                 closing = false;
@@ -161,6 +166,7 @@ namespace ProjectChallengeRijexamen
                         }
                         if (closing)
                         {
+                        //Als alle paren zijn gevonden.
                             MessageBox.Show("Gefeliciteerd je hebt alle paren gevonden.");
                             this.Close();
                         }
