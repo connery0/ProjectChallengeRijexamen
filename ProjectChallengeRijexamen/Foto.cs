@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// een klasse om foto's op te slaan in het programma
+// aangemaakt op: 18/04/2014
+// gemaakt door: Tom Partoens
+
 namespace ProjectChallengeRijexamen
 {
     class Foto
-    {
-        
+    {        
         protected string naam;
 
         public Foto(string naam)

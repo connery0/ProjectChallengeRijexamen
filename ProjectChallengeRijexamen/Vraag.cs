@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace ProjectChallengeRijexamen
 {
+    // Deze klasse wordt gebruikt om alles van 1 vraag op te slaan.
+    // aangemaakt op: 18/04/2014
+    // gemaakt door: Tom Partoens
+
     class Vraag : IBeantwoord
     {
-
         private String vraag;
         private Foto afbeelding;
         private Keuze antwoord1, antwoord2, antwoord3;
@@ -38,8 +41,6 @@ namespace ProjectChallengeRijexamen
             return toPrint;
         }
 
-
-
         public Boolean ControleerVraag(int Antwoord)
         {
             if (beantwoord == false)
@@ -63,8 +64,9 @@ namespace ProjectChallengeRijexamen
             set
             {
                 juistBeantwoord = false;
-                beantwoord = true; 
-                overgeslagen = value; }
+                beantwoord = true;
+                overgeslagen = value;
+            }
         }
 
         public Boolean VraagJuist
@@ -95,6 +97,7 @@ namespace ProjectChallengeRijexamen
             }
             return returnAntwoord;
         }
+
         public String getVraag
         {
             get
@@ -102,6 +105,7 @@ namespace ProjectChallengeRijexamen
                 return vraag;
             }
         }
+
         public Foto Img
         {
             get
@@ -161,9 +165,7 @@ namespace ProjectChallengeRijexamen
                     juistAntwoord = 3;
                     break;
             }
-
         }
-
 
         public bool Beantwoord
         {

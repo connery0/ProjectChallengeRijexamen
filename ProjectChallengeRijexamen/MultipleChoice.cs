@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using System.IO;
 namespace ProjectChallengeRijexamen
 {
+    // de klasse die gebruikt word om vragen te kiezen en beantwoorden in MC_Form
+    // aangemaakt op: 18/04/2014
+    // gemaakt door: Tom Partoens
+
     class MultipleChoice
     {
         private Vraag[] vragen;

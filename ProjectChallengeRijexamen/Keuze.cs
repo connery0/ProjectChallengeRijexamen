@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectChallengeRijexamen
 {
+    // de klasse die gebruikt word om vragen te kiezen en beantwoorden in MC_Form
+    // aangemaakt op: 18/04/2014
+    // gemaakt door: Tom Partoens
     class Keuze
     {
         private String antwoord;
@@ -14,25 +17,22 @@ namespace ProjectChallengeRijexamen
         {
             this.antwoord = antwoord;
             this.juist = juist;
-
         }
 
         public String getAntwoord
         {
-            get{
-            return antwoord;
+            get
+            {
+                return antwoord;
             }
         }
+
         public Boolean isJuist
         {
-            get{
-            return juist;
+            get
+            {
+                return juist;
             }
         }
-
-
-
-
-
     }
 }
