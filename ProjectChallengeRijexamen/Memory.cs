@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Memory spel
+//Author: Bram Zabot
+// za 10/05/2014
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,13 +30,16 @@ namespace ProjectChallengeRijexamen
         {
             InitializeComponent();
             this.parentform = parentform;
-            PictureBox[] Box = { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8, pictureBox9, pictureBox10, pictureBox11, pictureBox12, pictureBox13, pictureBox14, pictureBox15, pictureBox16, pictureBox17, pictureBox18 };
+            PictureBox[] Box = { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, 
+            pictureBox7, pictureBox8, pictureBox9, pictureBox10, pictureBox11, pictureBox12, pictureBox13, 
+            pictureBox14, pictureBox15, pictureBox16, pictureBox17, pictureBox18 };
             this.Box = Box;
             setVerkeersborden();
 
             int[] Temp = new int[Box.Length];
             for (int i = 0; i < this.Box.Length; i++)
             {
+                //Hier wordt de tag "" gegeven aan ico3, wat gebruikt wordt om de verkeersborden te 'verstoppen'.
                 Temp[i] = -1;
                 Box[i].Load("..\\..\\img\\Verkeersborden\\ico3.png");
                 Box[i].Tag = "";
@@ -57,6 +63,9 @@ namespace ProjectChallengeRijexamen
 
         private void Settag(String Naam)
         {
+            // Hier worden tags aan de verkeersborden gegeven, om ze erna te kunnen plaatsen.
+            // Er worden 20 verkeersborden gekozen en als ze verkozen worden wordt de boolean geplaatst
+            // voor dat verkeersbord op true gezet.
             Boolean geplaatst = false;
             int teller = 0;
             while (teller < 20 && !geplaatst)
@@ -124,13 +133,14 @@ namespace ProjectChallengeRijexamen
                     Boolean test = laatsteKeuze.Equals(picture);
                     if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
                     {
+                        // Hier wordt wacht de code even, zodat de speler kan zien dat hij 2 verkeerde borden heeft omgedraaid.
                         picture.Refresh();
                         System.Threading.Thread.Sleep(500);
 
 
                         if (!((String)laatsteKeuze.Tag).Equals(((String)(picture.Tag)), StringComparison.Ordinal))
                         {
-
+                        // Hier wordt het verkeersbord terug 'omgedraaid'.
                             laatsteKeuze.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico3.png");
                             picture.Image = Image.FromFile("..\\..\\img\\Verkeersborden\\ico3.png");
                         }
@@ -152,8 +162,6 @@ namespace ProjectChallengeRijexamen
                             MessageBox.Show("Gefeliciteerd je hebt alle paren gevonden.");
                             this.Close();
                         }
-
-
                     }
 
                     laatsteKeuze = null;
@@ -165,10 +173,14 @@ namespace ProjectChallengeRijexamen
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            // Terugknop om naar het hoofdmenu te gaan.
         }
+
+        
 
         private void Memory_FormClosing(object sender, FormClosingEventArgs e)
         {
+            // Zodat als men per ongeluk het venster sluit, men een melding krijgt of hij zeker is of hij wil afsluiten.
             if (!closing)
             {
                 DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);

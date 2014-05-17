@@ -40,6 +40,8 @@ namespace ProjectChallengeRijexamen
 
         private void Inlogscherm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            // Update zodat men een waarschuwing krijgt, wanneer men wil sluiten.
+            // Author Stef Jansens, Bram Zabot
             if (!sluiten) { 
             DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (test == DialogResult.Yes)
@@ -53,8 +55,11 @@ namespace ProjectChallengeRijexamen
             }
         }
 
+
         private void TextboxNaam_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Update zodat men alleen karakters kan ingeven in de tekstboxen.
+            //Author: Bram Zabot
             if (e.KeyChar == (char)Keys.Enter)
             {
                 Aanmelden();
