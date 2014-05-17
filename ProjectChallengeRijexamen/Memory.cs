@@ -71,7 +71,7 @@ namespace ProjectChallengeRijexamen
             while (teller < 20 && !geplaatst)
             {
                 int N = r.Next(0, Box.Length);
-                if (Box[N].Tag == "")
+                if (Box[N].Tag.ToString() == "")
                 {
                     Box[N].Tag = "..\\..\\img\\Verkeersborden\\" + Naam;
                     geplaatst = true;
@@ -82,7 +82,7 @@ namespace ProjectChallengeRijexamen
             {
                 for (int i = 0; i < Box.Length; i++)
                 {
-                    if (Box[i].Tag == "" && !geplaatst)
+                    if (Box[i].Tag.ToString() == "" && !geplaatst)
                     {
                         Box[i].Tag = "..\\..\\img\\Verkeersborden\\" + Naam;
                         geplaatst = true;
@@ -119,7 +119,7 @@ namespace ProjectChallengeRijexamen
         {
             PictureBox picture = (PictureBox)sender;
 
-            if (picture.Tag != "Gevonden" && (laatsteKeuze == null || !laatsteKeuze.Equals(picture)))
+            if (picture.Tag.ToString() != "Gevonden" && (laatsteKeuze == null || !laatsteKeuze.Equals(picture)))
             {
                 picture.Load((String)picture.Tag);
 

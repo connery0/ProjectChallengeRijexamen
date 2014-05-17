@@ -1,4 +1,7 @@
-﻿using System;
+﻿﻿//Drag en Drop
+//Author: Stef Janssens
+//Datum: 6/05/2014
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +34,7 @@ namespace ProjectChallengeRijexamen
             setVerkeersborden();
             randomVerkeersborden();
             invullen();
-
+            // Er voor zorgen dat de pictureboxen een drop toelaten
             pictureBox7.AllowDrop = true;
             pictureBox8.AllowDrop = true;
             pictureBox9.AllowDrop = true;
@@ -43,12 +46,13 @@ namespace ProjectChallengeRijexamen
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            // Dat de picturebox locatie verandert waar de muis is
             pic1.Location = new Point(Cursor.Position.X - this.Location.X - 60, Cursor.Position.Y - this.Location.Y - 80);
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
+            //Als de linkermuis knop wordt ingedrukt voert hij deze code uit
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
                 pic1 = (PictureBox)sender;
@@ -58,6 +62,7 @@ namespace ProjectChallengeRijexamen
                 DoDragDrop(pic1.Image, DragDropEffects.Copy | DragDropEffects.Move);
                 
                 timer1.Stop();
+                //Zien of het op de juiste plaats is gedropt
                 int picX = pic1.Location.X + 50;
                 int picY = pic1.Location.Y + 50;
                 if (picX >= 12 && picX <= 112 && picY >= 118 && picY <= 218)
@@ -96,6 +101,7 @@ namespace ProjectChallengeRijexamen
                     pictureBox12.Image = pic1.Image;
                     pictureBox12.Tag = pic1.Tag;
                 }         
+                //Terug zetten van de picturebox op de juiste plaats
                 switch (pic1.Name)
                 {
                     case "pictureBox1":
@@ -119,6 +125,7 @@ namespace ProjectChallengeRijexamen
       
         private void setVerkeersborden()
         {
+            //Het inlezen van alle verkeersborden in een array
             try
             {
                 StreamReader myFile = new StreamReader("..\\..\\Vragen\\Borden.txt");
@@ -151,6 +158,7 @@ namespace ProjectChallengeRijexamen
         }
         private void controle()
         {
+            //controle of de image als gebruikt is, zo ja verwijder het in die picturebox
             foreach (Control control in this.Controls)
             {
                 if (control is PictureBox)
@@ -169,19 +177,22 @@ namespace ProjectChallengeRijexamen
 
         private void pictureBox10_DoubleClick(object sender, EventArgs e)
         {
+            //Een andere manier om picturebox leeg te krijgen
             pic2 = (PictureBox)sender;
             pic2.Image = null;
             pic2.Tag = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {            
+        {       
+            //Controle uitvoeren
             if (button1.Text == "Controle") {
                 foreach (Control control in this.Controls)
                 {
                     if (control is PictureBox)
                     {
                         PictureBox picture = (PictureBox)control;
+                        //controle of alles is ingevuld
                         if (picture.Tag == null)
                         {
                             MessageBox.Show("Gelieve alle verkeersborden te matchen!", "Lege plaatsen", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -189,7 +200,7 @@ namespace ProjectChallengeRijexamen
                         }
                     }
                 }
-
+                //Zien of het juist is ingevuld
                 if (pictureBox7.Tag.ToString() == label1.Text)
                 {
                     label1.BackColor = Color.Green;
@@ -260,6 +271,7 @@ namespace ProjectChallengeRijexamen
             }
             else if (button1.Text == "Volgende")
             {
+                //Kijken of er nog verkeersborden zijn
                 Boolean nogVerkeersborden = false;
                 for (int i = 0; i < alleVerkeersborden.Length; i++)
                 {
@@ -271,7 +283,7 @@ namespace ProjectChallengeRijexamen
 
                 if (nogVerkeersborden)
                 {
-
+                    //Alles terug zetten naar begin waarde
                     foreach (Control control in this.Controls)
                     {
                         if (control is PictureBox)
@@ -292,6 +304,7 @@ namespace ProjectChallengeRijexamen
                             uitleg.BackColor = Color.Transparent;
                         }
                     }
+                    //nieuwe 6 verkeersborden
                     randomVerkeersborden();
                     invullen();
                     button1.Text = "Controle";
@@ -308,6 +321,7 @@ namespace ProjectChallengeRijexamen
 
         private void randomVerkeersborden()
         {
+            //6 Random verkeersborden kiezen
             Random randomGetal = new Random();
             gevraagdeVerkeersborden = new Verkeersbord[6];
             int tellerAantal = 0;
@@ -323,12 +337,14 @@ namespace ProjectChallengeRijexamen
                     {            
                         for (int j = 1; j <= tellerAantal; j++)
                         {
+                            //testen of het verkeersbord al in de array voor 6 zit
                             if (gevraagdeVerkeersborden[j-1] == alleVerkeersborden[i])
                             {
                                 testing = true;
                                 break;
                             }
                         }
+                        // zit het er in doet hij deze code niet, zit de verkeersbord er nog niet in doet hij deze code en plaats hij het in de array
                         if (!testing)
                         {
                             gevraagdeVerkeersborden[tellerAantal] = alleVerkeersborden[i];
@@ -338,6 +354,7 @@ namespace ProjectChallengeRijexamen
                 }
                 else
                 {
+                    //Moest er altijd het zelfde random getal pakken. Gaat het hier door de hele array
                     for (int j = 0; j < alleVerkeersborden.Length; j++)
                     {
                         testing = false;
@@ -370,6 +387,7 @@ namespace ProjectChallengeRijexamen
 
         private void invullen()
         {
+            // Het invullen van de pictureboxen en labels
             Random getal = new Random();
             randomFoto = getal.Next(0,5);
             randomUitleg = getal.Next(0,5);
@@ -414,6 +432,7 @@ namespace ProjectChallengeRijexamen
 
         private void DnD_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //Als het formulier sluit en je bent nog bezig doet hij deze code. Zorgt ervoor dat hij er perongeluk op kan klikken en toch verder gaan
             if (!sluiten)
             {
                 DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
@@ -442,7 +461,7 @@ namespace ProjectChallengeRijexamen
         }
 
         //http://msdn.microsoft.com/en-us/library/aa984430(v=vs.71).aspx
-        
+        //drag en drop voor laatste picturebox om toch een normale drop te hebben
         private void pictureBox7_DragDrop(object sender, DragEventArgs e)
         {
             pic2 = (PictureBox)sender;
