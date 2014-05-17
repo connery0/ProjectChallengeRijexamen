@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Theorieviewer om theorie te kunnen lezen en in te leren.
+//Author: Thibaut Vandeput
+//Date : ma 5/5/2014
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
