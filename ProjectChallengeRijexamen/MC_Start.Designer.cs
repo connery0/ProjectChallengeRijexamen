@@ -148,7 +148,7 @@
             this.radioButton4.Size = new System.Drawing.Size(208, 44);
             this.radioButton4.TabIndex = 13;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "30 seconden per vraag";
+            this.radioButton4.Text = "15 seconden per vraag";
             this.radioButton4.UseVisualStyleBackColor = false;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 

@@ -17,14 +17,25 @@ namespace ProjectChallengeRijexamen
         private Boolean examen = false;
 
 
-        public MultipleChoice(MC_Form parentForm, String naam)
+        public MultipleChoice(MC_Form parentForm, String naam) //oefenvragen
         {
             this.parentForm = parentForm;
             this.naam = naam;
             setVragen(naam);
             VolgendeVraag();
         }
-        public MultipleChoice(MC_Form parentForm)
+
+
+        public Vraag vraag(int i)
+        {
+            return vragen[i];            
+        }
+
+
+
+
+
+        public MultipleChoice(MC_Form parentForm) //examen
         {
             examen = true;
             naam = "..\\Vragen";

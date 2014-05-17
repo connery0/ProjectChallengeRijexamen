@@ -22,7 +22,7 @@ namespace ProjectChallengeRijexamen
         private Boolean closing = false;
 
 
-        public MC_Form(Form1 parentForm, String naam, int tijdslimiet)
+        public MC_Form(Form1 parentForm, String naam, int tijdslimiet)//oefen vragen
         {
             InitializeComponent();
             vragen = new MultipleChoice(this, naam);
@@ -39,7 +39,7 @@ namespace ProjectChallengeRijexamen
         }
 
 
-        public MC_Form(Form1 parentForm)
+        public MC_Form(Form1 parentForm)//examen
         {
             InitializeComponent();
             vragen = new MultipleChoice(this);
@@ -84,7 +84,7 @@ namespace ProjectChallengeRijexamen
                     break;
                 case 3:
                     tijdPerVraag = true;
-                    maxTijd = 30;
+                    maxTijd = 15;
                     break;
             }
 
@@ -252,8 +252,18 @@ namespace ProjectChallengeRijexamen
                 DialogResult test = MessageBox.Show("Weet u zeker dat u wilt afsluiten?", "OPPASSEN", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (test == DialogResult.Yes)
                 {
-                  
-                    parentForm.Location = this.Location;
+                    String formtext = "U behaalde een score van ";
+                    int teller = 0;
+                    for (int i = 0; i < vragen.getAantalVragen; i++)
+                    {
+                        if (!vragen.vraag(i).Overgeslagen && vragen.vraag(i).VraagJuist)
+                        {
+                            teller++;
+                        }
+                    }
+                    formtext = formtext + teller+"/"+vragen.getAantalVragen+".";
+                    MessageBox.Show(formtext);
+                        parentForm.Location = this.Location;
                     parentForm.Show();
                 }
                 else

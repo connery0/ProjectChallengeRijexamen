@@ -289,6 +289,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Memory";
             this.Text = "Memory";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Memory_FormClosing);
             this.Load += new System.EventHandler(this.Memory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -2,22 +2,22 @@
 De reactietijd is de tijd die verloopt tussen:
 1.png
 Het zien van het gevaar en het indrukken van het rempedaal.
-Het indrukken van het rempedaal en de plaats van stilstand.
 Het zien van het gevaar en de plaats van stilstand.
+Het indrukken van het rempedaal en de plaats van stilstand.
 Feedback: De reactietijd is de tijd die verloopt tussen het zien van het gevaar en het indrukken van het rempedaal. Deze bedraagt ongeveer 1 seconde.
 -------------
 Op deze weg bedraagt de maximumsnelheid 90 km/u
 2.png
 voor alle voertuigen, behalve voor autobussen, autocars en voertuigen met een MTM van meer dan 7.5 ton.
-voor autobussen en autocars.
 voor alle voertuigen.
+voor autobussen en autocars.
 Feedback: Op een gewone weg, buiten de bebouwde kom, bedraagt de maximale toegelaten snelheid 75 km/u voor autobussen en autocars en 60km/u voor voertuigen met een MTM van meer dan 7.5 ton.
 -------------
 Ik bestuur een jeep met een caravan, de MTM van de sleep is 3800 kg. Hoe snel mag ik rijden op een autosnelweg?
 3.png
 90 km/u.
-100 km/u.
 120 km/u.
+100 km/u.
 Feedback: De snelheid voor alle voertuigen en slepen met een MTM van meer de 3,5 ton is op de autosnelwegen beperkt tot 90 km/u.
 -------------
 Je rijdt met een snelheid van 80 km/u. Om je voertuig tot stilstand te brengen, heb je een afstand nodig van:
@@ -37,8 +37,8 @@ Feedback: De maximale toegelaten snelheid van een sleep met nood- of hulpkoppeli
 Mijn snelheid is hier beperkt tot:
 6.png
 120 km/u.
-90 km/u.
 70 km/u.
+90 km/u.
 Feedback: Een personenauto mag maximaal 120 km/u rijden op de autosnelweg. De autosnelweg eindigt pas over 1 km.
 -------------
 Voorbij het verkeersbord is de snelheid van mijn personenauto beperkt tot:
@@ -51,8 +51,8 @@ Feedback: Buiten de bebouwde kom, op een gewone weg, bedraagt de maximumsnelheid
 Ik verlaat een straat waar mijn snelheid beperkt is tot:
 8.png
 20 km/u.
-30 km/u.
 50 km/u.
+30 km/u.
 Feedback: Op een woonerf bedraagt de maximale toegelaten snelheid 20 km/u.
 -------------
 Bij het naderen van trek-, last- of rijdieren of vee, moet de bestuurder:
@@ -72,22 +72,22 @@ Feedback: Dit is een kruispunt met voorrang aan rechts: ik moet dus voorrang ver
 Ik rijd op een aardeweg en wil rechts afslaan. Wie heeft voorrang?
 11.png
 De personenauto die op de rijbaan rijdt.
-Ik, want ik kom van rechts.
 Ik, want ik kom van een aardeweg.
+Ik, want ik kom van rechts.
 Feedback: Een bestuurder die van een aardeweg of een pad komt gereden, moet voorrang verlenen aan de bestuurders op de rijbaan.
 -------------
 De fietser rijdt op een fietssuggestiestrook. Moet ik hem voorrang verlenen?
 12.png
 Neen.
-Ja.
 Ja, een fietssuggestiestrook is hetzelfde als een fietspad.
+Ja.
 Feedback: Een fietssuggestiestrook is gewoon een onderdeel van de rijbaan. De fietser die erop rijdt, moet voorrang aan rechts verlenen.
 -------------
 Wie moet ik voorrang verlenen bij het oversteken van een doorlopend trottoir?
 13.png
 Iedereen die het trottoir mag gebruiken.
-De fietsers.
 Alleen de voetgangers.
+De fietsers.
 Feedback: Wie een doorlopend trottoir oversteekt, moet voorrang verlenen aan de weggebruikers die gerechtigd zijn om het trottoir te volgen, zoals voetgangers, kinderen tot 9 jaar met een kleine fiets, steppers en rolschaatsers.
 -------------
 Op het kruispunt
@@ -100,15 +100,15 @@ Feedback: Verkeersbord B5: stoppen en voorrang verlenen.
 Autosnelweg. De auto die de autosnelweg wil oprijden:
 15.png
 mag ik voorrang verlenen.
-mag ik geen voorrang verlenen, omdat ik op de autosnelweg rijd.
 moet ik voorrang verlenen, omdat hij van rechts komt.
+mag ik geen voorrang verlenen, omdat ik op de autosnelweg rijd.
 Feedback: Een bestuurder die van rijstrook verandert, voert een manoeuvre uit en heeft bijgevolg geen voorrang.
 -------------
 Geldt de regel 'rechts heeft voorrang' ook voor de bestuurder die uit een priv�garage komt gereden?
 16.png
 Neen.
-Ja.
 Ja, op voorwaarde dat hij niet is gestopt.
+Ja.
 Feedback: De voorrangsregels gelden op de kruispunten van een openbare weg. Wie uit een privaat eigendom komt, voert een manoeuvre uit en heeft bijgevolg geen voorrang.
 -------------
 De rode auto is gestopt. Wie moet voorrang verlenen?
@@ -121,8 +121,8 @@ Feedback: Kruispunt met 'voorrang aan rechts'. De rode auto komt van rechts, ik 
 Als ik een sirene van een ambulance hoor, moet ik:
 18.png
 de doorgang vrijmaken, voorrang verlenen en zo nodig stoppen.
-gewoon verder rijden.
 onmiddellijk stoppen.
+gewoon verder rijden.
 Feedback: Zodra je een sirene hoort moet je de doorgang vrijmaken, voorrang verlenen aan de ambulance en zo nodig stoppen.
 -------------
 Het onderbord betekent:
@@ -142,43 +142,43 @@ Feedback: Verkeersbord B9: voorrangsweg. Dit verkeersbord wordt telkens voorbij 
 De tram komt van links.
 21.png
 Ik moet voorrang verlenen.
-Ik heb voorrang.
 Ik heb voorrang op de tram, maar moet de voetganger voorrang verlenen.
+Ik heb voorrang.
 Feedback: Elke weggebruiker moet voorrang verlenen aan een spoorvoertuig, ook als deze van links komt.
 -------------
 Ik wil verderop rechts parkeren. Ik heb voorrang op de fietser.
 22.png
 Neen.
-Ja.
 Ja, als ik sneller rijd.
+Ja.
 Feedback: Bij het uitvoeren van een manoeuvre, zoals parkeren, moet de bestuurder voorrang verlenen aan alle andere weggebruikers, dus ook aan fietsers die rechtdoor rijden op de rijbaan.
 -------------
 Ik rijd rechtdoor.
 23.png
 Ik heb voorrang.
-Ik moet voorrang verlenen aan alle weggebruikers.
 Ik moet voorrang verlenen aan de tegenligger die links wil afslaan.
+Ik moet voorrang verlenen aan alle weggebruikers.
 Feedback: Een bestuurder die rechtdoor rijdt heeft voorrang op een bestuurder die links wil afslaan.
 -------------
 Als ik de fietser wil inhalen, moet ik een vrije ruimte laten van ten minste:
 24.png
 1 meter tussen mijn voertuig en de fietser
-1,5 meter tussen mijn voertuig en de fietser.
 1 meter tussen mijn voertuig en de rand van de rijbaan.
+1,5 meter tussen mijn voertuig en de fietser.
 Feedback: De bestuurder moet een zijdelingse afstand van ten minste 1 meter laten tussen zijn voertuig en de fietser.
 -------------
 Hoe handel ik best in deze situatie?
 25.png
 Ik stop rechts achter de tram.
-Ik rijd langzaam rechts voorbij, terwijl ik claxonneer.
 Ik probeer links in te halen.
+Ik rijd langzaam rechts voorbij, terwijl ik claxonneer.
 Feedback: Een tram moet rechts ingehaald worden. Bij afwezigheid van een vluchtheuvel moet de bestuurder die rijdt langs de kant waar de reizigers in- of uitstappen, stoppen om hen de gelegenheid te geven de tram of het trottoir veilig te bereiken.
 -------------
 De schoolbus stopt en zet de vier richtingaanwijzers aan. Wat moet ik doen?
 26.png
 Ik vertraag en kijk goed uit om eventueel overstekende kinderen niet te verrassen.
-Ik stop en wacht tot de bus verder rijdt.
 Ik rijd zo vlug mogelijk langs links voorbij de bus.
+Ik stop en wacht tot de bus verder rijdt.
 Feedback: Iedere bestuurder moet extra voorzichtig zijn bij het naderen van een voertuig dat schoolkinderen vervoert. Hij moet zijn snelheid aanzienlijk matigen en indien nodig stoppen.
 -------------
 Wat moet ik in deze situatie doen?
@@ -191,8 +191,8 @@ Feedback: Om in te halen moet ik ten minste 1 meter tussen mijn voertuig en de f
 De voetganger wacht om over te steken.
 28.png
 Ik moet de voetganger geen voorrang verlenen.
-Ik moet stoppen en de voetganger voorrang verlenen.
 Ik moet de voetganger voorrang verlenen.
+Ik moet stoppen en de voetganger voorrang verlenen.
 Feedback: Je moet geen voorrang verlenen. Dat zou wel moeten als de voetganger aan een zebrapad wacht om over te steken.
 -------------
 De leerling-bestuurder met een lesauto van een rijschool mag:
@@ -212,8 +212,8 @@ Feedback: Het is verboden op een autoweg te rijden met een vierwieler met motor 
 Op een autosnelweg is het verboden:
 31.png
 achteruit te rijden of te keren.
-achteruit te rijden, behalve om een afrit te nemen die je ongeveer 10 meter bent voorbijgereden.
 achteruit te rijden, behalve om benzine te tanken aan een tankstation dat je 100 meter bent voorbijgereden.
+achteruit te rijden, behalve om een afrit te nemen die je ongeveer 10 meter bent voorbijgereden.
 Feedback: Op een autosnelweg is het verboden achteruit te rijden, te keren of in de tegenovergestelde richting te rijden.
 -------------
 Op een autoweg is het verboden te rijden met:
@@ -233,8 +233,8 @@ Feedback: Op een autoweg binnen de bebouwde kom bedraagt de maximale toegelaten 
 Op een autoweg is het verboden
 34.png
 door de dwarsverbinding te rijden, behalve als verkeersborden dat opleggen.
-sneller te rijden dan 70 km/u.
 trager te rijden dan 70 km/u.
+sneller te rijden dan 70 km/u.
 Feedback: Op een autoweg is het verboden door de dwarsverbinding te rijden, behalve als verkeersborden dat opleggen.
 -------------
 Op deze autoweg is de maximale toegelaten snelheid:
@@ -254,29 +254,29 @@ Feedback: Je moet de lichten ontsteken zodra het zicht minder wordt dan 200 mete
 Bij felle regen
 37.png
 moeten de achtermistlichten gebruikt worden.
-mogen de achtermistlichten nooit gebruikt worden.
 mogen de achtermistlichten gebruikt worden.
+mogen de achtermistlichten nooit gebruikt worden.
 Feedback: De achtermistlichten moeten gebruikt worden: bij mist of sneeuwval die de zichtbaarheid vermindert tot minder dan 100 meter en altijd bij felle regen.
 -------------
 De maximale hoogte ven een beladen personenauto bedraagt:
 38.png 
 4 meter.
-3 meter.
 2.55 meter.
+3 meter.
 Feedback: De maximale hoogte van een beladen voertuig bedraagt 4 meter.
 -------------
 Voormistlichten zijn
 37.png
 niet verplicht.
-verplicht op alle personenauto's.
 verplicht op alle nieuw ingeschreven personenauto's.
+verplicht op alle personenauto's.
 Feedback: Achtermistlichten zijn verplicht, voor mistlichten zijn niet verplicht, wel toegelaten.
 -------------
 Het gebruik van een geluidstoestel is overdag toegelaten als ik een bestuurder moet waarschuwen die ik wil inhalen.
 40.png
 Ja, maar alleen buiten de bebouwde kom.
-Ja.
 Ja, maar alleen binnen de bebouwde kom.
+Ja.
 Feedback: Geluidssignalen zijn alleen toegelaten om een noodzakelijke waarschuwing te geven om een ongeval te voorkomen en buiten de bebouwde kom, als je een bestuurder moet waarschuwen die je wil inhalen.
 -------------
 Het grootlicht moet worden gedoofd en de dimlichten ontstoken, als ik een ander voertuig op minder dan
@@ -289,8 +289,8 @@ Feedback: Het grootlicht moet worden gedoofd en de dimlichten ontstoken, als je 
 De ondeelbare lading mag achter de personenauto niet verder uitsteken dan:
 42.png
 3 meter.
-0,50 meter.
 1 meter.
+0,50 meter.
 Feedback: De ondeelbare lading van een personenauto mag achteraan niet verder dan 3 meter buiten het voertuig uitsteken, een deelbare lading mag slechts 1 meter uitsteken.
 -------------
 Moet ik de standlichten ontsteken als ik 's avonds mijn voertuig parkeer op een gelijkgrondse berm?
@@ -303,15 +303,15 @@ Feedback: Tijdens stilstaan of parkeren op de openbare weg moeten ten minste de 
 De lading maakt de lichten van mijn wagen onzichtbaar.
 44.png
 Dat is nooit toegelaten.
-Dat is 's nachts toegelaten als het de lichten langs de rechterkant betreft.
 Dat is overdag toegelaten.
+Dat is 's nachts toegelaten als het de lichten langs de rechterkant betreft.
 Feedback: De lading mag de lichten, de reflectoren en de kentekenplaat niet onzichtbaar maken.
 -------------
 De maximumbreedte van een beladen personenauto bedraagt:
 45.png
 2.55 meter.
-3 meter.
 2.75 meter.
+3 meter.
 Feedback: De maximumbreedte van een beladen voertuig bedraagt 2,55 meter.
 -------------
 Bij sneeuwval als de zichtbaarheid minder is dan 200 meter moet ik vooraan
@@ -324,36 +324,36 @@ Feedback: Voormistlichten zijn niet verplicht maar mogen de dimlichten vervangen
 De lading van een personenauto mag vooraan
 47.png
 niet buiten het voertuig uitsteken.
-niet meer dan 1 meter uitsteken.
 niet meer dan 0,50 meter uitsteken.
+niet meer dan 1 meter uitsteken.
 Feedback: De lading van een personenauto mag vooraan niet buiten het voertuig uitsteken.
 -------------
 Na een ongeval, als ik mijn personenauto niet kan verplaatsen, moet ik:
 48.png
 ten minste de gevarendriehoek plaatsen op de verplichte afstand.
-de vier richtingaanwijzers in werking stellen.
 een oranje zwaailicht plaatsen achter mijn auto.
+de vier richtingaanwijzers in werking stellen.
 Feedback: Bij een ongeval waarbij je de auto niet kan verplaatsen moet je de plaats veilig stellen, door ten minste de gevarendriehoek te plaatsen. De vier richtingaanwijzers in werking stellen en/of een oranje zwaailicht plaatsen zijn bijkomende, toegelaten en aanbevolen maatregelen.
 -------------
 Verkeersongeval met gewonden. Wat doe je eerst?
 49.png
 De plaats veilig stellen.
-De gewonde helpen.
 De 100 of 112 bellen.
+De gewonde helpen.
 Feedback: Bij een ongeval dien je eerst de plaats veilig te stellen, dan de toestand van de gewonde(n) te bekijken en indien nodig te helpen en daarna de 100 of 112 te bellen.
 -------------
 Ik breng de hulpdienst op de hoogte van een verkeersongeval op een autosnelweg. Het belangrijkste dat ik meedeel is:
 50.png
 de plaats van het ongeval, de rijrichting van de voertuigen en het aantal gewonden.
-de plaats van het ongeval en het aantal gewonden.
 uw naam en het aantal voertuigen.
+de plaats van het ongeval en het aantal gewonden.
 Feedback: Het belangrijkste dat je meedeelt is de plaats van het ongeval, de rijrichting van de voertuigen en het aantal gewonden. Zeker bij het gebruik van een GSM is dat belangrijk.
 -------------
 Bij een verkeersongeval met louter stoffelijke schade
 51.png
 ben ik niet verplicht bij de politie aangifte te doen van het ongeval.
-ben ik verplicht bij de politie aangifte te doen van het ongeval.
 ben ik verplicht ter plaatse te blijven tot de politie de nodige vaststellingen heeft gedaan.
+ben ik verplicht bij de politie aangifte te doen van het ongeval.
 Feedback: Bij een ongeval met louter stoffelijke schade ben je niet verplicht bij de politie aangifte te doen, evenmin ter plaatse te blijven wachten op hun komst. Het invullen van een aanrijdingsformulier volstaat.
 -------------
 Ik zal een zwaargewonde, in afwachting van medische hulp:
@@ -366,15 +366,15 @@ Feedback: Bij een verkeersongeval geef je een zwaargewonde in geen geval te eten
 Mag ik een gewonde medicijnen geven in afwachting van de hulpdiensten?
 53.png
 Neen.
-Ja.
 Ja, als hij er zelf om vraagt.
+Ja.
 Feedback: Je mag een gewonde nooit te drinken geven en vooral geen medicijnen geven.
 -------------
 Ik ben betrokken bij een verkeersongeval met 1 lichtgewonde.
 53.png
 Ik moet de politie waarschuwen.
-Ik mag de schade onderling regelen.
 Ik moet alleen een aanrijdingsformulier invullen.
+Ik mag de schade onderling regelen.
 Feedback: Je moet de politie verwittigen als er gewonden zijn gevallen in een ongeval. Ook al is het maar een lichtgewonde.
 -------------
 Als ik de hulpdiensten wil verwittigen, vorm ik het nummer
@@ -408,8 +408,8 @@ Feedback: Het afrijden van een gevaarlijke daling doe je door naar een lagere ve
 Ik trap tijdens het remmen op mijn rempedaal en voel dat het te gemakkelijk kan worden ingedrukt. Wat is de oorzaak hiervan?
 56.png
 Er zit lucht of water in de remleiding
-Het loopvlak van de banden in kaal.
 Er zit water tussen remschijven en remblokken.
+Het loopvlak van de banden in kaal.
 Feedback: Als het rempedaal te gemakkelijk kan worden ingedrukt zit er waarschijnlijk lucht of water in de leiding.
 -------------
 Waardoor kan zwarte rook veroorzaakt worden?
@@ -422,15 +422,15 @@ Feedback: Een vuile luchtfilter kan de oorzaak zijn van zwarte rook, reinig daar
 Aan het chassis mag ik:
 56.png
 nooit boren en lassen.
-soms boren en lassen.
 wel lassen maar niet boren.
+soms boren en lassen.
 Feedback: Je mag aan het chassis nooit boren en lassen.
 -------------
 Ik moet de bandenspanning
 62.png
 regelmatig in koude toestand controleren.
-regelmatig in warme toestand controleren.
 niet controleren.
+regelmatig in warme toestand controleren.
 Feedback: Ik moet de bandenspanning regelmatig in koude toestand controleren.
 -------------
 Op een band staat '195/65 R15'.
@@ -443,22 +443,22 @@ Feedback: 65 geeft de hoogte/breedte verhouding in %.
 De tekening van de hoofdgroeven van de banden van de personenauto moet ten minste:
 62.png
 1,6 mm zijn.
-0,6 mm zijn.
 1 mm zijn.
+0,6 mm zijn.
 Feedback: De tekening van de hoofdgroeven van de banden van een personenauto moet ten minste 1,6 mm zijn over het hele loopvlak.
 -------------
 Door welk bestanddeel kan diesel in de winter stollen?
 65.png
 Paraffine.
-Water.
 Cetaan.
+Water.
 Feedback: Zomerdiesel kan in de winter beginnen vlokken (dit zijn paraffinekristallen), waardoor de brandstoffilters verstopt raken.
 -------------
 Ik rem en mijn voertuig wijkt naar links of rechts uit. Dat is te wijten aan:
 62.png
 de reminrichting.
-de stuurinrichting.
 de slechte kwaliteiten van de banden.
+de stuurinrichting.
 Feedback: Als de auto tijdens het remmen uitwijkt naar links of recht kan dat te wijten zijn aan de reminrichting.
 -------------
 Bij het instappen ga ik:
@@ -478,22 +478,22 @@ Feedback: Skiboxen, bagagedragers en fietsendragers veroorzaken een hoger brands
 Welke diesel is het vriendelijkst voor het milieu?
 65.png
 Zwavelarme diesel.
-Rode diesel.
 Witte diesel.
+Rode diesel.
 Feedback: Zwavelarme diesel is milieuvriendelijker dan de gewone witte diesel. Rode diesel mag enkel gebruikt worden voor verwarming en beperkt in landbouwvoertuigen.
 -------------
 Wat is het gevolg van rijden met een te lage bandenspanning?
 70.png
 Het brandstofgebruik neemt toe.
-De banden slijten minder snel.
 Minder wrijving met het wegdek.
+De banden slijten minder snel.
 Feedback: Bij een te lage bandendruk slijten de banden sneller en neemt het brandstofverbruik toe.
 -------------
 Ik bega een snelheidsovertreding van 8km/u. De onmiddellijke inning bedraagt:
 71.png
 50 euro.
-100 euro.
 150 euro.
+100 euro.
 Feedback: Voor een snelheidsovertreding van maximaal 10 km/u volgt een onmiddellijke inning van 50 euro.
 -------------
 Ik mag:

@@ -17,31 +17,18 @@ namespace ProjectChallengeRijexamen
         public MC_Form multipleChoice;
         public MC_Start startMC;
         public DnD dragAndDrop;
+        public Memory memory;
+
         private string naam;
+
         public Form1()
         {
             InitializeComponent();
             OmAantemelden();
 
         }
-
-
-        private void setScherm(String scherm)
-        {
-            switch (scherm)
-            {
-                case "Menu":
-                    break;
-
-                case "MultipleChoice":
-                    break;
-
-                default:
-                    break;
-            }
-        }
-
-        private void M_knop1_Click(object sender, EventArgs e)
+        
+      private void M_knop1_Click(object sender, EventArgs e)
         {
 
             startMC = new MC_Start(this, naam);
@@ -59,8 +46,10 @@ namespace ProjectChallengeRijexamen
 
         private void M_knop3_Click(object sender, EventArgs e)
         {
-            Memory memory = new Memory();
+            memory = new Memory(this);
             memory.Show();
+            memory.Location = this.Location;
+            this.Hide();
         }
 
         private void M_knop4_Click(object sender, EventArgs e)
@@ -86,7 +75,7 @@ namespace ProjectChallengeRijexamen
             naam = this.Tag.ToString();
 
             this.Text = "Welkom, " + this.Tag;
-            setScherm("Menu");
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,9 +91,6 @@ namespace ProjectChallengeRijexamen
             this.Close();
         }
 
-        
 
-        
-        
     }
 }

@@ -62,6 +62,7 @@ namespace ProjectChallengeRijexamen
             get { return overgeslagen; }
             set
             {
+                juistBeantwoord = false;
                 beantwoord = true; 
                 overgeslagen = value; }
         }

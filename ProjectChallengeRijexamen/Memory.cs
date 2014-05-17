@@ -19,12 +19,14 @@ namespace ProjectChallengeRijexamen
         private PictureBox laatsteKeuze = null;
         private Verkeersbord[] alleVerkeersborden;
         private Random r = new Random();
+        private Form1 parentform;
 
 
 
-        public Memory()
+        public Memory(Form1 parentform)
         {
             InitializeComponent();
+            this.parentform = parentform;
             PictureBox[] Box = { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5, pictureBox6, pictureBox7, pictureBox8, pictureBox9, pictureBox10, pictureBox11, pictureBox12, pictureBox13, pictureBox14, pictureBox15, pictureBox16, pictureBox17, pictureBox18 };
             this.Box = Box;
             setVerkeersborden();
@@ -169,6 +171,12 @@ namespace ProjectChallengeRijexamen
         private void Memory_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Memory_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            parentform.Location = this.Location;
+            parentform.Show();
         }
     }
 }
