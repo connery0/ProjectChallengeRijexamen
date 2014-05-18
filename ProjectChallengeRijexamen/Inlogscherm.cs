@@ -60,6 +60,7 @@ namespace ProjectChallengeRijexamen
         {
             //Update zodat men alleen karakters kan ingeven in de tekstboxen.
             //Author: Bram Zabot
+            //http://stackoverflow.com/questions/8321871/how-to-make-a-textbox-accept-only-alphabets
             if (e.KeyChar == (char)Keys.Enter)
             {
                 Aanmelden();
