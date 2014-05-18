@@ -63,7 +63,9 @@ namespace ProjectChallengeRijexamen
             OmAantemelden();
             e.Cancel = true;
         }
-
+        ﻿//Zo is het form1 toch het opstartformulier maar eerst een ander formulier
+        //Author: Stef Janssens
+        //Datum: 12/05/2014
         private void OmAantemelden()
         {
             Inlogscherm inloggen = new Inlogscherm(this);

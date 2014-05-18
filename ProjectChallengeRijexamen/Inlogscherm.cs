@@ -1,4 +1,7 @@
-﻿using System;
+﻿﻿//Aanmeldenformulier
+//Author: Stef Janssens
+//Datum: 12/05/2014
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,7 +73,9 @@ namespace ProjectChallengeRijexamen
                 e.Handled = true;
             }
         }
-
+        ﻿//Het aanmelden
+        //Author: Stef Janssens
+        //Datum: 12/05/2014
         private void Aanmelden()
         {
             string naam = TextboxNaam.Text.Trim();
