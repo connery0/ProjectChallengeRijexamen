@@ -1,0 +1,6 @@
+Als men het exe-bestand installeert, zal men een error krijgen als men de oefenvragen wil doen.
+Dit komt doordat door de installatie, de map 'Persoon' (bevindt zich in map 'Vragen'), niet genoeg rechten krijgt. 
+De evaluatieversie van InstallShield die in Visual Studio 2013 zit, laat niet toe rechten toe te kennen 
+voor bij een installatie.
+Deze error kan men oplossen door na de installatie, de map 'Persoon', de groep 'Iedereen' het recht te geven 
+deze map te wijzigen. Men kan deze mappen vinden onder Progam Files (x86), G1. 
