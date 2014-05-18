@@ -54,6 +54,7 @@ namespace ProjectChallengeRijexamen
         {
             TheorieViewer theorieviewer = new TheorieViewer(this);
             theorieviewer.Show();
+            theorieviewer.Location = this.Location;
             this.Hide();
         }
 
